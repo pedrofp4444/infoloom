@@ -110,7 +110,7 @@
     "docentes": []
   },
   {
-    "nome": "Análise de Big Data",
+    "nome": "Análise de Dados de Grandes Dimensões",
     "perfil": "Computação Avançada",
     "slug": "ca-uc2",
     "avaliacoes": [],
@@ -190,7 +190,7 @@
     "docentes": []
   },
   {
-    "nome": "Sistemas para Extração, Transformação e Carga de Dados",
+    "nome": "Sistemas de Extração, Transformação e Carregamento de Dados",
     "perfil": "Sistemas de Data Warehousing",
     "slug": "sdw-uc2",
     "avaliacoes": [],
@@ -230,7 +230,7 @@
     "docentes": []
   },
   {
-    "nome": "Sistemas Interativos de Alta Confiança",
+    "nome": "Sistemas Interativos Confiáveis",
     "perfil": "Engenharia de Aplicações",
     "slug": "ea-uc2",
     "avaliacoes": [],
@@ -240,7 +240,7 @@
     "docentes": []
   },
   {
-    "nome": "Architectures of Applications",
+    "nome": "Arquiteturas Aplicacionais",
     "perfil": "Engenharia de Aplicações",
     "slug": "ea-uc3",
     "avaliacoes": [],
@@ -440,7 +440,7 @@
     "docentes": []
   },
   {
-    "nome": "Análise Inteligente de Big Data",
+    "nome": "Análise Inteligente em Sistemas de \"Big Data\"",
     "perfil": "Engenharia do Conhecimento",
     "slug": "ek-uc3",
     "avaliacoes": [],
@@ -470,7 +470,7 @@
     "docentes": []
   },
   {
-    "nome": "Deep Learning (Apredizagem Aprofundada)",
+    "nome": "Aprendizagem Profunda",
     "perfil": "Sistemas Inteligentes",
     "slug": "si-uc2",
     "avaliacoes": [],
