@@ -16,11 +16,12 @@ import  SpeedInsights  from "@vercel/speed-insights/astro"
         <title>Infoloom</title>
     </head>
     <body class="flex min-h-screen flex-col">
-        <SpeedInsights/>
         <Header />
         <main class="flex-1">
             <slot />
         </main>
         <Footer />
     </body>
-</html>
+    </html>
+
+<SpeedInsights/>
