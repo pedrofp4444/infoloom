@@ -24,6 +24,7 @@
         "@astrojs/vue": "^5.1.0",
         "@headlessui/vue": "^1.7.23",
         "@tailwindcss/vite": "^4.1.11",
+        "@vercel/speed-insights": "^1.2.0",
         "@vueuse/core": "^13.9.0",
         "astro": "^5.13.4",
         "class-variance-authority": "^0.7.1",
