@@ -80,7 +80,7 @@
     "docentes": []
   },
   {
-    "nome": "Criptografia",
+    "nome": "Criptografia de Informação",
     "perfil": "Criptografia e Segurança da Informação",
     "slug": "csi-uc3",
     "avaliacoes": [],
@@ -470,7 +470,7 @@
     "docentes": []
   },
   {
-    "nome": "Deep Learning",
+    "nome": "Deep Learning (Apredizagem Aprofundada)",
     "perfil": "Sistemas Inteligentes",
     "slug": "si-uc2",
     "avaliacoes": [],
