@@ -1,0 +1,20 @@
+---
+import UCDetail from "../../components/UCDetail.vue";
+import ucsData from "../../../public/data/ucs.json";
+import MainLayout from "@/layouts/MainLayout.astro";
+
+export async function getStaticPaths() {
+  return ucsData
+    .filter(u => typeof u.slug === "string")
+    .map(u => ({ params: { slug: u.slug } }));
+}
+
+const { slug } = Astro.params;
+
+const uc = ucsData.filter(u => typeof u.slug === "string").find(u => u.slug === slug);
+
+if (!uc) throw new Error("UC não encontrada");
+---
+<MainLayout>
+  <UCDetail uc={uc} />
+</MainLayout>

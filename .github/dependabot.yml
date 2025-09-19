@@ -1,0 +1,18 @@
+version: 2
+updates:
+  - package-ecosystem: "npm"
+    directory: "/"
+    schedule:
+      interval: "daily"
+    allow:
+      - dependency-name: "astro"
+      - dependency-name: "@astrojs/*"
+    groups:
+      astro-stack:
+        patterns:
+          - "astro"
+          - "@astrojs/*"
+    labels:
+      - "dependencies"
+      - "astro"
+

@@ -1,0 +1,59 @@
+---
+import { Mail, Phone } from "lucide-vue-next";
+import MainLayout from "../layouts/MainLayout.astro";
+---
+
+<MainLayout>
+<div class="min-h-screen bg-background">
+  <main class="container mx-auto px-4 sm:px-6 lg:px-8 py-6 sm:py-8">
+    <div class="mb-6 sm:mb-8">
+      <h1 class="text-3xl sm:text-4xl font-bold text-foreground mb-3 sm:mb-4 text-balance">
+        Contactos
+      </h1>
+      <p class="text-base sm:text-lg text-muted-foreground text-pretty">
+        Entra em contacto connosco para esclarecimentos sobre o mestrado
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 sm:gap-6">
+      <div class="rounded-2xl border bg-card text-card-foreground shadow">
+        <div class="p-4 sm:p-6">
+          <h2 class="text-lg sm:text-xl font-semibold">Pedro Figueiredo Pereira</h2>
+          <p class="text-sm sm:text-base text-muted-foreground">
+            Delegado
+          </p>
+        </div>
+        <div class="p-4 sm:p-6 space-y-3 sm:space-y-4">
+          <div class="flex items-center gap-3">
+            <Mail class="h-4 w-4 text-primary flex-shrink-0" />
+            <span class="text-sm sm:text-base break-all">pg61538@uminho.pt</span>
+          </div>
+          <div class="flex items-center gap-3">
+            <Phone class="h-4 w-4 text-primary flex-shrink-0" />
+            <span class="text-sm sm:text-base">+351 962 119 614</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="rounded-2xl border bg-card text-card-foreground shadow">
+        <div class="p-4 sm:p-6">
+          <h2 class="text-lg sm:text-xl font-semibold">Renato Pereira Garcia</h2>
+          <p class="text-sm sm:text-base text-muted-foreground">
+            Subdelegado
+          </p>
+        </div>
+        <div class="p-4 sm:p-6 space-y-3 sm:space-y-4">
+          <div class="flex items-center gap-3">
+            <Mail class="h-4 w-4 text-primary flex-shrink-0" />
+            <span class="text-sm sm:text-base break-all">pg61542@uminho.pt</span>
+          </div>
+          <div class="flex items-center gap-3">
+            <Phone class="h-4 w-4 text-primary flex-shrink-0" />
+            <span class="text-sm sm:text-base">+351 968 797 134</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+</div>
+</MainLayout>

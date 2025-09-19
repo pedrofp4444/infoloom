@@ -1,0 +1,59 @@
+---
+import Image from "astro/components/Image.astro";
+import logo from "../assets/logo.svg";
+import AppSidebar from "./AppSidebar.vue";
+
+const pages = [
+  { label: "Unidades Curriculares", route: "/" },
+  { label: "Contactos", route: "/contacts" }
+];
+---
+
+<header class="bg-green-100">
+  <div class="container mx-auto">
+    <nav
+    class="mx-4 flex flex-row items-center justify-between py-7 lg:mx-12 xl:mx-20"
+  >
+    <a
+      href="/"
+      class="flex items-center gap-3 hover:opacity-80 transition-opacity"
+    >
+      <Image
+        layout="fixed"
+        width={50}
+        height={50}
+        src={logo}
+        alt="Infoloom's Logo"
+        loading={"eager"}
+      />
+      <div>
+        <h1 class="text-xl font-bold text-foreground">Infoloom</h1>
+        <p class="text-sm text-muted-foreground">
+          Mestrado em Engenharia Informática
+        </p>
+      </div>
+    </a>
+
+    <ul class="hidden md:flex gap-6 text-sm items-center">
+      {
+        pages.map(({ label, route }) => (
+          <li>
+            <a
+              href={route}
+              class="hover:text-green-400 cursor-pointer hover:transition-discrete duration-300"
+            >
+              {label}
+            </a>
+          </li>
+        ))
+      }
+    </ul>
+
+    <ul class="hidden max-md:block items-center">
+      <li>
+        <AppSidebar client:load />
+      </li>
+    </ul>
+  </nav>
+  </div>
+</header>

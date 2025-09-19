@@ -1,0 +1,582 @@
+[
+  {
+    "nome": "Aplicações e Serviços de Computação em Nuvem",
+    "perfil": "Tronco Comum",
+    "slug": "aplicacoes-e-servicos-de-computacao-em-nuvem",
+    "avaliacoes": [],
+    "criterios": "",
+    "notas": "",
+    "recursos": [],
+    "docentes": []
+  },
+  {
+    "nome": "Computação Paralela",
+    "perfil": "Tronco Comum",
+    "slug": "computacao-paralela",
+    "avaliacoes": [],
+    "criterios": "",
+    "notas": "",
+    "recursos": [],
+    "docentes": []
+  },
+  {
+    "nome": "Dados e Aprendizagem Automática",
+    "perfil": "Tronco Comum",
+    "slug": "dados-e-aprendizagem-automatica",
+    "avaliacoes": [],
+    "criterios": "",
+    "notas": "",
+    "recursos": [],
+    "docentes": []
+  },
+  {
+    "nome": "Engenharia de Serviços em Rede",
+    "perfil": "Tronco Comum",
+    "slug": "engenharia-de-servicos-em-rede",
+    "avaliacoes": [],
+    "criterios": "",
+    "notas": "",
+    "recursos": [],
+    "docentes": []
+  },
+  {
+    "nome": "Métodos Formais em Engenharia de Software",
+    "perfil": "Tronco Comum",
+    "slug": "metodos-formais-em-engenharia-de-software",
+    "avaliacoes": [],
+    "criterios": "",
+    "notas": "",
+    "recursos": [],
+    "docentes": []
+  },
+  {
+    "nome": "Requisitos e Arquiteturas de Software",
+    "perfil": "Tronco Comum",
+    "slug": "requisitos-e-arquiteturas-de-software",
+    "avaliacoes": [],
+    "criterios": "",
+    "notas": "",
+    "recursos": [],
+    "docentes": []
+  },
+  {
+    "nome": "Segurança de Sistemas de Computador",
+    "perfil": "Criptografia e Segurança da Informação",
+    "slug": "csi-uc1",
+    "avaliacoes": [],
+    "criterios": "",
+    "notas": "",
+    "recursos": [],
+    "docentes": []
+  },
+  {
+    "nome": "Segurança de Software",
+    "perfil": "Criptografia e Segurança da Informação",
+    "slug": "csi-uc2",
+    "avaliacoes": [],
+    "criterios": "",
+    "notas": "",
+    "recursos": [],
+    "docentes": []
+  },
+  {
+    "nome": "Criptografia",
+    "perfil": "Criptografia e Segurança da Informação",
+    "slug": "csi-uc3",
+    "avaliacoes": [],
+    "criterios": "",
+    "notas": "",
+    "recursos": [],
+    "docentes": []
+  },
+  {
+    "nome": "Projeto em Criptografia e Segurança da Informação",
+    "perfil": "Criptografia e Segurança da Informação",
+    "slug": "csi-projeto",
+    "avaliacoes": [],
+    "criterios": "",
+    "notas": "",
+    "recursos": [],
+    "docentes": []
+  },
+  {
+    "nome": "Arquiteturas Avançadas de Computadores",
+    "perfil": "Computação Avançada",
+    "slug": "ca-uc1",
+    "avaliacoes": [],
+    "criterios": "",
+    "notas": "",
+    "recursos": [],
+    "docentes": []
+  },
+  {
+    "nome": "Análise de Big Data",
+    "perfil": "Computação Avançada",
+    "slug": "ca-uc2",
+    "avaliacoes": [],
+    "criterios": "",
+    "notas": "",
+    "recursos": [],
+    "docentes": []
+  },
+  {
+    "nome": "Sistemas de Armazenamento de Dados",
+    "perfil": "Computação Avançada",
+    "slug": "ca-uc3",
+    "avaliacoes": [],
+    "criterios": "",
+    "notas": "",
+    "recursos": [],
+    "docentes": []
+  },
+  {
+    "nome": "Projeto em Computação Avançada",
+    "perfil": "Computação Avançada",
+    "slug": "ca-projeto",
+    "avaliacoes": [],
+    "criterios": "",
+    "notas": "",
+    "recursos": [],
+    "docentes": []
+  },
+  {
+    "nome": "Qualidade de Serviço na Internet",
+    "perfil": "Engenharia Internet",
+    "slug": "ei-uc1",
+    "avaliacoes": [],
+    "criterios": "",
+    "notas": "",
+    "recursos": [],
+    "docentes": []
+  },
+  {
+    "nome": "Internet das Coisas Aplicada",
+    "perfil": "Engenharia Internet",
+    "slug": "ei-uc2",
+    "avaliacoes": [],
+    "criterios": "",
+    "notas": "",
+    "recursos": [],
+    "docentes": []
+  },
+  {
+    "nome": "Gestão e Segurança de Redes",
+    "perfil": "Engenharia Internet",
+    "slug": "ei-uc3",
+    "avaliacoes": [],
+    "criterios": "",
+    "notas": "",
+    "recursos": [],
+    "docentes": []
+  },
+  {
+    "nome": "Projeto em Engenharia Internet",
+    "perfil": "Engenharia Internet",
+    "slug": "ei-projeto",
+    "avaliacoes": [],
+    "criterios": "",
+    "notas": "",
+    "recursos": [],
+    "docentes": []
+  },
+  {
+    "nome": "Conceção e Implementação de Data Warehouses",
+    "perfil": "Sistemas de Data Warehousing",
+    "slug": "sdw-uc1",
+    "avaliacoes": [],
+    "criterios": "",
+    "notas": "",
+    "recursos": [],
+    "docentes": []
+  },
+  {
+    "nome": "Sistemas para Extração, Transformação e Carga de Dados",
+    "perfil": "Sistemas de Data Warehousing",
+    "slug": "sdw-uc2",
+    "avaliacoes": [],
+    "criterios": "",
+    "notas": "",
+    "recursos": [],
+    "docentes": []
+  },
+  {
+    "nome": "Extração de Conhecimento em Data Warehouses",
+    "perfil": "Sistemas de Data Warehousing",
+    "slug": "sdw-uc3",
+    "avaliacoes": [],
+    "criterios": "",
+    "notas": "",
+    "recursos": [],
+    "docentes": []
+  },
+  {
+    "nome": "Projeto em Sistemas de Data Warehousing",
+    "perfil": "Sistemas de Data Warehousing",
+    "slug": "sdw-projeto",
+    "avaliacoes": [],
+    "criterios": "",
+    "notas": "",
+    "recursos": [],
+    "docentes": []
+  },
+  {
+    "nome": "Administração de Bases de Dados",
+    "perfil": "Engenharia de Aplicações",
+    "slug": "ea-uc1",
+    "avaliacoes": [],
+    "criterios": "",
+    "notas": "",
+    "recursos": [],
+    "docentes": []
+  },
+  {
+    "nome": "Sistemas Interativos de Alta Confiança",
+    "perfil": "Engenharia de Aplicações",
+    "slug": "ea-uc2",
+    "avaliacoes": [],
+    "criterios": "",
+    "notas": "",
+    "recursos": [],
+    "docentes": []
+  },
+  {
+    "nome": "Architectures of Applications",
+    "perfil": "Engenharia de Aplicações",
+    "slug": "ea-uc3",
+    "avaliacoes": [],
+    "criterios": "",
+    "notas": "",
+    "recursos": [],
+    "docentes": []
+  },
+  {
+    "nome": "Projeto em Engenharia de Aplicações",
+    "perfil": "Engenharia de Aplicações",
+    "slug": "ea-projeto",
+    "avaliacoes": [],
+    "criterios": "",
+    "notas": "",
+    "recursos": [],
+    "docentes": []
+  },
+  {
+    "nome": "Manutenção e Evolução de Software",
+    "perfil": "Desenvolvimento, Validação e Manutenção de Software",
+    "slug": "dvms-uc1",
+    "avaliacoes": [],
+    "criterios": "",
+    "notas": "",
+    "recursos": [],
+    "docentes": []
+  },
+  {
+    "nome": "Experimentação em Engenharia de Software",
+    "perfil": "Desenvolvimento, Validação e Manutenção de Software",
+    "slug": "dvms-uc2",
+    "avaliacoes": [],
+    "criterios": "",
+    "notas": "",
+    "recursos": [],
+    "docentes": []
+  },
+  {
+    "nome": "Tópicos de Desenvolvimento de Software",
+    "perfil": "Desenvolvimento, Validação e Manutenção de Software",
+    "slug": "dvms-uc3",
+    "avaliacoes": [],
+    "criterios": "",
+    "notas": "",
+    "recursos": [],
+    "docentes": []
+  },
+  {
+    "nome": "Projeto em Desenvolvimento, Validação e Manutenção de Software",
+    "perfil": "Desenvolvimento, Validação e Manutenção de Software",
+    "slug": "dvms-projeto",
+    "avaliacoes": [],
+    "criterios": "",
+    "notas": "",
+    "recursos": [],
+    "docentes": []
+  },
+  {
+    "nome": "Engenharia de Gramáticas",
+    "perfil": "Engenharia de Linguagens",
+    "slug": "el-uc1",
+    "avaliacoes": [],
+    "criterios": "",
+    "notas": "",
+    "recursos": [],
+    "docentes": []
+  },
+  {
+    "nome": "Scripting para Processamento de Linguagem Natural",
+    "perfil": "Engenharia de Linguagens",
+    "slug": "el-uc2",
+    "avaliacoes": [],
+    "criterios": "",
+    "notas": "",
+    "recursos": [],
+    "docentes": []
+  },
+  {
+    "nome": "Representação e Processamento de Conhecimento na Web",
+    "perfil": "Engenharia de Linguagens",
+    "slug": "el-uc3",
+    "avaliacoes": [],
+    "criterios": "",
+    "notas": "",
+    "recursos": [],
+    "docentes": []
+  },
+  {
+    "nome": "Projeto em Engenharia de Linguagens",
+    "perfil": "Engenharia de Linguagens",
+    "slug": "el-projeto",
+    "avaliacoes": [],
+    "criterios": "",
+    "notas": "",
+    "recursos": [],
+    "docentes": []
+  },
+  {
+    "nome": "Tolerância a Faltas",
+    "perfil": "Sistemas Distribuídos",
+    "slug": "sd-uc1",
+    "avaliacoes": [],
+    "criterios": "",
+    "notas": "",
+    "recursos": [],
+    "docentes": []
+  },
+  {
+    "nome": "Paradigmas de Sistemas Distribuídos",
+    "perfil": "Sistemas Distribuídos",
+    "slug": "sd-uc2",
+    "avaliacoes": [],
+    "criterios": "",
+    "notas": "",
+    "recursos": [],
+    "docentes": []
+  },
+  {
+    "nome": "Sistemas Distribuídos em Larga Escala",
+    "perfil": "Sistemas Distribuídos",
+    "slug": "sd-uc3",
+    "avaliacoes": [],
+    "criterios": "",
+    "notas": "",
+    "recursos": [],
+    "docentes": []
+  },
+  {
+    "nome": "Projeto em Sistemas Distribuídos",
+    "perfil": "Sistemas Distribuídos",
+    "slug": "sd-projeto",
+    "avaliacoes": [],
+    "criterios": "",
+    "notas": "",
+    "recursos": [],
+    "docentes": []
+  },
+  {
+    "nome": "Redes Fixas e Móveis",
+    "perfil": "Redes de Nova Geração",
+    "slug": "rng-uc1",
+    "avaliacoes": [],
+    "criterios": "",
+    "notas": "",
+    "recursos": [],
+    "docentes": []
+  },
+  {
+    "nome": "Novos Paradigmas de Redes",
+    "perfil": "Redes de Nova Geração",
+    "slug": "rng-uc2",
+    "avaliacoes": [],
+    "criterios": "",
+    "notas": "",
+    "recursos": [],
+    "docentes": []
+  },
+  {
+    "nome": "Redes Definidas por Software",
+    "perfil": "Redes de Nova Geração",
+    "slug": "rng-uc3",
+    "avaliacoes": [],
+    "criterios": "",
+    "notas": "",
+    "recursos": [],
+    "docentes": []
+  },
+  {
+    "nome": "Projeto em Redes de Nova Geração",
+    "perfil": "Redes de Nova Geração",
+    "slug": "rng-projeto",
+    "avaliacoes": [],
+    "criterios": "",
+    "notas": "",
+    "recursos": [],
+    "docentes": []
+  },
+  {
+    "nome": "Bases de Dados NoSQL",
+    "perfil": "Engenharia do Conhecimento",
+    "slug": "ek-uc1",
+    "avaliacoes": [],
+    "criterios": "",
+    "notas": "",
+    "recursos": [],
+    "docentes": []
+  },
+  {
+    "nome": "Mineração de Dados",
+    "perfil": "Engenharia do Conhecimento",
+    "slug": "ek-uc2",
+    "avaliacoes": [],
+    "criterios": "",
+    "notas": "",
+    "recursos": [],
+    "docentes": []
+  },
+  {
+    "nome": "Análise Inteligente de Big Data",
+    "perfil": "Engenharia do Conhecimento",
+    "slug": "ek-uc3",
+    "avaliacoes": [],
+    "criterios": "",
+    "notas": "",
+    "recursos": [],
+    "docentes": []
+  },
+  {
+    "nome": "Projeto em Engenharia do Conhecimento",
+    "perfil": "Engenharia do Conhecimento",
+    "slug": "ek-projeto",
+    "avaliacoes": [],
+    "criterios": "",
+    "notas": "",
+    "recursos": [],
+    "docentes": []
+  },
+  {
+    "nome": "Agentes e Sistemas Multiagente",
+    "perfil": "Sistemas Inteligentes",
+    "slug": "si-uc1",
+    "avaliacoes": [],
+    "criterios": "",
+    "notas": "",
+    "recursos": [],
+    "docentes": []
+  },
+  {
+    "nome": "Deep Learning",
+    "perfil": "Sistemas Inteligentes",
+    "slug": "si-uc2",
+    "avaliacoes": [],
+    "criterios": "",
+    "notas": "",
+    "recursos": [],
+    "docentes": []
+  },
+  {
+    "nome": "Sensorização e Ambiente",
+    "perfil": "Sistemas Inteligentes",
+    "slug": "si-uc3",
+    "avaliacoes": [],
+    "criterios": "",
+    "notas": "",
+    "recursos": [],
+    "docentes": []
+  },
+  {
+    "nome": "Projeto em Sistemas Inteligentes",
+    "perfil": "Sistemas Inteligentes",
+    "slug": "si-projeto",
+    "avaliacoes": [],
+    "criterios": "",
+    "notas": "",
+    "recursos": [],
+    "docentes": []
+  },
+  {
+    "nome": "Sistemas de Informação por Cálculo",
+    "perfil": "Métodos Formais de Programação",
+    "slug": "mfp-uc1",
+    "avaliacoes": [],
+    "criterios": "",
+    "notas": "",
+    "recursos": [],
+    "docentes": []
+  },
+  {
+    "nome": "Verificação Formal",
+    "perfil": "Métodos Formais de Programação",
+    "slug": "mfp-uc2",
+    "avaliacoes": [],
+    "criterios": "",
+    "notas": "",
+    "recursos": [],
+    "docentes": []
+  },
+  {
+    "nome": "Programação Ciberfísica",
+    "perfil": "Métodos Formais de Programação",
+    "slug": "mfp-uc3",
+    "avaliacoes": [],
+    "criterios": "",
+    "notas": "",
+    "recursos": [],
+    "docentes": []
+  },
+  {
+    "nome": "Projeto em Métodos Formais de Programação",
+    "perfil": "Métodos Formais de Programação",
+    "slug": "mfp-projeto",
+    "avaliacoes": [],
+    "criterios": "",
+    "notas": "",
+    "recursos": [],
+    "docentes": []
+  },
+  {
+    "nome": "Visualização em Tempo Real",
+    "perfil": "Computação Gráfica",
+    "slug": "cg-uc1",
+    "avaliacoes": [],
+    "criterios": "",
+    "notas": "",
+    "recursos": [],
+    "docentes": []
+  },
+  {
+    "nome": "Visão Computacional e Processamento de Imagem",
+    "perfil": "Computação Gráfica",
+    "slug": "cg-uc2",
+    "avaliacoes": [],
+    "criterios": "",
+    "notas": "",
+    "recursos": [],
+    "docentes": []
+  },
+  {
+    "nome": "Visualização e Iluminação",
+    "perfil": "Computação Gráfica",
+    "slug": "cg-uc3",
+    "avaliacoes": [],
+    "criterios": "",
+    "notas": "",
+    "recursos": [],
+    "docentes": []
+  },
+  {
+    "nome": "Projeto em Computação Gráfica",
+    "perfil": "Computação Gráfica",
+    "slug": "cg-projeto",
+    "avaliacoes": [],
+    "criterios": "",
+    "notas": "",
+    "recursos": [],
+    "docentes": []
+  }
+]

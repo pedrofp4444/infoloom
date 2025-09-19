@@ -1,0 +1,24 @@
+---
+import "../styles/global.css";
+import Footer from "../components/Footer.astro";
+import logo from "../assets/logo.ico";
+import Header from "../components/Header.astro";
+---
+
+<!doctype html>
+<html lang="pt">
+    <head>
+        <meta charset="utf-8" />
+        <link rel="icon" type="image/svg+xml" href={logo} />
+        <meta name="viewport" content="width=device-width" />
+        <meta name="generator" content={Astro.generator} />
+        <title>Infoloom</title>
+    </head>
+    <body class="flex min-h-screen flex-col">
+        <Header />
+        <main class="flex-1">
+            <slot />
+        </main>
+        <Footer />
+    </body>
+</html>
