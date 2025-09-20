@@ -7,7 +7,13 @@
     "criterios": "",
     "notas": "",
     "recursos": [],
-    "docentes": []
+    "docentes": [
+      "João Paulo (jtpaulo@di.uminho.pt)",
+      "Tânia Esteves",
+      "Claúdia Brito",
+      "Pedro Moreira",
+      "Bruno Pereira"
+  ]
   },
   {
     "nome": "Computação Paralela",
@@ -17,7 +23,7 @@
     "criterios": "",
     "notas": "",
     "recursos": [],
-    "docentes": []
+    "docentes": ["João Luís Sobral (jls@di.uminho.pt)"]
   },
   {
     "nome": "Dados e Aprendizagem Automática",
@@ -47,7 +53,11 @@
     "criterios": "",
     "notas": "",
     "recursos": [],
-    "docentes": []
+    "docentes": [
+      "Nuno Macedo (nmacedo@di.uminho.pt)",
+      "Maria João Frade (mjf@di.uminho.pt)",
+      "Jorge Sousa Pinto (jsp@di.uminho.pt)"
+    ]
   },
   {
     "nome": "Requisitos e Arquiteturas de Software",
