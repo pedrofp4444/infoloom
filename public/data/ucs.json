@@ -4,11 +4,11 @@
     "perfil": "Tronco Comum",
     "slug": "aplicacoes-e-servicos-de-computacao-em-nuvem",
     "avaliacoes": [],
-    "criterios": "",
-    "notas": "",
+    "criterios": "Projeto (50%) + Teste (50%, Min. 8 valores)",
+    "notas": "Os grupos são compostos por 5 elementos (4 é possível mas não recomendado). Checkpoints do projeto podem ter avaliação associada (a confirmar).",
     "recursos": [],
     "docentes": [
-      "João Paulo (jtpaulo@di.uminho.pt)",
+      "João Paulo (jtpaulo@di.uminho.pt) (Regente)",
       "Tânia Esteves",
       "Claúdia Brito",
       "Pedro Moreira",
@@ -20,10 +20,10 @@
     "perfil": "Tronco Comum",
     "slug": "computacao-paralela",
     "avaliacoes": [],
-    "criterios": "",
-    "notas": "",
+    "criterios": "1º Checkpoint Projeto (10%) + Entrega Final do Projeto (50%) + Teste (40%, Min. 5 valores)",
+    "notas": "Os grupos são compostos por 2 elementos.",
     "recursos": [],
-    "docentes": ["João Luís Sobral (jls@di.uminho.pt)"]
+    "docentes": ["João Luís Sobral (jls@di.uminho.pt) (Regente)"]
   },
   {
     "nome": "Dados e Aprendizagem Automática",
