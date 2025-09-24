@@ -29,11 +29,23 @@
     "nome": "Dados e Aprendizagem Automática",
     "perfil": "Tronco Comum",
     "slug": "dados-e-aprendizagem-automatica",
-    "avaliacoes": [],
-    "criterios": "",
-    "notas": "",
+    "avaliacoes": [
+      {"data": "2025-12-02", "descricao": "Apresentação 1º fase"},
+      {"data": "2025-12-03", "descricao": "Apresentação 1º fase"},
+      {"data": "2025-12-04", "descricao": "Apresentação 1º fase"},
+      {"data": "2026-01-05", "descricao": "Apresentação 2º fase"},
+      {"data": "2026-01-06", "descricao": "Apresentação 2º fase"},
+      {"data": "2026-01-07", "descricao": "Apresentação 2º fase"}
+    ],
+    "criterios": "Projeto (60%) + Teste (40%, Min. 8 valores)",
+    "notas": "Os grupos são compostos por 4 elementos.",
     "recursos": [],
-    "docentes": []
+    "docentes": [
+      "Víctor Manuel Rodrigues Alves (valves@di.uminho.pt) (Regente)",
+      "Dalila Alves Durães (dad@di.uminho.pt)",
+      "Filipa Tinoco Ferraz (filipa.ferraz@di.uminho.pt)",
+      "Guilherme João Fernandes Barbosa (gjfbarbosa@di.uminho.pt)"
+    ]
   },
   {
     "nome": "Engenharia de Serviços em Rede",
