@@ -8,11 +8,10 @@
     "notas": "Os grupos são compostos por 5 elementos (4 é possível mas não recomendado). Checkpoints do projeto podem ter avaliação associada (a confirmar).",
     "recursos": [],
     "docentes": [
-      "João Paulo (jtpaulo@di.uminho.pt) (Regente)",
-      "Tânia Esteves",
-      "Claúdia Brito",
-      "Pedro Moreira",
-      "Bruno Pereira"
+      "João Tiago Medeiros Paulo (jtpaulo@di.uminho.pt) (Regente)",
+      "Bruno Filipe Miranda Pereira (D14951@di.uminho.pt)",
+      "Pedro Miguel Braga Moreira (D14112@di.uminho.pt)",
+      "Tânia Conceição Araújo Esteves (D12729@di.uminho.pt)"
   ]
   },
   {
@@ -23,7 +22,9 @@
     "criterios": "1º Checkpoint Projeto (10%) + Entrega Final do Projeto (50%) + Teste (40%, Min. 5 valores)",
     "notas": "Os grupos são compostos por 2 elementos.",
     "recursos": [],
-    "docentes": ["João Luís Sobral (jls@di.uminho.pt) (Regente)"]
+    "docentes": [
+      "João Luís Sobral (jls@di.uminho.pt) (Regente)"
+    ]
   },
   {
     "nome": "Dados e Aprendizagem Automática",
@@ -52,10 +53,14 @@
     "perfil": "Tronco Comum",
     "slug": "engenharia-de-servicos-em-rede",
     "avaliacoes": [],
-    "criterios": "",
-    "notas": "",
+    "criterios": "Projetos (50%) (TP1:20% | TP2:80% - Desvalorização de 0.5 por cada falta injustificada) + Teste (50%, Min. 8 valores)",
+    "notas": "Os grupos são compostos por 3 elementos (2 é possível se não houver número certo no turno para divisão).",
     "recursos": [],
-    "docentes": []
+    "docentes": [
+      "Flávio Oliveira Silva (flavio@di.uminho.pt) (Regente)",
+      "Bruno Alexandre Taraio Santos Antunes (bantunes@di.uminho.pt)",
+      "Pedro Jorge Rito Lima (D12521@di.uminho.pt)"
+    ]
   },
   {
     "nome": "Métodos Formais em Engenharia de Software",
