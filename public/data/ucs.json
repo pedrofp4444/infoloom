@@ -490,11 +490,19 @@
     "nome": "Agentes e Sistemas Multiagente",
     "perfil": "Sistemas Inteligentes",
     "slug": "si-uc1",
-    "avaliacoes": [],
-    "criterios": "",
-    "notas": "",
+    "avaliacoes": [
+      {"data": "2025-11-03", "descricao": "Entrega do trabalho de investigação"},
+      {"data": "2025-11-06", "descricao": "Apresentação do trabalho de investigação"},
+      {"data": "2026-01-12", "descricao": "Entrega do projeto prático"},
+      {"data": "2026-01-15", "descricao": "Apresentação do projeto prático"}
+    ],
+    "criterios": "Trabalho de Investigação (25% + 25%) + Projeto prático (50%)",
+    "notas": "Os grupos são compostos por 5 elementos (4 ou 6 é possível mas não recomendado).",
     "recursos": [],
-    "docentes": []
+    "docentes": [
+      "José Manuel Ferreira Machado (jmac@di.uminho.pt) (Regente)",
+      "Pedro José Costa Oliveira (pedro.jose.oliveira@algoritmi.uminho.pt)"
+    ]
   },
   {
     "nome": "Aprendizagem Profunda",
