@@ -571,10 +571,12 @@
     "perfil": "Computação Gráfica",
     "slug": "cg-uc1",
     "avaliacoes": [],
-    "criterios": "",
-    "notas": "",
+    "criterios": "Primeira componente prática (50%) + Segunda componente prática (50%)",
+    "notas": "Existem duas componentes práticas, uma em grupos até 3 elementos e uma individual. Não há teste.",
     "recursos": [],
-    "docentes": []
+    "docentes": [
+      "António José Borba Ramires Fernandes (arf@di.uminho.pt) (Regente)"
+    ]
   },
   {
     "nome": "Visão Computacional e Processamento de Imagem",
