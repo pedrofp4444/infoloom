@@ -87,7 +87,7 @@
     "docentes": []
   },
   {
-    "nome": "Segurança de Sistemas de Computador",
+    "nome": "Segurança de Sistemas de Computação",
     "perfil": "Criptografia e Segurança da Informação",
     "slug": "csi-uc1",
     "avaliacoes": [],
@@ -130,8 +130,13 @@
     "nome": "Arquiteturas Avançadas de Computadores",
     "perfil": "Computação Avançada",
     "slug": "ca-uc1",
-    "avaliacoes": [],
-    "criterios": "",
+    "avaliacoes": [
+      {"data": "2025-10-29", "descricao": "Entrega do TP1"},
+      {"data": "2025-10-31", "descricao": "Defesa do TP1"},
+      {"data": "2026-01-04", "descricao": "Entrega do TP2"},
+      {"data": "2026-01-09", "descricao": "Defesa do TP2"}
+    ],
+    "criterios": "Teste (35%) + Trabalho prático (50%) + Análise, apresentação e discussão de um artigo sobre HPC (15%)",
     "notas": "",
     "recursos": [],
     "docentes": []
@@ -330,11 +335,16 @@
     "nome": "Engenharia de Gramáticas",
     "perfil": "Engenharia de Linguagens",
     "slug": "el-uc1",
-    "avaliacoes": [],
-    "criterios": "",
-    "notas": "",
+    "avaliacoes": [
+      {"data": "2025-11-06", "descricao": "Apresentação TP1"},
+      {"data": "2025-12-18", "descricao": "Apresentação TP2"}
+    ],
+    "criterios": "Projetos (60%, Min. 8 valores) + Teste (40%, Min. 8 valores)",
+    "notas": "Os grupos são compostos por 2 elementos.",
     "recursos": [],
-    "docentes": []
+    "docentes": [
+      "Nuno Macedo (nmacedo@di.uminho.pt) (Regente)"
+    ]
   },
   {
     "nome": "Scripting para Processamento de Linguagem Natural",
@@ -540,10 +550,13 @@
     "perfil": "Métodos Formais de Programação",
     "slug": "mfp-uc1",
     "avaliacoes": [],
-    "criterios": "",
-    "notas": "",
+    "criterios": "**Regime A)** TE + AO a valerem respetivamente 60% e 40% da nota final. A nota máxima neste regime é 14 valores. **Regime B)** TE + AO + TG a valerem respetivamente 40%, 20% e 40% da nota final. O trabalho (TG) é avaliado através de uma defesa oral.",
+    "notas": "Os grupos são compostos por 3 elementos. A nota mínima da componente TE é 8 valores, havendo lugar a exame de recurso para os alunos que tenham tido nota TE negativa. As componentes TG e AO têm nota mínima de 10 valores e não têm recurso.",
     "recursos": [],
-    "docentes": []
+    "docentes": [
+      "José Nuno Oliveira (jno@di.uminho.pt)",
+      "Luís Soares Barbosa (lsb@di.uminho.pt)"
+    ]
   },
   {
     "nome": "Verificação Formal",
