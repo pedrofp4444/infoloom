@@ -54,7 +54,6 @@ const toggleFavorite = () => favoritesStore.toggleFavorite(props.uc.slug);
         </Badge>
       </div>
 
-      <!-- Botões -->
       <div class="mt-3 w-full flex flex-col space-y-2">
         <a :href="`/uc/${uc.slug}`" class="w-full">
           <Button variant="outline" size="sm" class="w-full min-h-[36px] bg-transparent justify-center">
