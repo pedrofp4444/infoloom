@@ -1,19 +1,18 @@
 ---
 import MainLayout from "../layouts/MainLayout.astro";
-import UCList from "@/components/UCList.vue";
 ---
 
 <MainLayout>
-  <main class="container mx-auto px-4 sm:px-6 lg:px-8 py-6 sm:py-8">
-    <div class="mb-6 sm:mb-8">
-      <h1 class="text-3xl sm:text-4xl font-bold text-foreground mb-3 sm:mb-4 text-balance">
-        Unidades Curriculares
-      </h1>
-      <p class="text-base sm:text-lg text-muted-foreground text-pretty">
-        Explora as unidades curriculares do Mestrado em Engenharia Informática
-      </p>
-    </div>
+  <script is:inline>
+    if (typeof window !== "undefined") {
+      const stored = localStorage.getItem("favorites");
+      const favorites = stored ? JSON.parse(stored) : [];
 
-    <UCList client:only="vue" />
-  </main>
+      if (favorites.length > 0) {
+        window.location.replace("/favorites");
+      } else {
+        window.location.replace("/ucs");
+      }
+    }
+  </script>
 </MainLayout>
