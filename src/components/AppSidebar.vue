@@ -4,6 +4,7 @@ import SidebarTrigger from "./ui/sidebar/SidebarTrigger.vue";
 
 import {
   Book,
+  Calendar,
   Star,
   Users
 } from "lucide-vue-next"
@@ -24,6 +25,11 @@ const items = [
     title: "Unidades Curriculares",
     url: "/ucs",
     icon: Book,
+  },
+  {
+    title: "Calendário",
+    url: "/calendar",
+    icon: Calendar,
   },
   {
     title: "Favoritas",
