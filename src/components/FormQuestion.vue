@@ -61,7 +61,7 @@ function optionKey(opt: FormOption) {
       type="text"
       :model-value="valueString"
       @update:modelValue="onUpdateValue"
-      placeholder="Digite a sua resposta"
+      placeholder="Digita a tua resposta"
       :class="{ 'border-red-500': error }"
     />
 
@@ -71,7 +71,7 @@ function optionKey(opt: FormOption) {
       rows="4"
       :model-value="valueString"
       @update:modelValue="onUpdateValue"
-      placeholder="Digite a sua resposta"
+      placeholder="Digita a tua resposta"
       :class="{ 'border-red-500': error }"
     />
 

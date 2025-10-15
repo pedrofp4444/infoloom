@@ -9,6 +9,43 @@ import {
     CardTitle,
 } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
+
+import fs from "fs";
+import path from "path";
+
+const formsDir = path.resolve("./public/forms");
+
+const files = fs.readdirSync(formsDir).filter((f) => f.endsWith(".json"));
+
+type FormData = {
+    title?: string;
+    description?: string;
+    [key: string]: any;
+};
+
+const forms = files.map((file) => {
+    const filePath = path.join(formsDir, file);
+    const rawData = fs.readFileSync(filePath, "utf-8");
+    let data: FormData = {};
+    try {
+        data = JSON.parse(rawData);
+    } catch {
+        data = {};
+    }
+
+    const fileName = file.replace(".json", "");
+    const [status, ...nameParts] = fileName.split("-");
+    const name = nameParts.join("-");
+    const displayName = name.replace(/-/g, " ");
+
+    return {
+        status: status.toUpperCase(),
+        name,
+        displayName,
+        data,
+        link: `/formulario/${fileName}`,
+    };
+});
 ---
 
 <MainLayout>
@@ -23,66 +60,60 @@ import { Button } from "@/components/ui/button";
                 <p
                     class="text-base sm:text-lg text-muted-foreground text-pretty"
                 >
-                    Responde aos formulários de feeback e controlo de qualidade
+                    Responde aos formulários de feedback e controlo de qualidade
                 </p>
             </div>
 
             <div class="grid gap-4 md:grid-cols-2">
-                <Card class="hover:shadow-lg transition-shadow relative">
-                    <span
-                        class="absolute top-3 right-3 px-4 py-1 text-xs font-semibold rounded-full
-                        bg-green-100 text-green-800"
-                    >
-                        Ativo
-                    </span>
-
-                    <CardHeader>
-                        <div class="flex items-start gap-4">
-                            <div class="p-2 bg-primary/10 rounded-lg">
-                                <FileText class="w-6 h-6 text-primary" />
-                            </div>
-                            <div class="flex-1">
-                                <CardTitle class="text-xl"
-                                    >Formulário 1</CardTitle
+                {
+                    forms.map((form) => (
+                        <Card class="hover:shadow-lg transition-shadow relative">
+                            <CardHeader class="relative">
+                                <span
+                                    class={`absolute top-3 right-3 px-4 py-1 text-xs font-semibold rounded-full ${
+                                        form.status === "ACTIVE"
+                                            ? "bg-green-100 text-green-800"
+                                            : "bg-red-100 text-red-800"
+                                    }`}
                                 >
-                                <CardDescription class="mt-2">
-                                    Ainda não fiz
-                                </CardDescription>
-                            </div>
-                        </div>
-                    </CardHeader>
-                    <CardContent>
-                        <a href="/formulario/exemplo-avaliacao-curso">
-                            <Button class="w-full">Responder</Button>
-                        </a>
-                    </CardContent>
-                </Card>
-                <Card class="hover:shadow-lg transition-shadow relative">
-                    <span class="absolute top-3 right-3 px-2 py-1 text-xs font-semibold rounded-full
-                        bg-red-100 text-red-800">
-                        Inativo
-                    </span>
+                                    {form.status === "ACTIVE"
+                                        ? "Ativo"
+                                        : "Inativo"}
+                                </span>
 
-                    <CardHeader>
-                        <div class="flex items-start gap-4">
-                            <div class="p-2 bg-primary/10 rounded-lg">
-                                <FileText class="w-6 h-6 text-primary" />
-                            </div>
-                            <div class="flex-1">
-                                <CardTitle class="text-xl">Exemplo de Formulário</CardTitle>
-                                <CardDescription class="mt-2">
-                                    Questionário de exemplo com todo o tipo de
-                                    perguntas
-                                </CardDescription>
-                            </div>
-                        </div>
-                    </CardHeader>
-                    <CardContent>
-                        <Button class="w-full" disabled>
-                            Responder
-                        </Button>
-                    </CardContent>
-                </Card>
+                                <div class="flex items-start gap-4">
+                                    <div class="p-2 bg-primary/10 rounded-lg flex-shrink-0">
+                                        <FileText class="w-6 h-6 text-primary" />
+                                    </div>
+                                    <div class="flex-1 pr-20">
+                                        <CardTitle class="text-xl capitalize break-words">
+                                            {form.data.title ||
+                                                form.displayName}
+                                        </CardTitle>
+                                        <CardDescription class="mt-2 break-words">
+                                            {form.data.description ||
+                                                "Formulário disponível para preenchimento"}
+                                        </CardDescription>
+                                    </div>
+                                </div>
+                            </CardHeader>
+
+                            <CardContent>
+                                {form.status === "ACTIVE" ? (
+                                    <a href={form.link}>
+                                        <Button class="w-full">
+                                            Responder
+                                        </Button>
+                                    </a>
+                                ) : (
+                                    <Button class="w-full" disabled>
+                                        Responder
+                                    </Button>
+                                )}
+                            </CardContent>
+                        </Card>
+                    ))
+                }
             </div>
         </main>
     </div>

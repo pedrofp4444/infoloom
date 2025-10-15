@@ -29,6 +29,7 @@ export interface FormSchema {
   id: string
   title: string
   description?: string
+  responseTime?: string
   sections: FormSection[]
 }
 

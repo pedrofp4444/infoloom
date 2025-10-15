@@ -1,7 +1,7 @@
 {
   "id": "exemplo-avaliacao-curso",
-  "title": "Avaliação do Curso de Programação",
-  "description": "Ajuda-nos a melhorar o curso respondendo a este questionário. As tuas respostas são anónimas e muito importantes para nós.",
+  "title": "Formulário de exemplo",
+  "description": "Template de formulário com todo o tipo de questões possíveis. O formulário é criado dinamicamente a partir de um JSON público e partilhado.",
   "sections": [
     {
       "id": "secao-1",

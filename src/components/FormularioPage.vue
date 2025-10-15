@@ -133,9 +133,21 @@ async function saveToDatabase(response: FormResponse) {
 
   <div v-else class="space-y-6">
     <Card>
-      <CardHeader>
-        <CardTitle class="text-2xl">{{ formSchema.title }}</CardTitle>
-        <CardDescription v-if="formSchema.description" class="text-base">{{ formSchema.description }}</CardDescription>
+      <CardHeader class="relative">
+        <div class="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-2">
+          <div class="flex-1 min-w-0">
+            <CardTitle class="text-2xl break-words">{{ formSchema.title }}</CardTitle>
+            <CardDescription v-if="formSchema.description" class="text-base break-words">
+              {{ formSchema.description }}
+            </CardDescription>
+          </div>
+          <div
+            v-if="formSchema.responseTime"
+            class="shrink-0 self-start sm:self-center bg-primary/10 text-primary text-xs font-medium px-2 py-1 rounded-md whitespace-nowrap mt-1 sm:mt-0"
+          >
+            {{ formSchema.responseTime }}
+          </div>
+        </div>
       </CardHeader>
     </Card>
 
