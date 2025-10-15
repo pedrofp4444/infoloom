@@ -1,0 +1,89 @@
+---
+import MainLayout from "../../layouts/MainLayout.astro";
+import { FileText } from "lucide-vue-next";
+import {
+    Card,
+    CardContent,
+    CardDescription,
+    CardHeader,
+    CardTitle,
+} from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
+---
+
+<MainLayout>
+    <div class="min-h-screen bg-background">
+        <main class="container mx-auto px-4 sm:px-6 lg:px-8 py-6 sm:py-8">
+            <div class="mb-6 sm:mb-8">
+                <h1
+                    class="text-3xl sm:text-4xl font-bold text-foreground mb-3 sm:mb-4 text-balance"
+                >
+                    Formulários
+                </h1>
+                <p
+                    class="text-base sm:text-lg text-muted-foreground text-pretty"
+                >
+                    Responde aos formulários de feeback e controlo de qualidade
+                </p>
+            </div>
+
+            <div class="grid gap-4 md:grid-cols-2">
+                <Card class="hover:shadow-lg transition-shadow relative">
+                    <span
+                        class="absolute top-3 right-3 px-4 py-1 text-xs font-semibold rounded-full
+                        bg-green-100 text-green-800"
+                    >
+                        Ativo
+                    </span>
+
+                    <CardHeader>
+                        <div class="flex items-start gap-4">
+                            <div class="p-2 bg-primary/10 rounded-lg">
+                                <FileText class="w-6 h-6 text-primary" />
+                            </div>
+                            <div class="flex-1">
+                                <CardTitle class="text-xl"
+                                    >Formulário 1</CardTitle
+                                >
+                                <CardDescription class="mt-2">
+                                    Ainda não fiz
+                                </CardDescription>
+                            </div>
+                        </div>
+                    </CardHeader>
+                    <CardContent>
+                        <a href="/formulario/exemplo-avaliacao-curso">
+                            <Button class="w-full">Responder</Button>
+                        </a>
+                    </CardContent>
+                </Card>
+                <Card class="hover:shadow-lg transition-shadow relative">
+                    <span class="absolute top-3 right-3 px-2 py-1 text-xs font-semibold rounded-full
+                        bg-red-100 text-red-800">
+                        Inativo
+                    </span>
+
+                    <CardHeader>
+                        <div class="flex items-start gap-4">
+                            <div class="p-2 bg-primary/10 rounded-lg">
+                                <FileText class="w-6 h-6 text-primary" />
+                            </div>
+                            <div class="flex-1">
+                                <CardTitle class="text-xl">Exemplo de Formulário</CardTitle>
+                                <CardDescription class="mt-2">
+                                    Questionário de exemplo com todo o tipo de
+                                    perguntas
+                                </CardDescription>
+                            </div>
+                        </div>
+                    </CardHeader>
+                    <CardContent>
+                        <Button class="w-full" disabled>
+                            Responder
+                        </Button>
+                    </CardContent>
+                </Card>
+            </div>
+        </main>
+    </div>
+</MainLayout>

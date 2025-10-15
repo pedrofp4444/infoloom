@@ -1,0 +1,92 @@
+{
+  "id": "exemplo-avaliacao-curso",
+  "title": "Avaliação do Curso de Programação",
+  "description": "Ajuda-nos a melhorar o curso respondendo a este questionário. As tuas respostas são anónimas e muito importantes para nós.",
+  "sections": [
+    {
+      "id": "secao-1",
+      "title": "Informações Gerais",
+      "description": "Conta-nos um pouco sobre a sua experiência",
+      "questions": [
+        {
+          "id": "q1",
+          "type": "text",
+          "question": "Qual é o teu nome? (opcional)",
+          "required": false
+        },
+        {
+          "id": "q2",
+          "type": "dropdown",
+          "question": "Qual é a tua área de formação?",
+          "required": true,
+          "options": [
+            { "id": "opt1", "label": "Engenharia Informática", "value": "eng-info" },
+            { "id": "opt2", "label": "Ciências da Computação", "value": "cc" },
+            { "id": "opt3", "label": "Gestão", "value": "gestao" },
+            { "id": "opt4", "label": "Design", "value": "design" },
+            { "id": "opt5", "label": "Outra", "value": "outra" }
+          ]
+        },
+        {
+          "id": "q3",
+          "type": "date",
+          "question": "Quando começaste o curso?",
+          "required": true
+        }
+      ]
+    },
+    {
+      "id": "secao-2",
+      "title": "Avaliação do Conteúdo",
+      "description": "Avalia os diferentes aspetos do curso",
+      "questions": [
+        {
+          "id": "q4",
+          "type": "scale",
+          "question": "Como avalias a qualidade do conteúdo apresentado?",
+          "required": true,
+          "scaleMin": 1,
+          "scaleMax": 5,
+          "scaleMinLabel": "Muito fraco",
+          "scaleMaxLabel": "Excelente"
+        },
+        {
+          "id": "q5",
+          "type": "scale",
+          "question": "Como avalias a dificuldade do curso?",
+          "required": true,
+          "scaleMin": 1,
+          "scaleMax": 5,
+          "scaleMinLabel": "Muito fácil",
+          "scaleMaxLabel": "Muito difícil"
+        }
+      ]
+    },
+    {
+      "id": "secao-3",
+      "title": "Feedback Final",
+      "description": "As tuas sugestões são muito valiosas",
+      "questions": [
+        {
+          "id": "q7",
+          "type": "multiple-choice",
+          "question": "Recomendarias este curso a um amigo?",
+          "required": true,
+          "options": [
+            { "id": "opt1", "label": "Sim, definitivamente", "value": "sim-def" },
+            { "id": "opt2", "label": "Sim, provavelmente", "value": "sim-prob" },
+            { "id": "opt3", "label": "Não tenho certeza", "value": "neutro" },
+            { "id": "opt4", "label": "Provavelmente não", "value": "nao-prob" },
+            { "id": "opt5", "label": "Definitivamente não", "value": "nao-def" }
+          ]
+        },
+        {
+          "id": "q8",
+          "type": "textarea",
+          "question": "Tens alguma sugestão de melhoria ou comentário adicional?",
+          "required": false
+        }
+      ]
+    }
+  ]
+}
