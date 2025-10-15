@@ -122,10 +122,10 @@
         "perfil": "Criptografia e Segurança da Informação",
         "slug": "csi-uc1",
         "avaliacoes": [],
-        "criterios": "",
-        "notas": "",
+        "criterios": "Teste ( 40% - 60 %) | Trabalhos (40 - 60%) | Avaliação contínua (10%)",
+        "notas": "Os grupos são compostos por 3 elementos.",
         "recursos": [],
-        "docentes": []
+        "docentes": ["Vitor Francisco Mendes Freitas Gomes Fonte (vff@di.uminho.pt) (Regente)"]
     },
     {
         "nome": "Segurança de Software",
@@ -168,9 +168,12 @@
             { "data": "2026-01-09", "descricao": "Defesa do TP2" }
         ],
         "criterios": "Teste (35%) + Trabalho prático (50%) + Análise, apresentação e discussão de um artigo sobre HPC (15%)",
-        "notas": "",
+        "notas": "Os grupos são compostos por 3 elementos.",
         "recursos": [],
-        "docentes": []
+        "docentes": [
+            "André Martins Pereira (ampereira@di.uminho.pt) (Regente)",
+            "Gonçalo Medeiros Sao Pedro Raposo (D14957@di.uminho.pt)"
+        ]
     },
     {
         "nome": "Análise de Dados de Grandes Dimensões",
@@ -327,10 +330,13 @@
         "perfil": "Desenvolvimento, Validação e Manutenção de Software",
         "slug": "dvms-uc1",
         "avaliacoes": [],
-        "criterios": "",
+        "criterios": "Teste (50%) + Trabalho prático (50%, 75% de projeto + 25% de avaliação contínua)",
         "notas": "",
         "recursos": [],
-        "docentes": []
+        "docentes": [
+            "João Alexandre Baptista Vieira Saraiva (saraiva@di.uminho.pt) (Regente)",
+            "José Emanuel Silva Rodrigues (D14960@di.uminho.pt)"
+        ]
     },
     {
         "nome": "Experimentação em Engenharia de Software",
