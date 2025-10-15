@@ -78,19 +78,19 @@
         "avaliacoes": [
             {
                 "data": "2025-10-14",
-                "descricao": "Data Limite da sumissão do 1º Exercício"
+                "descricao": "Data Limite da submissão do 1º Exercício"
             },
             {
                 "data": "2025-11-02",
-                "descricao": "Data Limite da sumissão do 2º Exercício"
+                "descricao": "Data Limite da submissão do 2º Exercício"
             },
             {
                 "data": "2025-11-16",
-                "descricao": "Data Limite da sumissão do 3º Exercício"
+                "descricao": "Data Limite da submissão do 3º Exercício"
             },
             {
                 "data": "2025-12-21",
-                "descricao": "Data Limite da sumissão do 4º Exercício"
+                "descricao": "Data Limite da submissão do 4º Exercício"
             },
             { "data": "2026-01-07", "descricao": "Teste" },
             { "data": "2026-01-28", "descricao": "Exame" }
