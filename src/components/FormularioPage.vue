@@ -74,20 +74,31 @@ async function handleSubmit() {
     })),
   };
 
-  saveToLocalStorage(response);
   await saveToDatabase(response);
   isSubmitted.value = true;
 }
 
-function saveToLocalStorage(response: FormResponse) {
-  const responses = JSON.parse(localStorage.getItem("form-responses") || "[]");
-  responses.push(response);
-  localStorage.setItem("form-responses", JSON.stringify(responses));
-  console.log("[vue] Response stored:", response);
-}
-
 async function saveToDatabase(response: FormResponse) {
-  console.log("[vue] saveToDatabase chamada (não implementada):", response);
+  try {
+    const res = await fetch('/api/submit-form', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(response),
+    });
+
+    if (!res.ok) {
+      const errorData = await res.json();
+      throw new Error(errorData.error || 'Error submitting form');
+    }
+
+    const data = await res.json();
+    return data;
+  } catch (error) {
+    alert('Erro ao enviar o formulário. A equipa foi notificada. Por favor, tente novamente mais tarde.');
+    throw error;
+  }
 }
 </script>
 
@@ -103,7 +114,7 @@ async function saveToDatabase(response: FormResponse) {
     <Card class="max-w-md w-full">
       <CardHeader>
         <CardTitle>Formulário não encontrado</CardTitle>
-        <CardDescription>O formulário que procura não existe.</CardDescription>
+        <CardDescription>O formulário que procuras não existe.</CardDescription>
       </CardHeader>
     </Card>
   </div>
@@ -115,7 +126,7 @@ async function saveToDatabase(response: FormResponse) {
           <Check class="w-6 h-6 text-green-600" />
         </div>
         <CardTitle>Resposta enviada com sucesso!</CardTitle>
-        <CardDescription>Obrigado por responder. As suas respostas foram guardadas.</CardDescription>
+        <CardDescription>Obrigado por responderes. As tuas respostas foram guardadas.</CardDescription>
       </CardHeader>
     </Card>
   </div>
