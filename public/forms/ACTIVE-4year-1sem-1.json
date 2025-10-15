@@ -1,0 +1,624 @@
+{
+  "id": "4year-1sem-1",
+  "title": "1º Recolha de Feedback Intermédio",
+  "description": "Ajuda-nos a melhorar o curso respondendo a este questionário. As tuas respostas são anónimas e muito importantes para nós.",
+  "responseTime": "Tempo estimando de resposta: 3 minutos",
+  "sections": [
+    {
+      "id": "secao-1",
+      "title": "Aplicações e Serviços de Computação em Nuvem",
+      "description": "Conta-nos um pouco sobre a tua experiência em ASCN. Caso não tenhas esta UC, por favor indica isso e passa para a próxima secção.",
+      "questions": [
+        {
+          "id": "s1q0",
+          "type": "multiple-choice",
+          "question": "Estás inscrito/a nesta unidade curricular?",
+          "required": true,
+          "options": [
+            { "id": "opt1", "label": "Sim", "value": "sim" },
+            { "id": "opt2", "label": "Não", "value": "nao" }
+          ]
+        },
+        {
+          "id": "s1q1",
+          "type": "dropdown",
+          "question": "Qual é a tua assiduidade?",
+          "required": false,
+          "options": [
+            { "id": "opt1", "label": "0%", "value": "nenhuma" },
+            { "id": "opt2", "label": "1% - 25%", "value": "pouca" },
+            { "id": "opt3", "label": "26% - 50%", "value": "alguma" },
+            { "id": "opt4", "label": "51% - 75%", "value": "razoavel" },
+            { "id": "opt5", "label": "76% - 100%", "value": "boa" }
+          ]
+        },
+        {
+          "id": "s1q2",
+          "type": "scale",
+          "question": "Qual é a tua apreciação das aulas teóricas?",
+          "required": false,
+          "scaleMin": 1,
+          "scaleMax": 5,
+          "scaleMinLabel": "Muito fracas",
+          "scaleMaxLabel": "Excelentes"
+        },
+        {
+          "id": "s1q3",
+          "type": "scale",
+          "question": "Qual é a tua apreciação das aulas práticas?",
+          "required": false,
+          "scaleMin": 1,
+          "scaleMax": 5,
+          "scaleMinLabel": "Muito fracas",
+          "scaleMaxLabel": "Excelentes"
+        },
+        {
+          "id": "s1q4",
+          "type": "scale",
+          "question": "Qual é a tua apreciação do trabalho prático?",
+          "required": false,
+          "scaleMin": 1,
+          "scaleMax": 5,
+          "scaleMinLabel": "Muito fraco",
+          "scaleMaxLabel": "Excelente"
+        },
+        {
+          "id": "s1q5",
+          "type": "textarea",
+          "question": "O que consideras que pode ser melhorado e porquê?",
+          "required": false
+        }
+      ]
+    },
+    {
+      "id": "secao-2",
+      "title": "Computação Paralela",
+      "description": "Conta-nos um pouco sobre a tua experiência em CPar. Caso não tenhas esta UC, por favor indica isso e passa para a próxima secção.",
+      "questions": [
+        {
+          "id": "s2q0",
+          "type": "multiple-choice",
+          "question": "Estás inscrito/a nesta unidade curricular?",
+          "required": true,
+          "options": [
+            { "id": "opt1", "label": "Sim", "value": "sim" },
+            { "id": "opt2", "label": "Não", "value": "nao" }
+          ]
+        },
+        {
+          "id": "s2q1",
+          "type": "dropdown",
+          "question": "Qual é a tua assiduidade?",
+          "required": false,
+          "options": [
+            { "id": "opt1", "label": "0%", "value": "nenhuma" },
+            { "id": "opt2", "label": "1% - 25%", "value": "pouca" },
+            { "id": "opt3", "label": "26% - 50%", "value": "alguma" },
+            { "id": "opt4", "label": "51% - 75%", "value": "razoavel" },
+            { "id": "opt5", "label": "76% - 100%", "value": "boa" }
+          ]
+        },
+        {
+          "id": "s2q2",
+          "type": "scale",
+          "question": "Qual é a tua apreciação das aulas teóricas?",
+          "required": false,
+          "scaleMin": 1,
+          "scaleMax": 5,
+          "scaleMinLabel": "Muito fracas",
+          "scaleMaxLabel": "Excelentes"
+        },
+        {
+          "id": "s2q3",
+          "type": "scale",
+          "question": "Qual é a tua apreciação das aulas práticas?",
+          "required": false,
+          "scaleMin": 1,
+          "scaleMax": 5,
+          "scaleMinLabel": "Muito fracas",
+          "scaleMaxLabel": "Excelentes"
+        },
+        {
+          "id": "s2q4",
+          "type": "scale",
+          "question": "Qual é a tua apreciação do trabalho prático?",
+          "required": false,
+          "scaleMin": 1,
+          "scaleMax": 5,
+          "scaleMinLabel": "Muito fraco",
+          "scaleMaxLabel": "Excelente"
+        },
+        {
+          "id": "s2q5",
+          "type": "textarea",
+          "question": "O que consideras que pode ser melhorado e porquê?",
+          "required": false
+        }
+      ]
+    },
+    {
+      "id": "secao-3",
+      "title": "Dados e Aprendizagem Automática",
+      "description": "Conta-nos um pouco sobre a tua experiência em DAA. Caso não tenhas esta UC, por favor indica isso e passa para a próxima secção.",
+      "questions": [
+        {
+          "id": "s3q0",
+          "type": "multiple-choice",
+          "question": "Estás inscrito/a nesta unidade curricular?",
+          "required": true,
+          "options": [
+            { "id": "opt1", "label": "Sim", "value": "sim" },
+            { "id": "opt2", "label": "Não", "value": "nao" }
+          ]
+        },
+        {
+          "id": "s3q1",
+          "type": "dropdown",
+          "question": "Qual é a tua assiduidade?",
+          "required": false,
+          "options": [
+            { "id": "opt1", "label": "0%", "value": "nenhuma" },
+            { "id": "opt2", "label": "1% - 25%", "value": "pouca" },
+            { "id": "opt3", "label": "26% - 50%", "value": "alguma" },
+            { "id": "opt4", "label": "51% - 75%", "value": "razoavel" },
+            { "id": "opt5", "label": "76% - 100%", "value": "boa" }
+          ]
+        },
+        {
+          "id": "s3q2",
+          "type": "scale",
+          "question": "Qual é a tua apreciação das aulas teóricas?",
+          "required": false,
+          "scaleMin": 1,
+          "scaleMax": 5,
+          "scaleMinLabel": "Muito fracas",
+          "scaleMaxLabel": "Excelentes"
+        },
+        {
+          "id": "s3q3",
+          "type": "scale",
+          "question": "Qual é a tua apreciação das aulas práticas?",
+          "required": false,
+          "scaleMin": 1,
+          "scaleMax": 5,
+          "scaleMinLabel": "Muito fracas",
+          "scaleMaxLabel": "Excelentes"
+        },
+        {
+          "id": "s3q4",
+          "type": "scale",
+          "question": "Qual é a tua apreciação do trabalho prático?",
+          "required": false,
+          "scaleMin": 1,
+          "scaleMax": 5,
+          "scaleMinLabel": "Muito fraco",
+          "scaleMaxLabel": "Excelente"
+        },
+        {
+          "id": "s3q5",
+          "type": "textarea",
+          "question": "O que consideras que pode ser melhorado e porquê?",
+          "required": false
+        }
+      ]
+    },
+    {
+      "id": "secao-4",
+      "title": "Engenharia de Serviços em Rede",
+      "description": "Conta-nos um pouco sobre a tua experiência em ESR. Caso não tenhas esta UC, por favor indica isso e passa para a próxima secção.",
+      "questions": [
+        {
+          "id": "s4q0",
+          "type": "multiple-choice",
+          "question": "Estás inscrito/a nesta unidade curricular?",
+          "required": true,
+          "options": [
+            { "id": "opt1", "label": "Sim", "value": "sim" },
+            { "id": "opt2", "label": "Não", "value": "nao" }
+          ]
+        },
+        {
+          "id": "s4q1",
+          "type": "dropdown",
+          "question": "Qual é a tua assiduidade?",
+          "required": false,
+          "options": [
+            { "id": "opt1", "label": "0%", "value": "nenhuma" },
+            { "id": "opt2", "label": "1% - 25%", "value": "pouca" },
+            { "id": "opt3", "label": "26% - 50%", "value": "alguma" },
+            { "id": "opt4", "label": "51% - 75%", "value": "razoavel" },
+            { "id": "opt5", "label": "76% - 100%", "value": "boa" }
+          ]
+        },
+        {
+          "id": "s4q2",
+          "type": "scale",
+          "question": "Qual é a tua apreciação das aulas teóricas?",
+          "required": false,
+          "scaleMin": 1,
+          "scaleMax": 5,
+          "scaleMinLabel": "Muito fracas",
+          "scaleMaxLabel": "Excelentes"
+        },
+        {
+          "id": "s4q3",
+          "type": "scale",
+          "question": "Qual é a tua apreciação das aulas práticas?",
+          "required": false,
+          "scaleMin": 1,
+          "scaleMax": 5,
+          "scaleMinLabel": "Muito fracas",
+          "scaleMaxLabel": "Excelentes"
+        },
+        {
+          "id": "s4q4",
+          "type": "scale",
+          "question": "Qual é a tua apreciação dos trabalhos práticos?",
+          "required": false,
+          "scaleMin": 1,
+          "scaleMax": 5,
+          "scaleMinLabel": "Muito fracos",
+          "scaleMaxLabel": "Excelentes"
+        },
+        {
+          "id": "s4q5",
+          "type": "textarea",
+          "question": "O que consideras que pode ser melhorado e porquê?",
+          "required": false
+        }
+      ]
+    },
+    {
+      "id": "secao-5",
+      "title": "Métodos Formais em Engenharia de Software",
+      "description": "Conta-nos um pouco sobre a tua experiência em MFES. Caso não tenhas esta UC, por favor indica isso e passa para a próxima secção.",
+      "questions": [
+        {
+          "id": "s5q0",
+          "type": "multiple-choice",
+          "question": "Estás inscrito/a nesta unidade curricular?",
+          "required": true,
+          "options": [
+            { "id": "opt1", "label": "Sim", "value": "sim" },
+            { "id": "opt2", "label": "Não", "value": "nao" }
+          ]
+        },
+        {
+          "id": "s5q1",
+          "type": "dropdown",
+          "question": "Qual é a tua assiduidade?",
+          "required": false,
+          "options": [
+            { "id": "opt1", "label": "0%", "value": "nenhuma" },
+            { "id": "opt2", "label": "1% - 25%", "value": "pouca" },
+            { "id": "opt3", "label": "26% - 50%", "value": "alguma" },
+            { "id": "opt4", "label": "51% - 75%", "value": "razoavel" },
+            { "id": "opt5", "label": "76% - 100%", "value": "boa" }
+          ]
+        },
+        {
+          "id": "s5q2",
+          "type": "scale",
+          "question": "Qual é a tua apreciação das aulas teóricas?",
+          "required": false,
+          "scaleMin": 1,
+          "scaleMax": 5,
+          "scaleMinLabel": "Muito fracas",
+          "scaleMaxLabel": "Excelentes"
+        },
+        {
+          "id": "s5q3",
+          "type": "scale",
+          "question": "Qual é a tua apreciação das aulas práticas?",
+          "required": false,
+          "scaleMin": 1,
+          "scaleMax": 5,
+          "scaleMinLabel": "Muito fracas",
+          "scaleMaxLabel": "Excelentes"
+        },
+        {
+          "id": "s5q4",
+          "type": "scale",
+          "question": "Qual é a tua apreciação dos exercícios de avaliação contínua?",
+          "required": false,
+          "scaleMin": 1,
+          "scaleMax": 5,
+          "scaleMinLabel": "Muito fracos",
+          "scaleMaxLabel": "Excelentes"
+        },
+        {
+          "id": "s5q5",
+          "type": "textarea",
+          "question": "O que consideras que pode ser melhorado e porquê?",
+          "required": false
+        }
+      ]
+    },
+    {
+      "id": "secao-6",
+      "title": "Requisitos e Arquiteturas de Software",
+      "description": "Conta-nos um pouco sobre a tua experiência em RAS. Caso não tenhas esta UC, por favor indica isso e passa para a próxima secção.",
+      "questions": [
+        {
+          "id": "s6q0",
+          "type": "multiple-choice",
+          "question": "Estás inscrito/a nesta unidade curricular?",
+          "required": true,
+          "options": [
+            { "id": "opt1", "label": "Sim", "value": "sim" },
+            { "id": "opt2", "label": "Não", "value": "nao" }
+          ]
+        },
+        {
+          "id": "s6q1",
+          "type": "dropdown",
+          "question": "Qual é a tua assiduidade?",
+          "required": false,
+          "options": [
+            { "id": "opt1", "label": "0%", "value": "nenhuma" },
+            { "id": "opt2", "label": "1% - 25%", "value": "pouca" },
+            { "id": "opt3", "label": "26% - 50%", "value": "alguma" },
+            { "id": "opt4", "label": "51% - 75%", "value": "razoavel" },
+            { "id": "opt5", "label": "76% - 100%", "value": "boa" }
+          ]
+        },
+        {
+          "id": "s6q2",
+          "type": "scale",
+          "question": "Qual é a tua apreciação das aulas teóricas?",
+          "required": false,
+          "scaleMin": 1,
+          "scaleMax": 5,
+          "scaleMinLabel": "Muito fracas",
+          "scaleMaxLabel": "Excelentes"
+        },
+        {
+          "id": "s6q3",
+          "type": "scale",
+          "question": "Qual é a tua apreciação das aulas práticas?",
+          "required": false,
+          "scaleMin": 1,
+          "scaleMax": 5,
+          "scaleMinLabel": "Muito fracas",
+          "scaleMaxLabel": "Excelentes"
+        },
+        {
+          "id": "s6q4",
+          "type": "scale",
+          "question": "Qual é a tua apreciação do trabalho prático?",
+          "required": false,
+          "scaleMin": 1,
+          "scaleMax": 5,
+          "scaleMinLabel": "Muito fraco",
+          "scaleMaxLabel": "Excelente"
+        },
+        {
+          "id": "s6q5",
+          "type": "textarea",
+          "question": "O que consideras que pode ser melhorado e porquê?",
+          "required": false
+        }
+      ]
+    },
+    {
+      "id": "secao-7",
+      "title": "Primeiro Perfil",
+      "description": "Conta-nos um pouco sobre a tua experiência de um dos teus perfis.",
+      "questions": [
+        {
+          "id": "s7q0",
+          "type": "dropdown",
+          "question": "Que perfil escolheste?",
+          "required": true,
+          "options": [
+            { "id": "opt1", "label": "Computação Avançada", "value": "computacao_avancada" },
+            { "id": "opt2", "label": "Computação Gráfica", "value": "computacao_grafica" },
+            { "id": "opt3", "label": "Criptografia e Segurança da Informação", "value": "criptografia" },
+            { "id": "opt4", "label": "Desenvolvimento, Validação e Manutenção de Software", "value": "desenvolvimento_software" },
+            { "id": "opt5", "label": "Engenharia de Aplicações", "value": "engenharia_aplicacoes" },
+            { "id": "opt6", "label": "Engenharia de Linguagens", "value": "engenharia_linguagens" },
+            { "id": "opt7", "label": "Engenharia do Conhecimento", "value": "engenharia_conhecimento" },
+            { "id": "opt8", "label": "Engenharia Internet", "value": "engenharia_internet" },
+            { "id": "opt9", "label": "Métodos Formais de Programação", "value": "metodos_formais_programacao" },
+            { "id": "opt10", "label": "Redes de Nova Geração", "value": "redes_nova_geracao" },
+            { "id": "opt11", "label": "Sistemas de Data Warehousing", "value": "data_warehousing" },
+            { "id": "opt12", "label": "Sistemas Distribuídos", "value": "sistemas_distribuidos" },
+            { "id": "opt13", "label": "Sistemas Inteligentes", "value": "sistemas_inteligentes" }
+          ]
+        },
+        {
+          "id": "s7q1",
+          "type": "dropdown",
+          "question": "Qual é a tua assiduidade?",
+          "required": false,
+          "options": [
+            { "id": "opt1", "label": "0%", "value": "nenhuma" },
+            { "id": "opt2", "label": "1% - 25%", "value": "pouca" },
+            { "id": "opt3", "label": "26% - 50%", "value": "alguma" },
+            { "id": "opt4", "label": "51% - 75%", "value": "razoavel" },
+            { "id": "opt5", "label": "76% - 100%", "value": "boa" }
+          ]
+        },
+        {
+          "id": "s7q2",
+          "type": "scale",
+          "question": "Qual é a tua apreciação das aulas teóricas?",
+          "required": false,
+          "scaleMin": 1,
+          "scaleMax": 5,
+          "scaleMinLabel": "Muito fracas",
+          "scaleMaxLabel": "Excelentes"
+        },
+        {
+          "id": "s7q3",
+          "type": "scale",
+          "question": "Qual é a tua apreciação das aulas práticas?",
+          "required": false,
+          "scaleMin": 1,
+          "scaleMax": 5,
+          "scaleMinLabel": "Muito fracas",
+          "scaleMaxLabel": "Excelentes"
+        },
+        {
+          "id": "s7q4",
+          "type": "scale",
+          "question": "Qual é a tua apreciação de componentes de avaliação práticas?",
+          "required": false,
+          "scaleMin": 1,
+          "scaleMax": 5,
+          "scaleMinLabel": "Muito fracas",
+          "scaleMaxLabel": "Excelentes"
+        },
+        {
+          "id": "s7q5",
+          "type": "textarea",
+          "question": "O que consideras que pode ser melhorado e porquê?",
+          "required": false
+        }
+      ]
+    },
+    {
+      "id": "secao-8",
+      "title": "Segundo Perfil",
+      "description": "Conta-nos um pouco sobre a tua experiência do teu outro perfil.",
+      "questions": [
+        {
+          "id": "s8q0",
+          "type": "dropdown",
+          "question": "Qual foi o outro perfil que escolheste?",
+          "required": true,
+          "options": [
+            { "id": "opt1", "label": "Computação Avançada", "value": "computacao_avancada" },
+            { "id": "opt2", "label": "Computação Gráfica", "value": "computacao_grafica" },
+            { "id": "opt3", "label": "Criptografia e Segurança da Informação", "value": "criptografia" },
+            { "id": "opt4", "label": "Desenvolvimento, Validação e Manutenção de Software", "value": "desenvolvimento_software" },
+            { "id": "opt5", "label": "Engenharia de Aplicações", "value": "engenharia_aplicacoes" },
+            { "id": "opt6", "label": "Engenharia de Linguagens", "value": "engenharia_linguagens" },
+            { "id": "opt7", "label": "Engenharia do Conhecimento", "value": "engenharia_conhecimento" },
+            { "id": "opt8", "label": "Engenharia Internet", "value": "engenharia_internet" },
+            { "id": "opt9", "label": "Métodos Formais de Programação", "value": "metodos_formais_programacao" },
+            { "id": "opt10", "label": "Redes de Nova Geração", "value": "redes_nova_geracao" },
+            { "id": "opt11", "label": "Sistemas de Data Warehousing", "value": "data_warehousing" },
+            { "id": "opt12", "label": "Sistemas Distribuídos", "value": "sistemas_distribuidos" },
+            { "id": "opt13", "label": "Sistemas Inteligentes", "value": "sistemas_inteligentes" }
+          ]
+        },
+        {
+          "id": "s8q1",
+          "type": "dropdown",
+          "question": "Qual é a tua assiduidade?",
+          "required": false,
+          "options": [
+            { "id": "opt1", "label": "0%", "value": "nenhuma" },
+            { "id": "opt2", "label": "1% - 25%", "value": "pouca" },
+            { "id": "opt3", "label": "26% - 50%", "value": "alguma" },
+            { "id": "opt4", "label": "51% - 75%", "value": "razoavel" },
+            { "id": "opt5", "label": "76% - 100%", "value": "boa" }
+          ]
+        },
+        {
+          "id": "s8q2",
+          "type": "scale",
+          "question": "Qual é a tua apreciação das aulas teóricas?",
+          "required": false,
+          "scaleMin": 1,
+          "scaleMax": 5,
+          "scaleMinLabel": "Muito fracas",
+          "scaleMaxLabel": "Excelentes"
+        },
+        {
+          "id": "s8q3",
+          "type": "scale",
+          "question": "Qual é a tua apreciação das aulas práticas?",
+          "required": false,
+          "scaleMin": 1,
+          "scaleMax": 5,
+          "scaleMinLabel": "Muito fracas",
+          "scaleMaxLabel": "Excelentes"
+        },
+        {
+          "id": "s8q4",
+          "type": "scale",
+          "question": "Qual é a tua apreciação de componentes de avaliação práticas?",
+          "required": false,
+          "scaleMin": 1,
+          "scaleMax": 5,
+          "scaleMinLabel": "Muito fracas",
+          "scaleMaxLabel": "Excelentes"
+        },
+        {
+          "id": "s8q5",
+          "type": "textarea",
+          "question": "O que consideras que pode ser melhorado e porquê?",
+          "required": false
+        }
+      ]
+    },
+    {
+      "id": "secao-9",
+      "title": "Avaliação dos Delegados",
+      "description": "Conta-nos um pouco sobre a tua perspetiva do rendimento e trabalho dos delegados.",
+      "questions": [
+        {
+          "id": "s9q0",
+          "type": "scale",
+          "question": "Qual é a tua opinião sobre a representação que os delegados fazem de ti enquanto estudante?",
+          "required": false,
+          "scaleMin": 1,
+          "scaleMax": 5,
+          "scaleMinLabel": "Muito fraca",
+          "scaleMaxLabel": "Excelente"
+        },
+        {
+          "id": "s9q1",
+          "type": "scale",
+          "question": "Qual é a tua apreciação da transparência e comunicação dos delegados?",
+          "required": false,
+          "scaleMin": 1,
+          "scaleMax": 5,
+          "scaleMinLabel": "Muito fraca",
+          "scaleMaxLabel": "Excelente"
+        },
+        {
+          "id": "s9q2",
+          "type": "scale",
+          "question": "Qual é a tua apreciação do empenho e disponibilidade dos delegados?",
+          "required": false,
+          "scaleMin": 1,
+          "scaleMax": 5,
+          "scaleMinLabel": "Muito fraca",
+          "scaleMaxLabel": "Excelente"
+        },
+        {
+          "id": "s9q3",
+          "type": "scale",
+          "question": "Qual é a tua apreciação geral dos delegados?",
+          "required": false,
+          "scaleMin": 1,
+          "scaleMax": 5,
+          "scaleMinLabel": "Muito fraca",
+          "scaleMaxLabel": "Excelente"
+        },
+        {
+          "id": "s9q4",
+          "type": "textarea",
+          "question": "O que consideras que pode ser melhorado e porquê?",
+          "required": false
+        }
+      ]
+    },
+    {
+      "id": "secao-10",
+      "title": "Informação Adicional",
+      "description": "Se desejares acrescentar comentários gerais sobre o semestre.",
+      "questions": [
+        {
+          "id": "s10q1",
+          "type": "textarea",
+          "question": "Tens alguma sugestão de melhoria ou comentário adicional?",
+          "required": false
+        }
+      ]
+    }
+  ]
+}

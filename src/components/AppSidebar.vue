@@ -5,6 +5,7 @@ import SidebarTrigger from "./ui/sidebar/SidebarTrigger.vue";
 import {
   Book,
   Calendar,
+  FileText,
   Star,
   Users
 } from "lucide-vue-next"
@@ -30,6 +31,11 @@ const items = [
     title: "Calendário",
     url: "/calendar",
     icon: Calendar,
+  },
+    {
+    title: "Formulários",
+    url: "/formulario",
+    icon: FileText,
   },
   {
     title: "Favoritas",

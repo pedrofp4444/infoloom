@@ -21,6 +21,7 @@
         ]
     },
     "dependencies": {
+        "@astrojs/vercel": "^8.2.10",
         "@astrojs/vue": "^5.1.1",
         "@headlessui/vue": "^1.7.23",
         "@tailwindcss/vite": "^4.1.11",
@@ -29,7 +30,9 @@
         "astro": "^5.14.3",
         "class-variance-authority": "^0.7.1",
         "clsx": "^2.1.1",
+        "dotenv": "^17.2.3",
         "lucide-vue-next": "^0.539.0",
+        "mongodb": "^6.20.0",
         "pinia": "^3.0.3",
         "reka-ui": "^2.5.1",
         "tailwind-merge": "^3.3.1",
