@@ -76,6 +76,22 @@
         "perfil": "Tronco Comum",
         "slug": "metodos-formais-em-engenharia-de-software",
         "avaliacoes": [
+            {
+                "data": "2025-10-14",
+                "descricao": "Data Limite da sumissão do 1º Exercício"
+            },
+            {
+                "data": "2025-11-02",
+                "descricao": "Data Limite da sumissão do 2º Exercício"
+            },
+            {
+                "data": "2025-11-16",
+                "descricao": "Data Limite da sumissão do 3º Exercício"
+            },
+            {
+                "data": "2025-12-21",
+                "descricao": "Data Limite da sumissão do 4º Exercício"
+            },
             { "data": "2026-01-07", "descricao": "Teste" },
             { "data": "2026-01-28", "descricao": "Exame" }
         ],
@@ -99,9 +115,7 @@
         "criterios": "min(0.6 * max(Teórica,Prática) + 0.4 * min(Teórica, Prática), Teórica + 2); Teste >= 9; Prático >= 10; Final >= 9.5",
         "notas": "Os grupos são compostos por 5 elementos.",
         "recursos": [],
-        "docentes": [
-            "João Miguel Lobo Fernandes (jmf@di.uminho.pt) (Regente)"
-        ]
+        "docentes": ["João Miguel Lobo Fernandes (jmf@di.uminho.pt) (Regente)"]
     },
     {
         "nome": "Segurança de Sistemas de Computação",
@@ -233,10 +247,10 @@
         "perfil": "Sistemas de Data Warehousing",
         "slug": "sdw-uc1",
         "avaliacoes": [],
-        "criterios": "",
+        "criterios": "50% Trabalho Prático + 50% Teste Teórico (ambas componentes têm nota mínima de 10 valores)",
         "notas": "",
         "recursos": [],
-        "docentes": []
+        "docentes": ["Orlando Belo (obelo@di.uminho.pt) (Regente)"]
     },
     {
         "nome": "Sistemas de Extração, Transformação e Carregamento de Dados",
@@ -441,11 +455,14 @@
         "nome": "Redes Fixas e Móveis",
         "perfil": "Redes de Nova Geração",
         "slug": "rng-uc1",
-        "avaliacoes": [],
-        "criterios": "",
+        "avaliacoes": [
+            { "data": "2025-10-16", "descricao": "Entrega do TP1" },
+            { "data": "2026-01-09", "descricao": "Teste Escrito" }
+        ],
+        "criterios": "Nota Final = 60% Componente Teórica (Nota mínima: 8 valores) + 40% Componente Prática (Nota Mínima: 10 valores)",
         "notas": "",
         "recursos": [],
-        "docentes": []
+        "docentes": ["Flávio de Oliveira Silva (flavio@di.uminho.pt) (Regente)"]
     },
     {
         "nome": "Novos Paradigmas de Redes",
@@ -522,11 +539,23 @@
         "perfil": "Sistemas Inteligentes",
         "slug": "si-uc1",
         "avaliacoes": [
-            { "data": "2025-11-03", "descricao": "Entrega do trabalho de investigação" },
-            { "data": "2025-11-06", "descricao": "Apresentação do trabalho de investigação" },
-            { "data": "2025-11-10", "descricao": "Revisão de trabalhos de investigação" },
+            {
+                "data": "2025-11-03",
+                "descricao": "Entrega do trabalho de investigação"
+            },
+            {
+                "data": "2025-11-06",
+                "descricao": "Apresentação do trabalho de investigação"
+            },
+            {
+                "data": "2025-11-10",
+                "descricao": "Revisão de trabalhos de investigação"
+            },
             { "data": "2026-01-12", "descricao": "Entrega do projeto prático" },
-            { "data": "2026-01-15", "descricao": "Apresentação do projeto prático" }
+            {
+                "data": "2026-01-15",
+                "descricao": "Apresentação do projeto prático"
+            }
         ],
         "criterios": "Trabalho de Investigação (25% + 25%) + Projeto prático (50%)",
         "notas": "Os grupos são compostos por 5 elementos (4 ou 6 é possível mas não recomendado).",
