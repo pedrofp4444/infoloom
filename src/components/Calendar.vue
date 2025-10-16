@@ -110,6 +110,42 @@ const formatarData = (dataStr: string) => {
   })
 }
 
+const formatarDataRelativa = (dataStr: string): string => {
+  const hojeRaw = new Date()
+  const hoje = new Date(hojeRaw.getFullYear(), hojeRaw.getMonth(), hojeRaw.getDate())
+  const data = new Date(dataStr + 'T00:00:00')
+
+  const deltaMs = data.getTime() - hoje.getTime()
+  const deltaDias = deltaMs / (1000 * 60 * 60 * 24)
+
+  if (deltaDias == -1) return 'ontem'
+  if (deltaDias == 0) return 'hoje'
+  if (deltaDias == 1) return 'amanhã'
+
+  const absDias = Math.abs(deltaDias)
+  let unidade = ''
+  let valor = 0
+
+  if (absDias < 7) {
+    unidade = 'dia'
+    valor = Math.round(absDias)
+  } else if (absDias < 30) {
+    unidade = 'semana'
+    valor = Math.round(absDias / 7)
+  } else if (absDias < 365) {
+    unidade = 'mês'
+    valor = Math.round(absDias / 30)
+  } else {
+    unidade = 'ano'
+    valor = Math.round(absDias / 365)
+  }
+
+  if (unidade === 'mês' && valor > 1) unidade = 'meses'
+  else if (valor > 1) unidade += 's'
+
+  return deltaDias < 0 ? `há ${valor} ${unidade}` : `daqui a ${valor} ${unidade}`
+}
+
 const agruparPorMes = (lista: Avaliacao[]) => {
   const grupos: Record<string, Avaliacao[]> = {}
   lista.forEach((avaliacao) => {
@@ -491,7 +527,7 @@ const formatWeekRange = (startDate: Date, endDate: Date) => {
                           <h4 class="font-medium text-sm break-words">{{ avaliacao.disciplina }}</h4>
                         </div>
                         <p class="text-sm text-muted-foreground break-words">{{ avaliacao.descricao }}</p>
-                        <p class="text-xs text-muted-foreground mt-1">{{ formatarData(avaliacao.data) }}</p>
+                        <p class="text-xs text-muted-foreground mt-1">{{ formatarData(avaliacao.data) }} - {{ formatarDataRelativa(avaliacao.data) }}</p>
                       </div>
 
                       <Badge variant="secondary" class="shrink-0 hidden sm:inline-flex">{{ avaliacao.descricao }}</Badge>
