@@ -35,7 +35,8 @@ const filteredUcs = computed(() => {
   }
   if (searchTerm.value) {
     filtered = filtered.filter((uc) =>
-      uc.nome.toLowerCase().includes(searchTerm.value.toLowerCase())
+      uc.nome.toLowerCase().includes(searchTerm.value.toLowerCase()) ||
+      uc.sigla.toLowerCase().includes(searchTerm.value.toLowerCase())
     );
   }
   return filtered;
