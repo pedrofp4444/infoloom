@@ -125,7 +125,9 @@
         "criterios": "Teste ( 40% - 60 %) | Trabalhos (40 - 60%) | Avaliação contínua (10%)",
         "notas": "Os grupos são compostos por 3 elementos.",
         "recursos": [],
-        "docentes": ["Vitor Francisco Mendes Freitas Gomes Fonte (vff@di.uminho.pt) (Regente)"]
+        "docentes": [
+            "Vitor Francisco Mendes Freitas Gomes Fonte (vff@di.uminho.pt) (Regente)"
+        ]
     },
     {
         "nome": "Segurança de Software",

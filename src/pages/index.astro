@@ -3,16 +3,16 @@ import MainLayout from "../layouts/MainLayout.astro";
 ---
 
 <MainLayout>
-  <script is:inline>
-    if (typeof window !== "undefined") {
-      const stored = localStorage.getItem("favorites");
-      const favorites = stored ? JSON.parse(stored) : [];
+    <script is:inline>
+        if (typeof window !== "undefined") {
+            const stored = localStorage.getItem("favorites");
+            const favorites = stored ? JSON.parse(stored) : [];
 
-      if (favorites.length > 0) {
-        window.location.replace("/favorites");
-      } else {
-        window.location.replace("/ucs");
-      }
-    }
-  </script>
+            if (favorites.length > 0) {
+                window.location.replace("/favorites");
+            } else {
+                window.location.replace("/ucs");
+            }
+        }
+    </script>
 </MainLayout>
