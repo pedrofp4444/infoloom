@@ -3,6 +3,7 @@ import SidebarProvider from "./ui/sidebar/SidebarProvider.vue";
 import SidebarTrigger from "./ui/sidebar/SidebarTrigger.vue";
 
 import {
+  BarChart2,
   Book,
   Calendar,
   FileText,
@@ -36,6 +37,11 @@ const items = [
     title: "Formulários",
     url: "/formulario",
     icon: FileText,
+  },
+  {
+    title: "Relatórios",
+    url: "/reports",
+    icon: BarChart2,
   },
   {
     title: "Favoritas",

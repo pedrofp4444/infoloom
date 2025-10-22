@@ -1,0 +1,21 @@
+---
+import MainLayout from "@/layouts/MainLayout.astro";
+import ReportsList from "@/components/ReportsList.vue";
+---
+
+<MainLayout>
+    <main class="container mx-auto px-4 sm:px-6 lg:px-8 py-6 sm:py-8">
+        <div class="mb-6 sm:mb-8">
+            <h1
+                class="text-3xl sm:text-4xl font-bold text-foreground mb-3 sm:mb-4 text-balance"
+            >
+                Relatórios
+            </h1>
+            <p class="text-base sm:text-lg text-muted-foreground text-pretty">
+                Consulta os relatórios e análises do percurso académico
+            </p>
+        </div>
+
+        <ReportsList client:load />
+    </main>
+</MainLayout>

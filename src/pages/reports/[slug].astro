@@ -1,0 +1,23 @@
+---
+import MainLayout from "@/layouts/MainLayout.astro";
+import ReportViewer from "@/components/ReportViewer.vue";
+import { reportsData } from "@/lib/reports-data";
+
+export async function getStaticPaths() {
+    return {
+        paths: reportsData.map((report) => ({
+            params: { slug: report.slug },
+            props: { report },
+        })),
+    };
+}
+
+const { slug } = Astro.params;
+const { report } = Astro.props ?? {};
+
+const reportData = report ? JSON.parse(JSON.stringify(report)) : {};
+---
+
+<MainLayout>
+    <ReportViewer client:only="vue" slug={slug} :initialMetadata={reportData} />
+</MainLayout>
