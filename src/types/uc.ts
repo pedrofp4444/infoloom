@@ -6,6 +6,7 @@ export interface Avaliacao {
 export interface UC {
     nome: string;
     slug: string;
+    sigla: string;
     perfil: string;
     avaliacoes: Avaliacao[];
     criterios: string;
