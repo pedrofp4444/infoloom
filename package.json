@@ -32,6 +32,8 @@
         "clsx": "^2.1.1",
         "dotenv": "^17.2.3",
         "lucide-vue-next": "^0.539.0",
+        "marked": "^16.4.1",
+        "marked-gfm-heading-id": "^4.1.2",
         "mongodb": "^6.20.0",
         "pinia": "^3.0.3",
         "reka-ui": "^2.5.1",

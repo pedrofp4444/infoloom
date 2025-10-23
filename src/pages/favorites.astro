@@ -4,16 +4,18 @@ import UCFavoritesList from "@/components/UCFavoritesList.vue";
 ---
 
 <MainLayout>
-  <main class="container mx-auto px-4 sm:px-6 lg:px-8 py-6 sm:py-8">
-    <div class="mb-6 sm:mb-8">
-      <h1 class="text-3xl sm:text-4xl font-bold text-foreground mb-3 sm:mb-4 text-balance">
-        As tuas Unidades Curriculares Favoritas
-      </h1>
-      <p class="text-base sm:text-lg text-muted-foreground text-pretty">
-        Aqui estão apenas as UCs que marcaste como favoritas
-      </p>
-    </div>
+    <main class="container mx-auto px-4 sm:px-6 lg:px-8 py-6 sm:py-8">
+        <div class="mb-6 sm:mb-8">
+            <h1
+                class="text-3xl sm:text-4xl font-bold text-foreground mb-3 sm:mb-4 text-balance"
+            >
+                As tuas Unidades Curriculares Favoritas
+            </h1>
+            <p class="text-base sm:text-lg text-muted-foreground text-pretty">
+                Aqui estão apenas as UCs que marcaste como favoritas
+            </p>
+        </div>
 
-    <UCFavoritesList client:only="vue" />
-  </main>
+        <UCFavoritesList client:only="vue" />
+    </main>
 </MainLayout>

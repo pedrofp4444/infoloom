@@ -4,59 +4,62 @@ import logo from "../assets/logo.svg";
 import AppSidebar from "./AppSidebar.vue";
 
 const pages = [
-  { label: "Unidades Curriculares", route: "/ucs" },
-  { label: "Calendário", route: "/calendar" },
-  { label: "Formulários", route: "/formulario" },
-  { label: "Favoritas", route: "/favorites" },
-  { label: "Contactos", route: "/contacts" }
+    { label: "Unidades Curriculares", route: "/ucs" },
+    { label: "Calendário", route: "/calendar" },
+    { label: "Formulários", route: "/formulario" },
+    { label: "Relatórios", route: "/reports" },
+    { label: "Favoritas", route: "/favorites" },
+    { label: "Contactos", route: "/contacts" },
 ];
 ---
 
-<header class="bg-green-100">
-  <div class="container mx-auto">
-    <nav
-    class="mx-4 flex flex-row items-center justify-between py-7 lg:mx-12 xl:mx-20"
-  >
-    <a
-      href="/"
-      class="flex items-center gap-3 hover:opacity-80 transition-opacity"
-    >
-      <Image
-        layout="fixed"
-        width={50}
-        height={50}
-        src={logo}
-        alt="Infoloom's Logo"
-        loading={"eager"}
-      />
-      <div>
-        <h1 class="text-xl font-bold text-foreground">Infoloom</h1>
-        <p class="text-sm text-muted-foreground">
-          Mestrado em Engenharia Informática
-        </p>
-      </div>
-    </a>
-
-    <ul class="hidden md:flex gap-6 text-sm items-center">
-      {
-        pages.map(({ label, route }) => (
-          <li>
+<header class="bg-green-100 shadow-md">
+    <div class="container mx-auto">
+        <nav
+            class="mx-4 flex flex-row items-center justify-between py-5 lg:mx-12 xl:mx-20"
+        >
             <a
-              href={route}
-              class="hover:text-green-400 cursor-pointer hover:transition-discrete duration-300"
+                href="/"
+                class="flex items-center gap-3 hover:opacity-80 transition-opacity"
             >
-              {label}
+                <Image
+                    layout="fixed"
+                    width={50}
+                    height={50}
+                    src={logo}
+                    alt="Infoloom's Logo"
+                    loading="eager"
+                    class="rounded-full"
+                />
+                <div>
+                    <h1 class="text-2xl font-semibold text-gray-800">
+                        Infoloom
+                    </h1>
+                    <p class="text-sm text-gray-600">
+                        Mestrado em Engenharia Informática
+                    </p>
+                </div>
             </a>
-          </li>
-        ))
-      }
-    </ul>
 
-    <ul class="hidden max-md:block items-center">
-      <li>
-        <AppSidebar client:load />
-      </li>
-    </ul>
-  </nav>
-  </div>
+            <ul class="hidden md:flex gap-8 text-sm font-medium items-center">
+                {
+                    pages.map(({ label, route }) => (
+                        <li>
+                            <a
+                                href={route}
+                                class="relative text-gray-800 hover:text-green-500 transition-colors duration-300"
+                            >
+                                {label}
+                                <span class="absolute left-0 -bottom-1 w-0 h-0.5 bg-green-500 transition-all duration-300 group-hover:w-full" />
+                            </a>
+                        </li>
+                    ))
+                }
+            </ul>
+
+            <div class="md:hidden">
+                <AppSidebar client:load />
+            </div>
+        </nav>
+    </div>
 </header>

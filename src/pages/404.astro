@@ -1,7 +1,7 @@
 ---
 import "../styles/global.css";
 import logo from "../assets/logo.ico";
-import { Button } from '@/components/ui/button';
+import { Button } from "@/components/ui/button";
 ---
 
 <!doctype html>
@@ -14,20 +14,22 @@ import { Button } from '@/components/ui/button';
         <title>Infoloom</title>
     </head>
     <body class="flex min-h-screen flex-col">
-    <div class="bg-background text-foreground flex items-center justify-center min-h-screen">
-        <div class="text-center p-6">
-        <h1 class="text-xl font-bold text-destructive mb-4">404</h1>
-        <p class="text-md text-muted-foreground mb-6">
-            Ops! A página que procuras não existe.
-        </p>
-        <a href="/" class="inline-block">
-            <Button
-                class="bg-primary text-primary-foreground hover:bg-primary/90"
-            >
-                Voltar à página inicial
-            </Button>
-        </a>
+        <div
+            class="bg-background text-foreground flex items-center justify-center min-h-screen"
+        >
+            <div class="text-center p-6">
+                <h1 class="text-xl font-bold text-destructive mb-4">404</h1>
+                <p class="text-md text-muted-foreground mb-6">
+                    Ops! A página que procuras não existe.
+                </p>
+                <a href="/" class="inline-block">
+                    <Button
+                        class="bg-primary text-primary-foreground hover:bg-primary/90"
+                    >
+                        Voltar à página inicial
+                    </Button>
+                </a>
+            </div>
         </div>
-    </div>
     </body>
 </html>
