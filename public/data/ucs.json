@@ -532,7 +532,7 @@
         "sigla": "RFM",
         "avaliacoes": [
             { "data": "2025-10-10", "descricao": "Entrega do TP1" },
-            { "data": "2026-01-09", "descricao": "Teste Escrito" }
+            { "data": "2026-01-09", "descricao": "Teste" }
         ],
         "criterios": "Nota Final = 60% Componente Teórica (Nota mínima: 8 valores) + 40% Componente Prática (Nota Mínima: 10 valores)",
         "notas": "",
