@@ -227,10 +227,14 @@
         "slug": "ei-uc1",
         "sigla": "QSI",
         "avaliacoes": [],
-        "criterios": "",
-        "notas": "",
+        "criterios": "Trabalhos Práticos (50%, Min. 10 valores) + Teste (50%, Min. 8 valores)",
+        "notas": "Os grupos são compostos por 3 elementos.",
         "recursos": [],
-        "docentes": []
+        "docentes": [
+            "Solange Rito Lima (solange@di.uminho.pt) (Regente)",
+            "Pedro Nuno Sousa (pns@di.uminho.pt)",
+            "Bruno Antunes (bantunes@di.uminho.pt)"
+        ]
     },
     {
         "nome": "Internet das Coisas Aplicada",
@@ -358,7 +362,10 @@
         "perfil": "Desenvolvimento, Validação e Manutenção de Software",
         "slug": "dvms-uc1",
         "sigla": "MEVS",
-        "avaliacoes": [],
+        "avaliacoes": [
+            { "data": "2025-12-18", "descricao": "Teste" },
+            { "data": "2026-01-08", "descricao": "Entrega do Projeto Prático" }
+        ],
         "criterios": "Teste (50%) + Trabalho prático (50%, 75% de projeto + 25% de avaliação contínua)",
         "notas": "",
         "recursos": [],
@@ -503,7 +510,7 @@
         "slug": "rng-uc1",
         "sigla": "RFM",
         "avaliacoes": [
-            { "data": "2025-10-16", "descricao": "Entrega do TP1" },
+            { "data": "2025-10-10", "descricao": "Entrega do TP1" },
             { "data": "2026-01-09", "descricao": "Teste Escrito" }
         ],
         "criterios": "Nota Final = 60% Componente Teórica (Nota mínima: 8 valores) + 40% Componente Prática (Nota Mínima: 10 valores)",
