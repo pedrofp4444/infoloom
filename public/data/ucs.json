@@ -113,9 +113,9 @@
         "notas": "",
         "recursos": [],
         "docentes": [
+            "Jorge Sousa Pinto (jsp@di.uminho.pt) (Regente)",
             "Nuno Macedo (nmacedo@di.uminho.pt)",
-            "Maria João Frade (mjf@di.uminho.pt)",
-            "Jorge Sousa Pinto (jsp@di.uminho.pt) (Regente)"
+            "Maria João Frade (mjf@di.uminho.pt)"
         ]
     },
     {
@@ -130,7 +130,12 @@
         "criterios": "min(0.6 * max(Teórica,Prática) + 0.4 * min(Teórica, Prática), Teórica + 2); Teste >= 9; Prático >= 10; Final >= 9.5",
         "notas": "Os grupos são compostos por 5 elementos.",
         "recursos": [],
-        "docentes": ["João Miguel Lobo Fernandes (jmf@di.uminho.pt) (Regente)"]
+        "docentes": [
+            "João Miguel Lobo Fernandes (jmf@di.uminho.pt) (Regente)",
+            "Paulo Rafael Costa Sousa (d7157@di.uminho.pt)",
+            "Diogo Afonso Silva Costa (d13690@di.uminho.pt)",
+            "André Leite Ferreira (alferreira@di.uminho.pt)"
+        ]
     },
     {
         "nome": "Segurança de Sistemas de Computação",
