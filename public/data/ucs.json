@@ -18,7 +18,7 @@
             { "data": "2026-01-26", "descricao": "Exame" }
         ],
         "criterios": "Projeto (50%) + Teste (50%, Min. 8 valores)",
-        "notas": "Os grupos são compostos por 5 elementos (4 é possível mas não recomendado). Checkpoints do projeto podem ter avaliação associada (a confirmar).",
+        "notas": "Os grupos são compostos por 5 elementos (4 é possível mas não recomendado). Checkpoints do projeto podem ter avaliação associada (a confirmar). As datas marcadas como \"Defesa\" são apenas indicativas da semana das mesmas, posteriormente a equipa docente divulgará as datas concretas, como habitual.",
         "recursos": [],
         "docentes": [
             "João Tiago Medeiros Paulo (jtpaulo@di.uminho.pt) (Regente)",
@@ -49,11 +49,15 @@
         "avaliacoes": [
             { "data": "2025-12-02", "descricao": "Apresentação 1º fase" },
             { "data": "2025-12-03", "descricao": "Apresentação 1º fase" },
-            { "data": "2025-12-04", "descricao": "Apresentação 1º fase" },
             { "data": "2025-12-17", "descricao": "Teste" },
-            { "data": "2026-01-05", "descricao": "Apresentação 2º fase" },
-            { "data": "2026-01-06", "descricao": "Apresentação 2º fase" },
-            { "data": "2026-01-07", "descricao": "Apresentação 2º fase" },
+            { "data": "2026-01-02", "descricao": "Fim do challenge" },
+            {
+                "data": "2026-01-10",
+                "descricao": "Entrega final do Trabalho Prático"
+            },
+            { "data": "2026-01-12", "descricao": "Apresentação 2º fase" },
+            { "data": "2026-01-13", "descricao": "Apresentação 2º fase" },
+            { "data": "2026-01-14", "descricao": "Apresentação 2º fase" },
             { "data": "2026-01-21", "descricao": "Exame" }
         ],
         "criterios": "Projeto (60%) + Teste (40%, Min. 8 valores)",
