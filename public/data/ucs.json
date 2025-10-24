@@ -481,8 +481,8 @@
         "slug": "sd-uc1",
         "sigla": "TF",
         "avaliacoes": [
-            { "data": "2026-01-09", "descricao": "Teste" },
-            { "data": "2026-01-02", "descricao": "Entrega do Projeto Prático" }
+            { "data": "2026-01-02", "descricao": "Entrega do Projeto Prático" },
+            { "data": "2026-01-09", "descricao": "Teste" }
         ],
         "criterios": "Projeto (50%) + Teste (50%, Min. 10 valores)",
         "notas": "As apresentações do Projeto Prático são entre o teste e o exame.",
