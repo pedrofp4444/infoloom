@@ -336,11 +336,14 @@
         "perfil": "Engenharia de Aplicações",
         "slug": "ea-uc1",
         "sigla": "ABD",
-        "avaliacoes": [],
-        "criterios": "",
-        "notas": "",
+        "avaliacoes": [{ "data": "2025-12-18", "descricao": "Teste" }],
+        "criterios": "Projeto (50%) + Teste (50%, Min. 8 valores)",
+        "notas": "Os grupos são compostos por 4 elementos. Há obrigatoriedade de defesa para notas superiores a 16 no projeto.",
         "recursos": [],
-        "docentes": []
+        "docentes": [
+            "José Orlando Pereira (jop@di.uminho.pt) (Regente)",
+            "Nuno Filipe Pinto Faria (D12956@di.uminho.pt)"
+        ]
     },
     {
         "nome": "Sistemas Interativos Confiáveis",
