@@ -570,11 +570,19 @@
         "perfil": "Engenharia do Conhecimento",
         "slug": "ek-uc1",
         "sigla": "BDN",
-        "avaliacoes": [],
-        "criterios": "",
+        "avaliacoes": [
+            { "data": "2025-11-07", "descricao": "Ficha de avaliação" },
+            { "data": "2025-11-28", "descricao": "Ficha de avaliação" },
+            { "data": "2025-12-12", "descricao": "Ficha de avaliação" },
+            { "data": "2026-01-09", "descricao": "Teste" }
+        ],
+        "criterios": "Projeto (40%) + Teste (60%)",
         "notas": "",
         "recursos": [],
-        "docentes": []
+        "docentes": [
+            "António Carlos Silva Abelha (abelha@di.uminho.pt) (Regente)",
+            "Cristiana Marisa Pereira Neto (cristiana.neto@algoritmi.uminho.pt)"
+        ]
     },
     {
         "nome": "Mineração de Dados",
