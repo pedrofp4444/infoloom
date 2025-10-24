@@ -5,8 +5,8 @@
         "slug": "aplicacoes-e-servicos-de-computacao-em-nuvem",
         "sigla": "ASCN",
         "avaliacoes": [
-            { "data": "2025-11-02", "descricao": "Chekpoint#1" },
-            { "data": "2025-11-30", "descricao": "Chekpoint#2" },
+            { "data": "2025-11-02", "descricao": "Checkpoint#1" },
+            { "data": "2025-11-30", "descricao": "Checkpoint#2" },
             { "data": "2025-12-29", "descricao": "Entrega Final" },
             { "data": "2026-01-05", "descricao": "Teste" },
             { "data": "2026-01-12", "descricao": "Defesa" },
