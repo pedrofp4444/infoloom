@@ -7,6 +7,7 @@ import {
   Book,
   Calendar,
   FileText,
+  MessageCircle,
   Star,
   Users
 } from "lucide-vue-next"
@@ -33,7 +34,12 @@ const items = [
     url: "/calendar",
     icon: Calendar,
   },
-    {
+  {
+    title: "Chatbot",
+    url: "/chat",
+    icon: MessageCircle,
+  },
+  {
     title: "Formulários",
     url: "/formulario",
     icon: FileText,
