@@ -154,52 +154,6 @@
         ]
     },
     {
-        "nome": "Segurança de Sistemas de Computação",
-        "perfil": "Criptografia e Segurança da Informação",
-        "slug": "csi-uc1",
-        "sigla": "SSC",
-        "avaliacoes": [],
-        "criterios": "Teste ( 40% - 60 %) | Trabalhos (40 - 60%) | Avaliação contínua (10%)",
-        "notas": "Os grupos são compostos por 3 elementos.",
-        "recursos": [],
-        "docentes": [
-            "Vitor Francisco Mendes Freitas Gomes Fonte (vff@di.uminho.pt) (Regente)"
-        ]
-    },
-    {
-        "nome": "Segurança de Software",
-        "perfil": "Criptografia e Segurança da Informação",
-        "slug": "csi-uc2",
-        "sigla": "SS",
-        "avaliacoes": [],
-        "criterios": "",
-        "notas": "",
-        "recursos": [],
-        "docentes": []
-    },
-    {
-        "nome": "Criptografia de Informação",
-        "perfil": "Criptografia e Segurança da Informação",
-        "slug": "csi-uc3",
-        "sigla": "CI",
-        "avaliacoes": [],
-        "criterios": "",
-        "notas": "",
-        "recursos": [],
-        "docentes": []
-    },
-    {
-        "nome": "Projeto em Criptografia e Segurança da Informação",
-        "perfil": "Criptografia e Segurança da Informação",
-        "slug": "csi-projeto",
-        "sigla": "PCSI",
-        "avaliacoes": [],
-        "criterios": "",
-        "notas": "",
-        "recursos": [],
-        "docentes": []
-    },
-    {
         "nome": "Arquiteturas Avançadas de Computadores",
         "perfil": "Computação Avançada",
         "slug": "ca-uc1",
@@ -252,25 +206,78 @@
         "docentes": []
     },
     {
-        "nome": "Qualidade de Serviço na Internet",
-        "perfil": "Engenharia Internet",
-        "slug": "ei-uc1",
-        "sigla": "QSI",
+        "nome": "Visualização em Tempo Real",
+        "perfil": "Computação Gráfica",
+        "slug": "cg-uc1",
+        "sigla": "VTR",
+        "avaliacoes": [
+            {
+                "data": "2026-01-26",
+                "descricao": "Entrega da componente prática"
+            },
+            {
+                "data": "2026-01-26",
+                "descricao": "Entrega da componente teórica"
+            }
+        ],
+        "criterios": "Componente prática (50%) + Componente teórica (50%)",
+        "notas": "Existem duas componentes de avaliação, uma prática, em grupos até 3 elementos, e uma individual teórica. Não há teste.",
+        "recursos": [],
+        "docentes": [
+            "António José Borba Ramires Fernandes (arf@di.uminho.pt) (Regente)"
+        ]
+    },
+    {
+        "nome": "Visão Computacional e Processamento de Imagem",
+        "perfil": "Computação Gráfica",
+        "slug": "cg-uc2",
+        "sigla": "VCPI",
         "avaliacoes": [],
-        "criterios": "Trabalhos Práticos (50%, Min. 10 valores) + Teste (50%, Min. 8 valores)",
+        "criterios": "",
+        "notas": "",
+        "recursos": [],
+        "docentes": []
+    },
+    {
+        "nome": "Visualização e Iluminação",
+        "perfil": "Computação Gráfica",
+        "slug": "cg-uc3",
+        "sigla": "VI",
+        "avaliacoes": [],
+        "criterios": "",
+        "notas": "",
+        "recursos": [],
+        "docentes": []
+    },
+    {
+        "nome": "Projeto em Computação Gráfica",
+        "perfil": "Computação Gráfica",
+        "slug": "cg-projeto",
+        "sigla": "PCG",
+        "avaliacoes": [],
+        "criterios": "",
+        "notas": "",
+        "recursos": [],
+        "docentes": []
+    },
+    {
+        "nome": "Segurança de Sistemas de Computação",
+        "perfil": "Criptografia e Segurança da Informação",
+        "slug": "csi-uc1",
+        "sigla": "SSC",
+        "avaliacoes": [],
+        "criterios": "Teste ( 40% - 60 %) | Trabalhos (40 - 60%) | Avaliação contínua (10%)",
         "notas": "Os grupos são compostos por 3 elementos.",
         "recursos": [],
         "docentes": [
-            "Solange Rito Lima (solange@di.uminho.pt) (Regente)",
-            "Pedro Nuno Sousa (pns@di.uminho.pt)",
-            "Bruno Antunes (bantunes@di.uminho.pt)"
+            "Vitor Francisco Mendes Freitas Gomes Fonte (vff@di.uminho.pt) (Regente)"
         ]
     },
     {
-        "nome": "Internet das Coisas Aplicada",
-        "perfil": "Engenharia Internet",
-        "slug": "ei-uc2",
-        "sigla": "IoTA",
+        "nome": "Segurança de Software",
+        "perfil": "Criptografia e Segurança da Informação",
+        "slug": "csi-uc2",
+        "sigla": "SS",
         "avaliacoes": [],
         "criterios": "",
         "notas": "",
@@ -278,10 +285,10 @@
         "docentes": []
     },
     {
-        "nome": "Gestão e Segurança de Redes",
-        "perfil": "Engenharia Internet",
-        "slug": "ei-uc3",
-        "sigla": "GRS",
+        "nome": "Criptografia de Informação",
+        "perfil": "Criptografia e Segurança da Informação",
+        "slug": "csi-uc3",
+        "sigla": "CI",
         "avaliacoes": [],
         "criterios": "",
         "notas": "",
@@ -289,101 +296,10 @@
         "docentes": []
     },
     {
-        "nome": "Projeto em Engenharia Internet",
-        "perfil": "Engenharia Internet",
-        "slug": "ei-projeto",
-        "sigla": "PEI",
-        "avaliacoes": [],
-        "criterios": "",
-        "notas": "",
-        "recursos": [],
-        "docentes": []
-    },
-    {
-        "nome": "Conceção e Implementação de Data Warehouses",
-        "perfil": "Sistemas de Data Warehousing",
-        "slug": "sdw-uc1",
-        "sigla": "CIDW",
-        "avaliacoes": [],
-        "criterios": "50% Trabalho Prático + 50% Teste Teórico (ambas componentes têm nota mínima de 10 valores)",
-        "notas": "",
-        "recursos": [],
-        "docentes": ["Orlando Belo (obelo@di.uminho.pt) (Regente)"]
-    },
-    {
-        "nome": "Sistemas de Extração, Transformação e Carregamento de Dados",
-        "perfil": "Sistemas de Data Warehousing",
-        "slug": "sdw-uc2",
-        "sigla": "SETCD",
-        "avaliacoes": [],
-        "criterios": "",
-        "notas": "",
-        "recursos": [],
-        "docentes": []
-    },
-    {
-        "nome": "Extração de Conhecimento em Data Warehouses",
-        "perfil": "Sistemas de Data Warehousing",
-        "slug": "sdw-uc3",
-        "sigla": "ECDW",
-        "avaliacoes": [],
-        "criterios": "",
-        "notas": "",
-        "recursos": [],
-        "docentes": []
-    },
-    {
-        "nome": "Projeto em Sistemas de Data Warehousing",
-        "perfil": "Sistemas de Data Warehousing",
-        "slug": "sdw-projeto",
-        "sigla": "PSDW",
-        "avaliacoes": [],
-        "criterios": "",
-        "notas": "",
-        "recursos": [],
-        "docentes": []
-    },
-    {
-        "nome": "Administração de Bases de Dados",
-        "perfil": "Engenharia de Aplicações",
-        "slug": "ea-uc1",
-        "sigla": "ABD",
-        "avaliacoes": [{ "data": "2025-12-18", "descricao": "Teste" }],
-        "criterios": "Projeto (50%) + Teste (50%, Min. 8 valores)",
-        "notas": "Os grupos são compostos por 4 elementos. Há obrigatoriedade de defesa para notas superiores a 16 no projeto.",
-        "recursos": [],
-        "docentes": [
-            "José Orlando Pereira (jop@di.uminho.pt) (Regente)",
-            "Nuno Filipe Pinto Faria (D12956@di.uminho.pt)"
-        ]
-    },
-    {
-        "nome": "Sistemas Interativos Confiáveis",
-        "perfil": "Engenharia de Aplicações",
-        "slug": "ea-uc2",
-        "sigla": "SIC",
-        "avaliacoes": [],
-        "criterios": "",
-        "notas": "",
-        "recursos": [],
-        "docentes": []
-    },
-    {
-        "nome": "Arquiteturas Aplicacionais",
-        "perfil": "Engenharia de Aplicações",
-        "slug": "ea-uc3",
-        "sigla": "AA",
-        "avaliacoes": [],
-        "criterios": "",
-        "notas": "",
-        "recursos": [],
-        "docentes": []
-    },
-    {
-        "nome": "Projeto em Engenharia de Aplicações",
-        "perfil": "Engenharia de Aplicações",
-        "slug": "ea-projeto",
-        "sigla": "PEA",
+        "nome": "Projeto em Criptografia e Segurança da Informação",
+        "perfil": "Criptografia e Segurança da Informação",
+        "slug": "csi-projeto",
+        "sigla": "PCSI",
         "avaliacoes": [],
         "criterios": "",
         "notas": "",
@@ -441,6 +357,53 @@
         "docentes": []
     },
     {
+        "nome": "Administração de Bases de Dados",
+        "perfil": "Engenharia de Aplicações",
+        "slug": "ea-uc1",
+        "sigla": "ABD",
+        "avaliacoes": [{ "data": "2025-12-18", "descricao": "Teste" }],
+        "criterios": "Projeto (50%) + Teste (50%, Min. 8 valores)",
+        "notas": "Os grupos são compostos por 4 elementos. Há obrigatoriedade de defesa para notas superiores a 16 no projeto.",
+        "recursos": [],
+        "docentes": [
+            "José Orlando Pereira (jop@di.uminho.pt) (Regente)",
+            "Nuno Filipe Pinto Faria (D12956@di.uminho.pt)"
+        ]
+    },
+    {
+        "nome": "Sistemas Interativos Confiáveis",
+        "perfil": "Engenharia de Aplicações",
+        "slug": "ea-uc2",
+        "sigla": "SIC",
+        "avaliacoes": [],
+        "criterios": "",
+        "notas": "",
+        "recursos": [],
+        "docentes": []
+    },
+    {
+        "nome": "Arquiteturas Aplicacionais",
+        "perfil": "Engenharia de Aplicações",
+        "slug": "ea-uc3",
+        "sigla": "AA",
+        "avaliacoes": [],
+        "criterios": "",
+        "notas": "",
+        "recursos": [],
+        "docentes": []
+    },
+    {
+        "nome": "Projeto em Engenharia de Aplicações",
+        "perfil": "Engenharia de Aplicações",
+        "slug": "ea-projeto",
+        "sigla": "PEA",
+        "avaliacoes": [],
+        "criterios": "",
+        "notas": "",
+        "recursos": [],
+        "docentes": []
+    },
+    {
         "nome": "Engenharia Gramatical",
         "perfil": "Engenharia de Linguagens",
         "slug": "el-uc1",
@@ -488,27 +451,29 @@
         "docentes": []
     },
     {
-        "nome": "Tolerância a Faltas",
-        "perfil": "Sistemas Distribuídos",
-        "slug": "sd-uc1",
-        "sigla": "TF",
+        "nome": "Bases de Dados NoSQL",
+        "perfil": "Engenharia do Conhecimento",
+        "slug": "ek-uc1",
+        "sigla": "BDN",
         "avaliacoes": [
-            { "data": "2026-01-02", "descricao": "Entrega do Projeto Prático" },
+            { "data": "2025-11-07", "descricao": "Ficha de avaliação" },
+            { "data": "2025-11-28", "descricao": "Ficha de avaliação" },
+            { "data": "2025-12-12", "descricao": "Ficha de avaliação" },
             { "data": "2026-01-09", "descricao": "Teste" }
         ],
-        "criterios": "Projeto (50%) + Teste (50%, Min. 10 valores)",
-        "notas": "As apresentações do Projeto Prático são entre o teste e o exame.",
+        "criterios": "Projeto (40%) + Teste (60%)",
+        "notas": "",
         "recursos": [],
         "docentes": [
-            "Rui Carlos Mendes Oliveira (rco@di.uminho.pt) (Regente)",
-            "Ana Luísa Parreira Nunes Alonso (ananunes@di.uminho.pt)"
+            "António Carlos Silva Abelha (abelha@di.uminho.pt) (Regente)",
+            "Cristiana Marisa Pereira Neto (cristiana.neto@algoritmi.uminho.pt)"
         ]
     },
     {
-        "nome": "Paradigmas de Sistemas Distribuídos",
-        "perfil": "Sistemas Distribuídos",
-        "slug": "sd-uc2",
-        "sigla": "PSD",
+        "nome": "Mineração de Dados",
+        "perfil": "Engenharia do Conhecimento",
+        "slug": "ek-uc2",
+        "sigla": "MD",
         "avaliacoes": [],
         "criterios": "",
         "notas": "",
@@ -516,10 +481,10 @@
         "docentes": []
     },
     {
-        "nome": "Sistemas Distribuídos em Larga Escala",
-        "perfil": "Sistemas Distribuídos",
-        "slug": "sd-uc3",
-        "sigla": "SDLE",
+        "nome": "Análise Inteligente em Sistemas de \"Big Data\"",
+        "perfil": "Engenharia do Conhecimento",
+        "slug": "ek-uc3",
+        "sigla": "AISBD",
         "avaliacoes": [],
         "criterios": "",
         "notas": "",
@@ -527,10 +492,105 @@
         "docentes": []
     },
     {
-        "nome": "Projeto em Sistemas Distribuídos",
-        "perfil": "Sistemas Distribuídos",
-        "slug": "sd-projeto",
-        "sigla": "PSD",
+        "nome": "Projeto em Engenharia do Conhecimento",
+        "perfil": "Engenharia do Conhecimento",
+        "slug": "ek-projeto",
+        "sigla": "PEK",
+        "avaliacoes": [],
+        "criterios": "",
+        "notas": "",
+        "recursos": [],
+        "docentes": []
+    },
+    {
+        "nome": "Qualidade de Serviço na Internet",
+        "perfil": "Engenharia Internet",
+        "slug": "ei-uc1",
+        "sigla": "QSI",
+        "avaliacoes": [],
+        "criterios": "Trabalhos Práticos (50%, Min. 10 valores) + Teste (50%, Min. 8 valores)",
+        "notas": "Os grupos são compostos por 3 elementos.",
+        "recursos": [],
+        "docentes": [
+            "Solange Rito Lima (solange@di.uminho.pt) (Regente)",
+            "Pedro Nuno Sousa (pns@di.uminho.pt)",
+            "Bruno Antunes (bantunes@di.uminho.pt)"
+        ]
+    },
+    {
+        "nome": "Internet das Coisas Aplicada",
+        "perfil": "Engenharia Internet",
+        "slug": "ei-uc2",
+        "sigla": "IoTA",
+        "avaliacoes": [],
+        "criterios": "",
+        "notas": "",
+        "recursos": [],
+        "docentes": []
+    },
+    {
+        "nome": "Gestão e Segurança de Redes",
+        "perfil": "Engenharia Internet",
+        "slug": "ei-uc3",
+        "sigla": "GRS",
+        "avaliacoes": [],
+        "criterios": "",
+        "notas": "",
+        "recursos": [],
+        "docentes": []
+    },
+    {
+        "nome": "Projeto em Engenharia Internet",
+        "perfil": "Engenharia Internet",
+        "slug": "ei-projeto",
+        "sigla": "PEI",
+        "avaliacoes": [],
+        "criterios": "",
+        "notas": "",
+        "recursos": [],
+        "docentes": []
+    },
+    {
+        "nome": "Cálculo de Sistemas de Informação",
+        "perfil": "Métodos Formais de Programação",
+        "slug": "mfp-uc1",
+        "sigla": "CFSI",
+        "avaliacoes": [],
+        "criterios": "**Regime A)** TE + AO a valerem respetivamente 60% e 40% da nota final. A nota máxima neste regime é 14 valores. **Regime B)** TE + AO + TG a valerem respetivamente 40%, 20% e 40% da nota final. O trabalho (TG) é avaliado através de uma defesa oral.",
+        "notas": "Os grupos são compostos por 3 elementos. A nota mínima da componente TE é 8 valores, havendo lugar a exame de recurso para os alunos que tenham tido nota TE negativa. As componentes TG e AO têm nota mínima de 10 valores e não têm recurso.",
+        "recursos": [],
+        "docentes": [
+            "José Nuno Oliveira (jno@di.uminho.pt)",
+            "Luís Soares Barbosa (lsb@di.uminho.pt) (Regente)"
+        ]
+    },
+    {
+        "nome": "Verificação Formal",
+        "perfil": "Métodos Formais de Programação",
+        "slug": "mfp-uc2",
+        "sigla": "VF",
+        "avaliacoes": [],
+        "criterios": "",
+        "notas": "",
+        "recursos": [],
+        "docentes": []
+    },
+    {
+        "nome": "Programação Ciberfísica",
+        "perfil": "Métodos Formais de Programação",
+        "slug": "mfp-uc3",
+        "sigla": "PC",
+        "avaliacoes": [],
+        "criterios": "",
+        "notas": "",
+        "recursos": [],
+        "docentes": []
+    },
+    {
+        "nome": "Projeto em Métodos Formais de Programação",
+        "perfil": "Métodos Formais de Programação",
+        "slug": "mfp-projeto",
+        "sigla": "PMFP",
         "avaliacoes": [],
         "criterios": "",
         "notas": "",
@@ -587,29 +647,71 @@
         "docentes": []
     },
     {
-        "nome": "Bases de Dados NoSQL",
-        "perfil": "Engenharia do Conhecimento",
-        "slug": "ek-uc1",
-        "sigla": "BDN",
-        "avaliacoes": [
-            { "data": "2025-11-07", "descricao": "Ficha de avaliação" },
-            { "data": "2025-11-28", "descricao": "Ficha de avaliação" },
-            { "data": "2025-12-12", "descricao": "Ficha de avaliação" },
-            { "data": "2026-01-09", "descricao": "Teste" }
-        ],
-        "criterios": "Projeto (40%) + Teste (60%)",
+        "nome": "Conceção e Implementação de Data Warehouses",
+        "perfil": "Sistemas de Data Warehousing",
+        "slug": "sdw-uc1",
+        "sigla": "CIDW",
+        "avaliacoes": [],
+        "criterios": "50% Trabalho Prático + 50% Teste Teórico (ambas componentes têm nota mínima de 10 valores)",
         "notas": "",
         "recursos": [],
+        "docentes": ["Orlando Belo (obelo@di.uminho.pt) (Regente)"]
+    },
+    {
+        "nome": "Sistemas de Extração, Transformação e Carregamento de Dados",
+        "perfil": "Sistemas de Data Warehousing",
+        "slug": "sdw-uc2",
+        "sigla": "SETCD",
+        "avaliacoes": [],
+        "criterios": "",
+        "notas": "",
+        "recursos": [],
+        "docentes": []
+    },
+    {
+        "nome": "Extração de Conhecimento em Data Warehouses",
+        "perfil": "Sistemas de Data Warehousing",
+        "slug": "sdw-uc3",
+        "sigla": "ECDW",
+        "avaliacoes": [],
+        "criterios": "",
+        "notas": "",
+        "recursos": [],
+        "docentes": []
+    },
+    {
+        "nome": "Projeto em Sistemas de Data Warehousing",
+        "perfil": "Sistemas de Data Warehousing",
+        "slug": "sdw-projeto",
+        "sigla": "PSDW",
+        "avaliacoes": [],
+        "criterios": "",
+        "notas": "",
+        "recursos": [],
+        "docentes": []
+    },
+    {
+        "nome": "Tolerância a Faltas",
+        "perfil": "Sistemas Distribuídos",
+        "slug": "sd-uc1",
+        "sigla": "TF",
+        "avaliacoes": [
+            { "data": "2026-01-02", "descricao": "Entrega do Projeto Prático" },
+            { "data": "2026-01-09", "descricao": "Teste" }
+        ],
+        "criterios": "Projeto (50%) + Teste (50%, Min. 10 valores)",
+        "notas": "As apresentações do Projeto Prático são entre o teste e o exame.",
+        "recursos": [],
         "docentes": [
-            "António Carlos Silva Abelha (abelha@di.uminho.pt) (Regente)",
-            "Cristiana Marisa Pereira Neto (cristiana.neto@algoritmi.uminho.pt)"
+            "Rui Carlos Mendes Oliveira (rco@di.uminho.pt) (Regente)",
+            "Ana Luísa Parreira Nunes Alonso (ananunes@di.uminho.pt)"
         ]
     },
     {
-        "nome": "Mineração de Dados",
-        "perfil": "Engenharia do Conhecimento",
-        "slug": "ek-uc2",
-        "sigla": "MD",
+        "nome": "Paradigmas de Sistemas Distribuídos",
+        "perfil": "Sistemas Distribuídos",
+        "slug": "sd-uc2",
+        "sigla": "PSD",
         "avaliacoes": [],
         "criterios": "",
         "notas": "",
@@ -617,10 +719,10 @@
         "docentes": []
     },
     {
-        "nome": "Análise Inteligente em Sistemas de \"Big Data\"",
-        "perfil": "Engenharia do Conhecimento",
-        "slug": "ek-uc3",
-        "sigla": "AISBD",
+        "nome": "Sistemas Distribuídos em Larga Escala",
+        "perfil": "Sistemas Distribuídos",
+        "slug": "sd-uc3",
+        "sigla": "SDLE",
         "avaliacoes": [],
         "criterios": "",
         "notas": "",
@@ -628,10 +730,10 @@
         "docentes": []
     },
     {
-        "nome": "Projeto em Engenharia do Conhecimento",
-        "perfil": "Engenharia do Conhecimento",
-        "slug": "ek-projeto",
-        "sigla": "PEK",
+        "nome": "Projeto em Sistemas Distribuídos",
+        "perfil": "Sistemas Distribuídos",
+        "slug": "sd-projeto",
+        "sigla": "PSD",
         "avaliacoes": [],
         "criterios": "",
         "notas": "",
@@ -697,108 +799,6 @@
         "perfil": "Sistemas Inteligentes",
         "slug": "si-projeto",
         "sigla": "PSI",
-        "avaliacoes": [],
-        "criterios": "",
-        "notas": "",
-        "recursos": [],
-        "docentes": []
-    },
-    {
-        "nome": "Cálculo de Sistemas de Informação",
-        "perfil": "Métodos Formais de Programação",
-        "slug": "mfp-uc1",
-        "sigla": "CFSI",
-        "avaliacoes": [],
-        "criterios": "**Regime A)** TE + AO a valerem respetivamente 60% e 40% da nota final. A nota máxima neste regime é 14 valores. **Regime B)** TE + AO + TG a valerem respetivamente 40%, 20% e 40% da nota final. O trabalho (TG) é avaliado através de uma defesa oral.",
-        "notas": "Os grupos são compostos por 3 elementos. A nota mínima da componente TE é 8 valores, havendo lugar a exame de recurso para os alunos que tenham tido nota TE negativa. As componentes TG e AO têm nota mínima de 10 valores e não têm recurso.",
-        "recursos": [],
-        "docentes": [
-            "José Nuno Oliveira (jno@di.uminho.pt)",
-            "Luís Soares Barbosa (lsb@di.uminho.pt) (Regente)"
-        ]
-    },
-    {
-        "nome": "Verificação Formal",
-        "perfil": "Métodos Formais de Programação",
-        "slug": "mfp-uc2",
-        "sigla": "VF",
-        "avaliacoes": [],
-        "criterios": "",
-        "notas": "",
-        "recursos": [],
-        "docentes": []
-    },
-    {
-        "nome": "Programação Ciberfísica",
-        "perfil": "Métodos Formais de Programação",
-        "slug": "mfp-uc3",
-        "sigla": "PC",
-        "avaliacoes": [],
-        "criterios": "",
-        "notas": "",
-        "recursos": [],
-        "docentes": []
-    },
-    {
-        "nome": "Projeto em Métodos Formais de Programação",
-        "perfil": "Métodos Formais de Programação",
-        "slug": "mfp-projeto",
-        "sigla": "PMFP",
-        "avaliacoes": [],
-        "criterios": "",
-        "notas": "",
-        "recursos": [],
-        "docentes": []
-    },
-    {
-        "nome": "Visualização em Tempo Real",
-        "perfil": "Computação Gráfica",
-        "slug": "cg-uc1",
-        "sigla": "VTR",
-        "avaliacoes": [
-            {
-                "data": "2026-01-26",
-                "descricao": "Entrega da componente prática"
-            },
-            {
-                "data": "2026-01-26",
-                "descricao": "Entrega da componente teórica"
-            }
-        ],
-        "criterios": "Componente prática (50%) + Componente teórica (50%)",
-        "notas": "Existem duas componentes de avaliação, uma prática, em grupos até 3 elementos, e uma individual teórica. Não há teste.",
-        "recursos": [],
-        "docentes": [
-            "António José Borba Ramires Fernandes (arf@di.uminho.pt) (Regente)"
-        ]
-    },
-    {
-        "nome": "Visão Computacional e Processamento de Imagem",
-        "perfil": "Computação Gráfica",
-        "slug": "cg-uc2",
-        "sigla": "VCPI",
-        "avaliacoes": [],
-        "criterios": "",
-        "notas": "",
-        "recursos": [],
-        "docentes": []
-    },
-    {
-        "nome": "Visualização e Iluminação",
-        "perfil": "Computação Gráfica",
-        "slug": "cg-uc3",
-        "sigla": "VI",
-        "avaliacoes": [],
-        "criterios": "",
-        "notas": "",
-        "recursos": [],
-        "docentes": []
-    },
-    {
-        "nome": "Projeto em Computação Gráfica",
-        "perfil": "Computação Gráfica",
-        "slug": "cg-projeto",
-        "sigla": "PCG",
         "avaliacoes": [],
         "criterios": "",
         "notas": "",
