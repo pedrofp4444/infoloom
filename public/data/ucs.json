@@ -741,9 +741,18 @@
         "perfil": "Computação Gráfica",
         "slug": "cg-uc1",
         "sigla": "VTR",
-        "avaliacoes": [],
-        "criterios": "Primeira componente prática (50%) + Segunda componente prática (50%)",
-        "notas": "Existem duas componentes práticas, uma em grupos até 3 elementos e uma individual. Não há teste.",
+        "avaliacoes": [
+            {
+                "data": "2026-01-26",
+                "descricao": "Entrega da componente prática"
+            },
+            {
+                "data": "2026-01-26",
+                "descricao": "Entrega da componente teórica"
+            }
+        ],
+        "criterios": "Componente prática (50%) + Componente teórica (50%)",
+        "notas": "Existem duas componentes de avaliação, uma prática, em grupos até 3 elementos, e uma individual teórica. Não há teste.",
         "recursos": [],
         "docentes": [
             "António José Borba Ramires Fernandes (arf@di.uminho.pt) (Regente)"

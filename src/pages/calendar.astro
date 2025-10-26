@@ -1,10 +1,16 @@
 ---
 import MainLayout from "../layouts/MainLayout.astro";
 import CalendarComponent from "@/components/Calendar.vue";
+import WarningBanner from "@/components/WarningBanner.vue";
 ---
 
 <MainLayout>
     <main class="container mx-auto px-4 sm:px-6 lg:px-8 py-6 sm:py-8">
+        <WarningBanner
+            client:only="vue"
+            message="A plataforma é informal e serve o propósito de prevenir conflitos de avaliações. Todas as informações devem ser confirmadas pelos canais oficiais das unidades curriculares (como a Blackboard ou as páginas das UCs)."
+        />
+
         <div class="mb-6 sm:mb-8">
             <h1
                 class="text-3xl sm:text-4xl font-bold text-foreground mb-3 sm:mb-4 text-balance"

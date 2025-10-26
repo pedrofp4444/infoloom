@@ -4,77 +4,151 @@ import MainLayout from "../layouts/MainLayout.astro";
 ---
 
 <MainLayout>
-    <div class="min-h-screen bg-background">
-        <main class="container mx-auto px-4 sm:px-6 lg:px-8 py-6 sm:py-8">
-            <div class="mb-6 sm:mb-8">
-                <h1
-                    class="text-3xl sm:text-4xl font-bold text-foreground mb-3 sm:mb-4 text-balance"
-                >
-                    Contactos
-                </h1>
-                <p
-                    class="text-base sm:text-lg text-muted-foreground text-pretty"
-                >
-                    Entra em contacto connosco para esclarecimentos sobre o
-                    mestrado
-                </p>
+    <main class="container mx-auto px-4 sm:px-6 lg:px-8 py-6 sm:py-8">
+        <div class="mb-6 sm:mb-8">
+            <div class="flex items-start gap-4">
+                <div>
+                    <h1
+                        class="text-3xl sm:text-4xl font-bold text-foreground mb-1 text-balance"
+                    >
+                        Contactos
+                    </h1>
+                    <p
+                        class="text-base sm:text-lg text-muted-foreground text-pretty"
+                    >
+                        Entra em contacto connosco para esclarecimentos sobre o
+                        mestrado
+                    </p>
+                </div>
             </div>
+        </div>
 
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 sm:gap-6">
-                <div
-                    class="rounded-2xl border bg-card text-card-foreground shadow"
-                >
-                    <div class="p-4 sm:p-6">
-                        <h2 class="text-lg sm:text-xl font-semibold">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+            <div
+                class="rounded-2xl border bg-card text-card-foreground shadow-md overflow-hidden"
+            >
+                <div class="p-6 flex items-center gap-4">
+                    <div class="flex-none">
+                        <div
+                            class="h-16 w-16 rounded-full bg-muted-foreground/10 flex items-center justify-center text-xl font-medium text-foreground"
+                        >
+                            PF
+                        </div>
+                    </div>
+                    <div class="flex-1 min-w-0">
+                        <h2 class="text-lg sm:text-xl font-semibold truncate">
                             Pedro Figueiredo Pereira
                         </h2>
                         <p class="text-sm sm:text-base text-muted-foreground">
                             Delegado
                         </p>
                     </div>
-                    <div class="p-4 sm:p-6 space-y-3 sm:space-y-4">
+                </div>
+
+                <div
+                    class="p-4 border-t bg-card/50 sm:flex sm:items-center sm:justify-between"
+                >
+                    <div class="space-y-2">
                         <div class="flex items-center gap-3">
                             <Mail class="h-4 w-4 text-primary flex-shrink-0" />
-                            <span class="text-sm sm:text-base break-all"
-                                >pg61538@uminho.pt</span
+                            <a
+                                href="mailto:pg61538@uminho.pt?subject=Contacto%20-%20Infoloom"
+                                class="text-sm sm:text-base break-all text-foreground hover:underline"
+                                >pg61538@uminho.pt</a
                             >
                         </div>
                         <div class="flex items-center gap-3">
                             <Phone class="h-4 w-4 text-primary flex-shrink-0" />
-                            <span class="text-sm sm:text-base"
-                                >+351 962 119 614</span
+                            <a
+                                href="tel:+351962119614"
+                                class="text-sm sm:text-base text-foreground hover:underline"
+                                >+351 962 119 614</a
+                            >
+                        </div>
+                    </div>
+
+                    <div class="mt-3 sm:mt-0">
+                        <div
+                            class="flex flex-col sm:flex-row sm:items-center sm:gap-3 gap-2 w-full"
+                        >
+                            <a
+                                class="inline-flex items-center gap-2 px-3 py-2 rounded-md bg-primary text-white text-sm shadow-sm w-full sm:w-auto justify-center"
+                                href="mailto:pg61538@uminho.pt?subject=Contacto%20-%20Infoloom"
+                                aria-label="Enviar email a Pedro"
+                                >Enviar e-mail</a
+                            >
+                            <a
+                                class="inline-flex items-center gap-2 px-3 py-2 rounded-md bg-primary text-white text-sm shadow-sm w-full sm:w-auto justify-center"
+                                href="tel:+351962119614"
+                                aria-label="Ligar a Pedro">Ligar</a
                             >
                         </div>
                     </div>
                 </div>
+            </div>
 
-                <div
-                    class="rounded-2xl border bg-card text-card-foreground shadow"
-                >
-                    <div class="p-4 sm:p-6">
-                        <h2 class="text-lg sm:text-xl font-semibold">
+            <div
+                class="rounded-2xl border bg-card text-card-foreground shadow-md overflow-hidden"
+            >
+                <div class="p-6 flex items-center gap-4">
+                    <div class="flex-none">
+                        <div
+                            class="h-16 w-16 rounded-full bg-muted-foreground/10 flex items-center justify-center text-xl font-medium text-foreground"
+                        >
+                            RG
+                        </div>
+                    </div>
+                    <div class="flex-1 min-w-0">
+                        <h2 class="text-lg sm:text-xl font-semibold truncate">
                             Renato Pereira Garcia
                         </h2>
                         <p class="text-sm sm:text-base text-muted-foreground">
                             Subdelegado
                         </p>
                     </div>
-                    <div class="p-4 sm:p-6 space-y-3 sm:space-y-4">
+                </div>
+
+                <div
+                    class="p-4 border-t bg-card/50 sm:flex sm:items-center sm:justify-between"
+                >
+                    <div class="space-y-2">
                         <div class="flex items-center gap-3">
                             <Mail class="h-4 w-4 text-primary flex-shrink-0" />
-                            <span class="text-sm sm:text-base break-all"
-                                >pg61542@uminho.pt</span
+                            <a
+                                href="mailto:pg61542@uminho.pt?subject=Contacto%20-%20Infoloom"
+                                class="text-sm sm:text-base break-all text-foreground hover:underline"
+                                >pg61542@uminho.pt</a
                             >
                         </div>
                         <div class="flex items-center gap-3">
                             <Phone class="h-4 w-4 text-primary flex-shrink-0" />
-                            <span class="text-sm sm:text-base"
-                                >+351 968 797 134</span
+                            <a
+                                href="tel:+351968797134"
+                                class="text-sm sm:text-base text-foreground hover:underline"
+                                >+351 968 797 134</a
+                            >
+                        </div>
+                    </div>
+
+                    <div class="mt-3 sm:mt-0">
+                        <div
+                            class="flex flex-col sm:flex-row sm:items-center sm:gap-3 gap-2 w-full"
+                        >
+                            <a
+                                class="inline-flex items-center gap-2 px-3 py-2 rounded-md bg-primary text-white text-sm shadow-sm w-full sm:w-auto justify-center"
+                                href="mailto:pg61542@uminho.pt?subject=Contacto%20-%20Infoloom"
+                                aria-label="Enviar email a Renato"
+                                >Enviar e-mail</a
+                            >
+                            <a
+                                class="inline-flex items-center gap-2 px-3 py-2 rounded-md bg-primary text-white text-sm shadow-sm w-full sm:w-auto justify-center"
+                                href="tel:+351968797134"
+                                aria-label="Ligar a Renato">Ligar</a
                             >
                         </div>
                     </div>
                 </div>
             </div>
-        </main>
-    </div>
+        </div>
+    </main>
 </MainLayout>

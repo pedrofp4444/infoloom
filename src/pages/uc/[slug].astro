@@ -2,6 +2,7 @@
 import UCDetail from "../../components/UCDetail.vue";
 import ucsData from "../../../public/data/ucs.json";
 import MainLayout from "@/layouts/MainLayout.astro";
+import WarningBanner from "@/components/WarningBanner.vue";
 
 export async function getStaticPaths() {
     return ucsData
@@ -19,5 +20,11 @@ if (!uc) throw new Error("UC não encontrada");
 ---
 
 <MainLayout>
-    <UCDetail uc={uc} />
+    <main class="container mx-auto px-4 sm:px-6 lg:px-8 py-6 sm:py-8">
+        <WarningBanner
+            client:only="vue"
+            message="A plataforma é informal e serve o propósito de prevenir conflitos de avaliações. Todas as informações devem ser confirmadas pelos canais oficiais das unidades curriculares (como a Blackboard ou as páginas das UCs)."
+        />
+        <UCDetail uc={uc} />
+    </main>
 </MainLayout>

@@ -49,72 +49,63 @@ const forms = files.map((file) => {
 ---
 
 <MainLayout>
-    <div class="min-h-screen bg-background">
-        <main class="container mx-auto px-4 sm:px-6 lg:px-8 py-6 sm:py-8">
-            <div class="mb-6 sm:mb-8">
-                <h1
-                    class="text-3xl sm:text-4xl font-bold text-foreground mb-3 sm:mb-4 text-balance"
-                >
-                    Formulários
-                </h1>
-                <p
-                    class="text-base sm:text-lg text-muted-foreground text-pretty"
-                >
-                    Responde aos formulários de feedback e controlo de qualidade
-                </p>
-            </div>
+    <main class="container mx-auto px-4 sm:px-6 lg:px-8 py-6 sm:py-8">
+        <div class="mb-6 sm:mb-8">
+            <h1
+                class="text-3xl sm:text-4xl font-bold text-foreground mb-3 sm:mb-4 text-balance"
+            >
+                Formulários
+            </h1>
+            <p class="text-base sm:text-lg text-muted-foreground text-pretty">
+                Responde aos formulários de feedback e controlo de qualidade
+            </p>
+        </div>
 
-            <div class="grid gap-4 md:grid-cols-2">
-                {
-                    forms.map((form) => (
-                        <Card class="hover:shadow-lg transition-shadow relative">
-                            <CardHeader class="relative">
-                                <span
-                                    class={`absolute top-3 right-3 px-4 py-1 text-xs font-semibold rounded-full ${
-                                        form.status === "ACTIVE"
-                                            ? "bg-green-100 text-green-800"
-                                            : "bg-red-100 text-red-800"
-                                    }`}
-                                >
-                                    {form.status === "ACTIVE"
-                                        ? "Ativo"
-                                        : "Inativo"}
-                                </span>
+        <div class="grid gap-4 md:grid-cols-2">
+            {
+                forms.map((form) => (
+                    <Card class="hover:shadow-lg transition-shadow relative">
+                        <CardHeader class="relative">
+                            <span
+                                class={`absolute top-3 right-3 px-4 py-1 text-xs font-semibold rounded-full ${
+                                    form.status === "ACTIVE"
+                                        ? "bg-green-100 text-green-800"
+                                        : "bg-red-100 text-red-800"
+                                }`}
+                            >
+                                {form.status === "ACTIVE" ? "Ativo" : "Inativo"}
+                            </span>
 
-                                <div class="flex items-start gap-4">
-                                    <div class="p-2 bg-primary/10 rounded-lg flex-shrink-0">
-                                        <FileText class="w-6 h-6 text-primary" />
-                                    </div>
-                                    <div class="flex-1 pr-20">
-                                        <CardTitle class="text-xl capitalize break-words">
-                                            {form.data.title ||
-                                                form.displayName}
-                                        </CardTitle>
-                                        <CardDescription class="mt-2 break-words">
-                                            {form.data.description ||
-                                                "Formulário disponível para preenchimento"}
-                                        </CardDescription>
-                                    </div>
+                            <div class="flex items-start gap-4">
+                                <div class="p-2 bg-primary/10 rounded-lg flex-shrink-0">
+                                    <FileText class="w-6 h-6 text-primary" />
                                 </div>
-                            </CardHeader>
+                                <div class="flex-1 pr-20">
+                                    <CardTitle class="text-xl capitalize break-words">
+                                        {form.data.title || form.displayName}
+                                    </CardTitle>
+                                    <CardDescription class="mt-2 break-words">
+                                        {form.data.description ||
+                                            "Formulário disponível para preenchimento"}
+                                    </CardDescription>
+                                </div>
+                            </div>
+                        </CardHeader>
 
-                            <CardContent>
-                                {form.status === "ACTIVE" ? (
-                                    <a href={form.link}>
-                                        <Button class="w-full">
-                                            Responder
-                                        </Button>
-                                    </a>
-                                ) : (
-                                    <Button class="w-full" disabled>
-                                        Responder
-                                    </Button>
-                                )}
-                            </CardContent>
-                        </Card>
-                    ))
-                }
-            </div>
-        </main>
-    </div>
+                        <CardContent>
+                            {form.status === "ACTIVE" ? (
+                                <a href={form.link}>
+                                    <Button class="w-full">Responder</Button>
+                                </a>
+                            ) : (
+                                <Button class="w-full" disabled>
+                                    Responder
+                                </Button>
+                            )}
+                        </CardContent>
+                    </Card>
+                ))
+            }
+        </div>
+    </main>
 </MainLayout>
