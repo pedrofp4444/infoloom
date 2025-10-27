@@ -1,5 +1,6 @@
 ---
 import "../styles/global.css";
+import logo from "../assets/logo.ico";
 import { Menu, X } from "lucide-vue-next";
 import DocsNav from "../components/docs/DocsNav.vue";
 import DocsToc from "../components/docs/DocsToc.vue";
@@ -10,22 +11,47 @@ const { title, description, toc = [] } = Astro.props;
 
 const navigation = [
     {
-        title: "Getting Started",
+        title: "Começar",
         items: [
-            { title: "Introduction", href: "/docs" },
-            { title: "Installation", href: "/docs/installation" },
-            { title: "Theming", href: "/docs/theming" },
+            { title: "Introdução", href: "/docs" },
+            { title: "Instalação", href: "/docs/instalacao" },
         ],
     },
     {
-        title: "Components",
+        title: "Funcionalidades",
         items: [
-            { title: "Accordion", href: "/docs/components/accordion" },
-            { title: "Alert", href: "/docs/components/alert" },
-            { title: "Button", href: "/docs/components/button" },
-            { title: "Card", href: "/docs/components/card" },
-            { title: "Sidebar", href: "/docs/components/sidebar" },
+            {
+                title: "Unidades Curriculares",
+                href: "/docs/funcionalidades/unidades-curriculares",
+            },
+            { title: "Calendário", href: "/docs/funcionalidades/calendario" },
+            { title: "Chatbot", href: "/docs/funcionalidades/chatbot" },
+            { title: "Formulários", href: "/docs/funcionalidades/formularios" },
+            { title: "Relatórios", href: "/docs/funcionalidades/relatorios" },
+            { title: "Favoritas", href: "/docs/funcionalidades/favoritas" },
+            { title: "Contactos", href: "/docs/funcionalidades/contactos" },
         ],
+    },
+    {
+        title: "APIs",
+        items: [
+            {
+                title: "Unidades Curriculares",
+                href: "/docs/apis/unidades-curriculares",
+            },
+            {
+                title: "Datas de Avaliações",
+                href: "/docs/apis/datas-de-avaliacoes",
+            },
+        ],
+    },
+    {
+        title: "Integrações",
+        items: [{ title: "Discord", href: "/docs/integracoes/discord" }],
+    },
+    {
+        title: "Exemplos",
+        items: [{ title: "Sidebar", href: "/docs/exemplos/sidebar" }],
     },
 ];
 ---
@@ -34,6 +60,7 @@ const navigation = [
 <html lang="pt">
     <head>
         <meta charset="UTF-8" />
+        <link rel="icon" type="image/svg+xml" href={logo} />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>{title} - Documentação</title>
         {description && <meta name="description" content={description} />}
@@ -117,7 +144,7 @@ const navigation = [
                             class="fixed inset-y-0 right-0 z-40 w-64 sm:w-72 border-l bg-background transform translate-x-full lg:hidden transition-transform duration-300 ease-in-out overflow-y-auto"
                         >
                             <div class="flex items-center justify-between p-6 border-b">
-                                <span class="font-semibold">On This Page</span>
+                                <span class="font-semibold">Nesta Página</span>
                                 <button
                                     id="mobile-toc-close"
                                     class="p-2 hover:bg-accent rounded-md"

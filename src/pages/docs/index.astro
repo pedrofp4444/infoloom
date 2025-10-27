@@ -1,67 +1,10 @@
 ---
 import DocsLayout from "../../layouts/DocsLayout.astro";
 
-const toc = [
-    { id: "introduction", title: "Introduction", level: 2 },
-    { id: "features", title: "Features", level: 2 },
-    { id: "getting-started", title: "Getting Started", level: 2 },
-];
+const toc = [{ id: "Introdução", title: "Introdução", level: 2 }];
 ---
 
-<DocsLayout
-    title="Introduction"
-    description="Welcome to the documentation"
-    toc={toc}
->
-    <h1 class="scroll-m-20 text-4xl font-bold tracking-tight">Introduction</h1>
-    <p class="text-lg text-muted-foreground mt-2">
-        Welcome to our component documentation built with Astro, Vue, and
-        shadcn-vue.
-    </p>
-
-    <section id="introduction" class="scroll-mt-20 mt-12">
-        <h2
-            class="font-heading scroll-m-20 border-b pb-2 text-2xl font-semibold tracking-tight"
-        >
-            What is this?
-        </h2>
-        <p class="mt-4 text-muted-foreground">
-            This is a modern documentation system built with cutting-edge
-            technologies to provide the best developer experience. It combines
-            the performance of Astro with the reactivity of Vue and the
-            beautiful components from shadcn-vue.
-        </p>
-    </section>
-
-    <section id="features" class="scroll-mt-20 mt-12">
-        <h2
-            class="font-heading scroll-m-20 border-b pb-2 text-2xl font-semibold tracking-tight"
-        >
-            Features
-        </h2>
-        <ul class="mt-4 space-y-2 text-muted-foreground list-disc list-inside">
-            <li>⚡ Lightning-fast performance with Astro</li>
-            <li>🎨 Beautiful, customizable components with shadcn-vue</li>
-            <li>📱 Fully responsive design</li>
-            <li>🌙 Dark mode support</li>
-            <li>📝 Easy to add new documentation pages</li>
-            <li>💻 Syntax-highlighted code blocks</li>
-            <li>🔍 Table of contents navigation</li>
-        </ul>
-    </section>
-
-    <section id="getting-started" class="scroll-mt-20 mt-12">
-        <h2
-            class="font-heading scroll-m-20 border-b pb-2 text-2xl font-semibold tracking-tight"
-        >
-            Getting Started
-        </h2>
-        <p class="mt-4 text-muted-foreground">
-            Check out the <a
-                href="/docs/components/sidebar"
-                class="text-primary hover:underline">Sidebar component</a
-            >
-            to see a complete example of how to document a component.
-        </p>
-    </section>
+<DocsLayout title="Introdução" description="Bem-vindo à documentação" toc={toc}>
+    <h1 class="scroll-m-20 text-4xl font-bold tracking-tight">Introdução</h1>
+    <p class="text-lg text-muted-foreground mt-2">Em desenvolvimento.</p>
 </DocsLayout>

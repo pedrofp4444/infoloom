@@ -1,6 +1,6 @@
 <template>
   <nav class="space-y-2">
-    <p class="font-medium mb-4 text-sm">On This Page</p>
+    <p class="font-medium mb-4 text-sm">Nesta Página</p>
     <ul class="space-y-2.5 text-sm border-l">
       <li v-for="item in items" :key="item.id">
         <a
