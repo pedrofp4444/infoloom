@@ -361,7 +361,10 @@
         "perfil": "Engenharia de Aplicações",
         "slug": "ea-uc1",
         "sigla": "ABD",
-        "avaliacoes": [{ "data": "2025-12-18", "descricao": "Teste" }],
+        "avaliacoes": [
+            { "data": "2025-12-18", "descricao": "Teste" },
+            { "data": "2026-01-22", "descricao": "Exame" }
+        ],
         "criterios": "Projeto (50%) + Teste (50%, Min. 8 valores)",
         "notas": "Os grupos são compostos por 4 elementos. Há obrigatoriedade de defesa para notas superiores a 16 no projeto.",
         "recursos": [],
