@@ -1,0 +1,269 @@
+---
+import DocsLayout from "../../../layouts/DocsLayout.astro";
+import DocsBreadcrumb from "../../../components/docs/DocsBreadcrumb.vue";
+import DocsSection from "../../../components/docs/DocsSection.vue";
+import DocsSubsection from "../../../components/docs/DocsSubsection.vue";
+import DocsSteps from "../../../components/docs/DocsSteps.vue";
+import DocsCallout from "../../../components/docs/DocsCallout.vue";
+import DocsPreview from "../../../components/docs/DocsPreview.vue";
+import CodeBlock from "../../../components/docs/CodeBlock.vue";
+
+const toc = [
+    { id: "installation", title: "Installation", level: 2 },
+    { id: "usage", title: "Usage", level: 2 },
+    { id: "examples", title: "Examples", level: 2 },
+    { id: "basic", title: "Basic Sidebar", level: 3 },
+    { id: "collapsible", title: "Collapsible Sidebar", level: 3 },
+    { id: "components", title: "Components", level: 2 },
+    { id: "api", title: "API Reference", level: 2 },
+];
+
+const installationSteps = [
+    {
+        title: "Install the component",
+        description:
+            "Run the following command to add the Sidebar component to your project:",
+        code: "npx shadcn-vue@latest add sidebar",
+        language: "bash",
+    },
+    {
+        title: "Import the components",
+        description: "Import the Sidebar components in your Vue file:",
+        code: `import {
+  Sidebar,
+  SidebarContent,
+  SidebarGroup,
+  SidebarGroupContent,
+  SidebarGroupLabel,
+  SidebarMenu,
+  SidebarMenuButton,
+  SidebarMenuItem,
+  SidebarProvider,
+  SidebarTrigger,
+} from '@/components/ui/sidebar'`,
+        language: "typescript",
+    },
+];
+
+const basicExample = `<template>
+  <SidebarProvider>
+    <Sidebar>
+      <SidebarContent>
+        <SidebarGroup>
+          <SidebarGroupLabel>Application</SidebarGroupLabel>
+          <SidebarGroupContent>
+            <SidebarMenu>
+              <SidebarMenuItem>
+                <SidebarMenuButton as-child>
+                  <a href="/">
+                    <Home class="h-4 w-4" />
+                    <span>Home</span>
+                  </a>
+                </SidebarMenuButton>
+              </SidebarMenuItem>
+              <SidebarMenuItem>
+                <SidebarMenuButton as-child>
+                  <a href="/inbox">
+                    <Inbox class="h-4 w-4" />
+                    <span>Inbox</span>
+                  </a>
+                </SidebarMenuButton>
+              </SidebarMenuItem>
+            </SidebarMenu>
+          </SidebarGroupContent>
+        </SidebarGroup>
+      </SidebarContent>
+    </Sidebar>
+    <main>
+      <SidebarTrigger />
+      <!-- Your content -->
+    </main>
+  </SidebarProvider>
+</template>
+
+<script setup lang="ts">
+import { Home, Inbox } from 'lucide-vue-next'
+</script>`;
+---
+
+<DocsLayout
+    title="Sidebar"
+    description="A composable, themeable and customizable sidebar component."
+    toc={toc}
+>
+    <DocsBreadcrumb
+        items={[
+            { label: "Docs", href: "/docs" },
+            { label: "Components", href: "/docs/components" },
+            { label: "Sidebar", href: "/docs/components/sidebar" },
+        ]}
+        client:load
+    />
+
+    <h1 class="scroll-m-20 text-4xl font-bold tracking-tight">Sidebar</h1>
+    <p class="text-lg text-muted-foreground mt-2">
+        A composable, themeable and customizable sidebar component.
+    </p>
+
+    <DocsSection id="installation" title="Installation" client:load>
+        <DocsSteps steps={installationSteps} client:load />
+    </DocsSection>
+
+    <DocsSection
+        id="usage"
+        title="Usage"
+        description="The Sidebar component is built using a composition pattern. You can use the individual components to build your sidebar."
+        client:load
+    >
+        <DocsCallout variant="info" title="Composition Pattern" client:load>
+            The Sidebar uses a composition pattern where you combine smaller
+            components to build your sidebar. This gives you full control over
+            the structure and behavior.
+        </DocsCallout>
+    </DocsSection>
+
+    <DocsSection id="examples" title="Examples" client:load>
+        <DocsSubsection
+            id="basic"
+            title="Basic Sidebar"
+            description="A simple sidebar with navigation items."
+            client:load
+        >
+            <DocsPreview title="Basic Sidebar" code={basicExample} client:load>
+                <div class="w-64 border rounded-lg">
+                    <div class="p-4 space-y-4">
+                        <div class="space-y-1">
+                            <div class="text-sm font-medium">Application</div>
+                            <div class="space-y-1">
+                                <a
+                                    href="#"
+                                    class="flex items-center gap-2 rounded-md px-2 py-1.5 text-sm hover:bg-accent"
+                                >
+                                    <span>🏠</span>
+                                    <span>Home</span>
+                                </a>
+                                <a
+                                    href="#"
+                                    class="flex items-center gap-2 rounded-md px-2 py-1.5 text-sm hover:bg-accent"
+                                >
+                                    <span>📥</span>
+                                    <span>Inbox</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </DocsPreview>
+        </DocsSubsection>
+
+        <DocsSubsection
+            id="collapsible"
+            title="Collapsible Sidebar"
+            description="A sidebar that can be collapsed to save space."
+            client:load
+        >
+            <CodeBlock
+                code={`<template>
+  <SidebarProvider>
+    <Sidebar collapsible="icon">
+      <SidebarContent>
+        <!-- Your sidebar content -->
+      </SidebarContent>
+    </Sidebar>
+  </SidebarProvider>
+</template>`}
+                language="vue"
+                client:load
+            />
+        </DocsSubsection>
+    </DocsSection>
+
+    <DocsSection id="components" title="Components" client:load>
+        <div class="space-y-4">
+            <div>
+                <h4 class="font-semibold mb-2">SidebarProvider</h4>
+                <p class="text-sm text-muted-foreground">
+                    The root component that provides context for the sidebar.
+                    Wrap your entire layout with this component.
+                </p>
+            </div>
+            <div>
+                <h4 class="font-semibold mb-2">Sidebar</h4>
+                <p class="text-sm text-muted-foreground">
+                    The main sidebar container. Supports collapsible behavior
+                    and theming.
+                </p>
+            </div>
+            <div>
+                <h4 class="font-semibold mb-2">SidebarContent</h4>
+                <p class="text-sm text-muted-foreground">
+                    Container for sidebar content with proper scrolling
+                    behavior.
+                </p>
+            </div>
+            <div>
+                <h4 class="font-semibold mb-2">SidebarGroup</h4>
+                <p class="text-sm text-muted-foreground">
+                    Groups related sidebar items together.
+                </p>
+            </div>
+        </div>
+    </DocsSection>
+
+    <DocsSection id="api" title="API Reference" client:load>
+        <div class="overflow-x-auto">
+            <table class="w-full text-sm">
+                <thead>
+                    <tr class="border-b">
+                        <th class="text-left py-2 px-4 font-semibold">Prop</th>
+                        <th class="text-left py-2 px-4 font-semibold">Type</th>
+                        <th class="text-left py-2 px-4 font-semibold"
+                            >Default</th
+                        >
+                        <th class="text-left py-2 px-4 font-semibold"
+                            >Description</th
+                        >
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="border-b">
+                        <td class="py-2 px-4 font-mono">collapsible</td>
+                        <td class="py-2 px-4 font-mono text-muted-foreground"
+                            >"icon" | "offcanvas" | "none"</td
+                        >
+                        <td class="py-2 px-4 font-mono text-muted-foreground"
+                            >"none"</td
+                        >
+                        <td class="py-2 px-4 text-muted-foreground"
+                            >Defines the collapsible behavior</td
+                        >
+                    </tr>
+                    <tr class="border-b">
+                        <td class="py-2 px-4 font-mono">side</td>
+                        <td class="py-2 px-4 font-mono text-muted-foreground"
+                            >"left" | "right"</td
+                        >
+                        <td class="py-2 px-4 font-mono text-muted-foreground"
+                            >"left"</td
+                        >
+                        <td class="py-2 px-4 text-muted-foreground"
+                            >Position of the sidebar</td
+                        >
+                    </tr>
+                    <tr class="border-b">
+                        <td class="py-2 px-4 font-mono">variant</td>
+                        <td class="py-2 px-4 font-mono text-muted-foreground"
+                            >"sidebar" | "floating" | "inset"</td
+                        >
+                        <td class="py-2 px-4 font-mono text-muted-foreground"
+                            >"sidebar"</td
+                        >
+                        <td class="py-2 px-4 text-muted-foreground"
+                            >Visual variant of the sidebar</td
+                        >
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </DocsSection>
+</DocsLayout>

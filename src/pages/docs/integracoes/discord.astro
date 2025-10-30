@@ -1,0 +1,226 @@
+---
+import DocsLayout from "../../../layouts/DocsLayout.astro";
+import DocsBreadcrumb from "../../../components/docs/DocsBreadcrumb.vue";
+import DocsSection from "../../../components/docs/DocsSection.vue";
+import DocsCallout from "../../../components/docs/DocsCallout.vue";
+import DocsSteps from "../../../components/docs/DocsSteps.vue";
+
+const toc = [
+    { id: "introducao", title: "Introdução", level: 2 },
+    { id: "convite", title: "Como convidar o bot", level: 2 },
+    { id: "configuracao", title: "Configuração inicial", level: 2 },
+    { id: "comandos", title: "Comandos disponíveis", level: 2 },
+    { id: "boas-praticas", title: "Boas práticas e ajuda", level: 2 },
+];
+
+const installationSteps = [
+    {
+        title: "Abrir o link de convite",
+        description: "Acede ao link oficial de convite do bot Infoloom:",
+        code: "https://discord.com/oauth2/authorize?client_id=1432413547706585088&permissions=68608&integration_type=0&scope=bot",
+        language: "bash",
+    },
+    {
+        title: "Selecionar o servidor",
+        description:
+            "Escolhe o servidor Discord onde queres adicionar o bot. Apenas administradores podem convidar o bot.",
+    },
+    {
+        title: "Conceder permissões",
+        description:
+            "Autoriza as permissões pedidas, o bot precisa de ler e enviar mensagens, e ver o histórico do canal.",
+    },
+    {
+        title: "Confirmar instalação",
+        description:
+            "Depois de autorizado, o bot aparecerá na lista de membros do servidor. Podes testá-lo com o comando `+ajuda`.",
+    },
+];
+---
+
+<DocsLayout
+    title="Instalação e Utilização do Bot Infoloom"
+    description="Guia passo a passo para convidar, configurar e utilizar o bot académico Infoloom no Discord."
+    toc={toc}
+>
+    <DocsBreadcrumb
+        items={[
+            { label: "Documentação", href: "/docs" },
+            { label: "Funcionalidades", href: "/docs/funcionalidades" },
+            { label: "Instalação", href: "/docs/funcionalidades/instalacao" },
+        ]}
+        client:load
+    />
+
+    <DocsSection id="introducao" title="Introdução" client:load>
+        <p class="text-lg text-muted-foreground mt-2">
+            O <strong>Bot Infoloom</strong> foi criado para simplificar a comunicação
+            e gestão de avaliações no Discord. Permite receber notificações automáticas
+            de testes, projetos e prazos de entrega diretamente nos canais de servidores.
+        </p>
+
+        <DocsCallout
+            variant="info"
+            title="Principais funcionalidades"
+            client:load
+        >
+            <ul class="list-disc list-inside mt-2">
+                <li>Subscrição de avisos por Unidade Curricular (UC).</li>
+                <li>
+                    Definição de quantos dias antes queres receber lembretes.
+                </li>
+                <li>Cancelamento ou listagem das subscrições ativas.</li>
+                <li>Envio automático de notificações antes das avaliações.</li>
+            </ul>
+        </DocsCallout>
+    </DocsSection>
+
+    <DocsSection id="convite" title="Como convidar o bot" client:load>
+        <DocsSteps steps={installationSteps} client:load />
+        <DocsCallout
+            variant="warning"
+            title="Permissões necessárias"
+            client:load
+        >
+            <p>
+                O bot precisa apenas de permissões básicas:
+                <strong>Enviar mensagens</strong>, <strong>Ler mensagens</strong
+                > e
+                <strong>Ver histórico</strong>. Não requer permissões de
+                moderação.
+            </p>
+        </DocsCallout>
+    </DocsSection>
+
+    <DocsSection id="configuracao" title="Configuração inicial" client:load>
+        <p class="text-muted-foreground mb-4">
+            Depois de convidares o bot, recomenda-se criar um canal dedicado,
+            por exemplo <code>#avisos-academicos</code>, onde ele possa enviar
+            as notificações.
+        </p>
+        <p class="text-muted-foreground">
+            No primeiro uso, o bot responde apenas a comandos que comecem por
+            <code>+</code>. Se alguém escrever incorretamente um comando mas
+            usar uma palavra-chave conhecida (como o nome de uma UC), o bot
+            responde com uma mensagem de ajuda e o formato correto.
+        </p>
+    </DocsSection>
+
+    <DocsSection id="comandos" title="Comandos disponíveis" client:load>
+        <h3 class="mt-4 mb-2 font-semibold">
+            📌 <code>+subscrever &lt;slug&gt; [dias]</code>
+        </h3>
+        <p class="text-muted-foreground">
+            Subscreve notificações para uma UC. O parâmetro <code>dias</code> é opcional
+            e indica quantos dias antes do evento o lembrete deve ser enviado (por
+            defeito, 7 dias).
+        </p>
+        <ul class="list-disc list-inside mt-2 text-muted-foreground">
+            <li>
+                <code>+subscrever p1</code> — subscreve a UC <em>P1</em> com aviso
+                7 dias antes.
+            </li>
+            <li>
+                <code>+subscrever p1 3</code> — subscreve a UC <em>P1</em> com aviso
+                3 dias antes.
+            </li>
+        </ul>
+
+        <h3 class="mt-6 mb-2 font-semibold">
+            ❌ <code>+cancelar &lt;slug&gt; [dias]</code>
+        </h3>
+        <p class="text-muted-foreground">
+            Cancela uma subscrição existente. Se for omitido o número de dias,
+            remove todas as subscrições dessa UC no canal atual.
+        </p>
+        <ul class="list-disc list-inside mt-2 text-muted-foreground">
+            <li>
+                <code>+cancelar p1</code> — remove todas as subscrições da UC <em
+                    >P1</em
+                >.
+            </li>
+            <li>
+                <code>+cancelar p1 3</code> — remove apenas a subscrição com aviso
+                3 dias antes.
+            </li>
+        </ul>
+
+        <h3 class="mt-6 mb-2 font-semibold">📋 <code>+listar</code></h3>
+        <p class="text-muted-foreground">
+            Lista todas as subscrições ativas no canal atual, incluindo UCs e
+            prazos de aviso configurados.
+        </p>
+        <p class="text-muted-foreground mt-2 italic">
+            Exemplo de resposta: <br />
+            <pre
+                class="bg-muted-foreground/10 p-4 rounded-md text-sm overflow-x-auto mt-2">📋 Subscrições deste canal:
+- p1 (aviso 3 dias antes)
+- p1 (aviso 7 dias antes)
+- p1 (aviso 4 dias antes)</pre>
+        </p>
+        <h3 class="mt-6 mb-2 font-semibold">
+            🔍 <code>+uc &lt;sigla|slug&gt;</code>
+        </h3>
+        <p class="text-muted-foreground">
+            Mostra detalhes completos de uma Unidade Curricular (UC), incluindo:
+            perfil, critérios de avaliação, docentes e próximas avaliações.
+        </p>
+        <p class="text-muted-foreground mt-2 italic">
+            Exemplo genérico de utilização:
+        </p>
+        <pre
+            class="bg-muted-foreground/10 p-4 rounded-md text-sm overflow-x-auto mt-2">
+Projeto 1 (P1)
+Perfil: Tronco Comum
+Critérios: Projeto (50%) + Teste (50%, Min. 8 valores)
+Docentes: Docente1 (Regente); Docente2; Docente3; Docente4
+📅 Próximas avaliações:
+- Checkpoint#1 (2025-11-02)
+- Checkpoint#2 (2025-11-30)
+- Entrega Final (2025-12-29)
+- Teste (2026-01-05)</pre>
+    </DocsSection>
+
+    <DocsSection id="boas-praticas" title="Boas práticas e ajuda" client:load>
+        <ul class="list-disc list-inside text-muted-foreground">
+            <li>
+                Utiliza sempre os comandos num canal onde o bot tenha acesso.
+            </li>
+            <li>
+                Usa a sigla ou o slug oficial da UC (ex: <code>p1</code>, <code
+                    >uc-p1</code
+                >, <code>unidade-curricular-p1</code>).
+            </li>
+            <li>
+                Se escreveres o comando incorretamente, o bot responderá com o
+                formato correto.
+            </li>
+            <li>
+                Podes testar o funcionamento com o comando <code>+ajuda</code>.
+            </li>
+            <li>Evita duplicar subscrições, o bot avisa se já existirem.</li>
+        </ul>
+
+        <DocsCallout variant="info" title="Suporte" client:load>
+            <p>
+                Em caso de dúvidas, contacta a equipa Infoloom através do canal
+                oficial em
+                <a href="/contacts" class="underline">Contactos</a> ou reporta o
+                problema diretamente no GitHub do projeto:
+                <a
+                    href="https://github.com/pedrofp4444/infoloom"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="underline">https://github.com/pedrofp4444/infoloom</a
+                >.
+            </p>
+        </DocsCallout>
+    </DocsSection>
+
+    <div class="mt-6 flex justify-center">
+        <p class="text-xs text-muted-foreground italic text-center">
+            Versão do documento: 1.0.1 • Última atualização: Outubro 2025 —
+            Infoloom
+        </p>
+    </div>
+</DocsLayout>

@@ -1,0 +1,294 @@
+---
+import "../styles/global.css";
+import logo from "../assets/logo.ico";
+import { Menu, X } from "lucide-vue-next";
+import DocsNav from "../components/docs/DocsNav.vue";
+import DocsToc from "../components/docs/DocsToc.vue";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+
+const { title, description, toc = [] } = Astro.props;
+
+const navigation = [
+    {
+        title: "Começar",
+        items: [
+            { title: "Introdução", href: "/docs" },
+            { title: "Instalação", href: "/docs/instalacao" },
+        ],
+    },
+    {
+        title: "Funcionalidades",
+        items: [
+            {
+                title: "Unidades Curriculares",
+                href: "/docs/funcionalidades/unidades-curriculares",
+            },
+            { title: "Calendário", href: "/docs/funcionalidades/calendario" },
+            { title: "Chatbot", href: "/docs/funcionalidades/chatbot" },
+            { title: "Formulários", href: "/docs/funcionalidades/formularios" },
+            { title: "Relatórios", href: "/docs/funcionalidades/relatorios" },
+            { title: "Favoritas", href: "/docs/funcionalidades/favoritas" },
+            { title: "Contactos", href: "/docs/funcionalidades/contactos" },
+        ],
+    },
+    {
+        title: "APIs",
+        items: [
+            {
+                title: "Unidades Curriculares",
+                href: "/docs/apis/unidades-curriculares",
+            },
+            {
+                title: "Datas de Avaliações",
+                href: "/docs/apis/datas-de-avaliacoes",
+            },
+        ],
+    },
+    {
+        title: "Integrações",
+        items: [{ title: "Discord", href: "/docs/integracoes/discord" }],
+    },
+    {
+        title: "Exemplos",
+        items: [{ title: "Sidebar", href: "/docs/exemplos/sidebar" }],
+    },
+];
+---
+
+<!doctype html>
+<html lang="pt">
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="icon" type="image/svg+xml" href={logo} />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>{title} - Documentação</title>
+        {description && <meta name="description" content={description} />}
+        <style>
+            :root {
+                --header-height: 64px;
+            }
+        </style>
+    </head>
+
+    <body
+        class="flex min-h-screen flex-col bg-background font-sans antialiased overflow-x-hidden"
+    >
+        <Header />
+
+        <!-- Sticky blur placeholder -->
+        <div
+            id="sticky-header-blur"
+            class="sticky top-0 z-20 h-[var(--header-height)] w-full bg-background/80 backdrop-blur-sm opacity-0 pointer-events-none transition-opacity duration-300"
+        >
+        </div>
+
+        <main class="flex-1">
+            <div class="relative flex min-h-screen mx-auto max-w-[1800px]">
+                <!-- Botões Mobile -->
+                <button
+                    id="mobile-menu-button"
+                    class="fixed top-[calc(var(--header-height)+2.5rem)] left-4 z-40 lg:hidden inline-flex items-center justify-center rounded-md p-2.5 bg-background/80 backdrop-blur-sm border shadow-sm hover:bg-accent transition-all duration-300"
+                    aria-label="Open menu"
+                >
+                    <Menu class="h-5 w-5" />
+                </button>
+
+                <button
+                    id="mobile-toc-button"
+                    class="fixed top-[calc(var(--header-height)+2.5rem)] right-4 z-40 lg:hidden inline-flex items-center justify-center rounded-md p-2.5 bg-background/80 backdrop-blur-sm border shadow-sm hover:bg-accent text-xs font-medium transition-all duration-300"
+                    aria-label="Table of contents"
+                >
+                    TOC
+                </button>
+
+                <!-- Overlay Mobile -->
+                <div
+                    id="mobile-overlay"
+                    class="fixed inset-0 bg-background/80 backdrop-blur-sm z-30 hidden lg:hidden"
+                >
+                </div>
+
+                <!-- Sidebar Esquerda (Mobile) -->
+                <aside
+                    id="docs-nav"
+                    class="fixed top-0 left-0 z-50 w-64 sm:w-72 h-screen transform -translate-x-full transition-transform duration-300 ease-in-out lg:hidden"
+                >
+                    <div
+                        class="flex flex-col h-full bg-background border-r overflow-y-auto"
+                    >
+                        <div
+                            class="flex items-center justify-between p-6 border-b flex-shrink-0"
+                        >
+                            <a href="/" class="flex items-center space-x-2">
+                                <span class="font-bold text-xl">Docs</span>
+                            </a>
+                            <button
+                                id="mobile-menu-close"
+                                class="p-2 hover:bg-accent rounded-md"
+                            >
+                                <X class="h-5 w-5" />
+                            </button>
+                        </div>
+                        <div class="flex-1 px-3 py-6">
+                            <DocsNav navigation={navigation} client:load />
+                        </div>
+                    </div>
+                </aside>
+
+                <!-- TOC Mobile -->
+                {
+                    toc.length > 0 && (
+                        <aside
+                            id="mobile-toc"
+                            class="fixed inset-y-0 right-0 z-40 w-64 sm:w-72 border-l bg-background transform translate-x-full lg:hidden transition-transform duration-300 ease-in-out overflow-y-auto"
+                        >
+                            <div class="flex items-center justify-between p-6 border-b">
+                                <span class="font-semibold">Nesta Página</span>
+                                <button
+                                    id="mobile-toc-close"
+                                    class="p-2 hover:bg-accent rounded-md"
+                                >
+                                    <X class="h-5 w-5" />
+                                </button>
+                            </div>
+                            <div class="p-6">
+                                <DocsToc items={toc} client:load />
+                            </div>
+                        </aside>
+                    )
+                }
+
+                <!-- Conteúdo Principal -->
+                <main class="flex-1 w-full">
+                    <div
+                        class="mx-auto max-w-[1400px] px-4 sm:px-6 lg:px-8 xl:px-12"
+                    >
+                        <div
+                            class="flex gap-8 lg:gap-12 xl:gap-16 justify-center"
+                        >
+                            <!-- Sidebar Esquerda (Desktop) -->
+                            <aside
+                                class="hidden lg:block w-64 flex-shrink-0 sticky top-[var(--header-height)] h-[calc(100vh-var(--header-height))] overflow-y-auto border-r pr-4 py-12"
+                            >
+                                <DocsNav navigation={navigation} client:load />
+                            </aside>
+
+                            <!-- Área de Conteúdo -->
+                            <div
+                                class="flex-1 min-w-0 pt-2 pb-6 sm:pb-8 lg:pt-12 lg:pb-12 max-w-3xl"
+                            >
+                                <article
+                                    class="prose prose-slate dark:prose-invert max-w-none"
+                                >
+                                    <slot />
+                                </article>
+                            </div>
+
+                            <!-- TOC Desktop -->
+                            {
+                                toc.length > 0 && (
+                                    <aside class="hidden xl:block w-64 flex-shrink-0 sticky top-[var(--header-height)] h-[calc(100vh-var(--header-height))] overflow-y-auto border-l pl-4 py-12">
+                                        <DocsToc items={toc} client:load />
+                                    </aside>
+                                )
+                            }
+                        </div>
+                    </div>
+                </main>
+            </div>
+        </main>
+
+        <Footer />
+
+        <script>
+            const menuButton = document.getElementById("mobile-menu-button");
+            const menuClose = document.getElementById("mobile-menu-close");
+            const nav = document.getElementById("docs-nav");
+            const overlay = document.getElementById("mobile-overlay");
+
+            const tocButton = document.getElementById("mobile-toc-button");
+            const tocClose = document.getElementById("mobile-toc-close");
+            const mobileToc = document.getElementById("mobile-toc");
+            const stickyHeader = document.getElementById("sticky-header-blur");
+
+            const headerHeight = parseFloat(
+                getComputedStyle(document.documentElement).getPropertyValue(
+                    "--header-height",
+                ),
+            );
+            const baseOffsetRem = 2.5;
+            const remToPx = parseFloat(
+                getComputedStyle(document.documentElement).fontSize,
+            );
+            const initialTop = headerHeight + baseOffsetRem * remToPx;
+
+            const hideButtons = () => {
+                menuButton?.classList.add("opacity-0", "pointer-events-none");
+                tocButton?.classList.add("opacity-0", "pointer-events-none");
+            };
+
+            const showButtons = () => {
+                menuButton?.classList.remove(
+                    "opacity-0",
+                    "pointer-events-none",
+                );
+                tocButton?.classList.remove("opacity-0", "pointer-events-none");
+            };
+
+            // MENU
+            menuButton?.addEventListener("click", () => {
+                nav?.classList.remove("-translate-x-full");
+                overlay?.classList.remove("hidden");
+                document.body.style.overflow = "hidden";
+                hideButtons();
+            });
+
+            const closeNav = () => {
+                nav?.classList.add("-translate-x-full");
+                overlay?.classList.add("hidden");
+                document.body.style.overflow = "";
+                showButtons();
+            };
+
+            menuClose?.addEventListener("click", closeNav);
+            overlay?.addEventListener("click", closeNav);
+
+            // TOC
+            tocButton?.addEventListener("click", () => {
+                mobileToc?.classList.remove("translate-x-full");
+                overlay?.classList.remove("hidden");
+                document.body.style.overflow = "hidden";
+                hideButtons();
+            });
+
+            const closeToc = () => {
+                mobileToc?.classList.add("translate-x-full");
+                overlay?.classList.add("hidden");
+                document.body.style.overflow = "";
+                showButtons();
+            };
+
+            tocClose?.addEventListener("click", closeToc);
+            overlay?.addEventListener("click", () => {
+                closeNav();
+                closeToc();
+            });
+
+            mobileToc?.addEventListener("click", (e) => {
+                const target = e.target;
+                if (target instanceof HTMLElement && target.tagName === "A")
+                    closeToc();
+            });
+
+            window.addEventListener("scroll", () => {
+                const scrolled = window.scrollY > headerHeight;
+                const offsetPx = scrolled ? remToPx * 1 : initialTop;
+                if (menuButton) menuButton.style.top = `${offsetPx}px`;
+                if (tocButton) tocButton.style.top = `${offsetPx}px`;
+                if (stickyHeader)
+                    stickyHeader.style.opacity = scrolled ? "1" : "0";
+            });
+        </script>
+    </body>
+</html>
