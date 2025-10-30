@@ -17,7 +17,6 @@ const toc = [
     { id: "estado-logica", title: "Estados e Lógica Interna", level: 2 },
     { id: "design-decisions", title: "Decisões de Design", level: 2 },
     { id: "integracao", title: "Integração com o Projeto", level: 2 },
-    { id: "testes-edgecases", title: "Testes e Edge Cases", level: 2 },
     { id: "boas-praticas", title: "Boas Práticas e Recomendações", level: 2 },
     { id: "roadmap", title: "Extensões Futuras / Roadmap", level: 2 },
 ];
@@ -31,17 +30,10 @@ const installationSteps = [
         language: "bash",
     },
     {
-        title: "Adicionar o componente",
-        description:
-            "Copia o ficheiro `Calendar.vue` para o diretório de componentes da tua aplicação ou executa o comando do gerador interno:",
-        code: "npx shadcn-vue@latest add calendar",
-        language: "bash",
-    },
-    {
         title: "Importar e registar o componente",
         description:
             "Importa o componente no contexto onde será utilizado (exemplo: página de avaliações ou dashboard académico).",
-        code: `import Calendar from "@/components/ui/calendar"`,
+        code: `import CalendarComponent from "@/components/Calendar.vue";`,
         language: "typescript",
     },
 ];
@@ -61,9 +53,6 @@ const installationSteps = [
         client:load
     />
 
-    <!-- ============================================================= -->
-    <!-- Introdução -->
-    <!-- ============================================================= -->
     <DocsSection id="introducao" title="Introdução" client:load>
         <p class="text-lg text-muted-foreground mt-2">
             O componente <strong>Calendário</strong> é responsável pela visualização
@@ -105,10 +94,6 @@ const installationSteps = [
             </ul>
         </DocsCallout>
     </DocsSection>
-
-    <!-- ============================================================= -->
-    <!-- Instalação -->
-    <!-- ============================================================= -->
     <DocsSection id="instalacao" title="Instalação" client:load>
         <DocsSteps steps={installationSteps} client:load />
         <DocsCallout
@@ -118,17 +103,14 @@ const installationSteps = [
         >
             <p>
                 O componente foi desenvolvido para Vue 3 com suporte a
-                Composition API. Não é compatível com Vue 2 sem refatoração.
-                Certifica-te de que o teu projeto utiliza <code>vue@^3.3</code> e
+                Composition API. Não é compatível com Vue 2 sem alterações.
+                Certifica-te de que o teu projeto utiliza <code>vue@^3.3+</code>
+                e
                 <code>vite</code> ou
                 <code>nuxt 3</code>.
             </p>
         </DocsCallout>
     </DocsSection>
-
-    <!-- ============================================================= -->
-    <!-- Utilização Base -->
-    <!-- ============================================================= -->
     <DocsSection id="utilizacao-base" title="Utilização Base" client:load>
         <p class="text-muted-foreground mb-4">
             O exemplo seguinte demonstra a utilização mínima do componente de
@@ -166,12 +148,9 @@ import Calendar from '@/components/ui/calendar'
             </p>
         </DocsCallout>
     </DocsSection>
-    <!-- ============================================================= -->
-    <!-- Parte 2/5: API (Propriedades e Eventos) -->
-    <!-- ============================================================= -->
     <DocsSection id="api" title="Propriedades e Eventos" client:load>
         <p class="text-muted-foreground mb-4">
-            A API do componente foi desenhada para ser flexível — podes utilizar
+            A API do componente foi desenhada para ser flexível, podes utilizar
             o calendário com dados internos (padrão) ou passar dados e
             controladores externos para integração avançada. Abaixo está a lista
             exaustiva de propriedades (props), eventos (emits) e métodos
@@ -290,7 +269,7 @@ interface CalendarHandle {
                             >undefined</td
                         >
                         <td class="py-2 px-4 text-muted-foreground">
-                            Fonte dos dados — se não fornecida, o componente
+                            Fonte dos dados, se não fornecida, o componente
                             carrega <code>ucs.json</code> por defeito. Estrutura:
                             <code>&#123; slug, nome, avaliacoes &#125;</code>.
                         </td>
@@ -417,14 +396,14 @@ interface CalendarHandle {
 
 <script setup lang="ts">
 import { ref } from 'vue'
-import Calendar from '@/components/ui/calendar'
+import CalendarComponent from "@/components/Calendar.vue";
 import disciplinas from '@/data/ucs.json'
 
 const view = ref<'calendar'|'list'|'heatmap'>('calendar')
 const initialDate = ref(new Date())
 
 function onDayClick(date, avaliacoes) {
-  // abre um modal personalizado ou roteia para a página da disciplina
+  // abre um modal personalizado com informações complementares
   console.log('Dia clicado', date, avaliacoes)
 }
 
@@ -454,10 +433,6 @@ function onViewChange(v) {
             </p>
         </DocsCallout>
     </DocsSection>
-
-    <!-- ============================================================= -->
-    <!-- Parte 2/5: Componentes Internos -->
-    <!-- ============================================================= -->
     <DocsSection
         id="componentes-internos"
         title="Componentes Internos"
@@ -472,13 +447,12 @@ function onViewChange(v) {
             pontos de atenção.
         </p>
 
-        <!-- Filtros -->
         <DocsSubsection id="filtros" title="Filtros de Disciplinas" client:load>
             <p class="text-sm text-muted-foreground">
                 O painel de filtros permite selecionar quais as disciplinas que
                 aparecem nas vistas. É composto por um componente de selecção
                 (Checkbox), um botão para seleccionar/desseleccionar todas e uma
-                área rolável com a lista de disciplinas.
+                área <i>scrollable</i> com a lista de disciplinas.
             </p>
 
             <h5 class="font-semibold mt-3">Responsabilidades</h5>
@@ -553,7 +527,6 @@ defineProps({
             </DocsCallout>
         </DocsSubsection>
 
-        <!-- Vista Calendário -->
         <DocsSubsection
             id="vista-calendario-interno"
             title="Vista: Calendário (Grid Mensal)"
@@ -648,16 +621,15 @@ function getAvaliacoesForDate(date) {
             </DocsCallout>
         </DocsSubsection>
 
-        <!-- Vista Lista -->
         <DocsSubsection
             id="vista-lista-interno"
             title="Vista: Lista Cronológica"
             client:load
         >
             <p class="text-sm text-muted-foreground">
-                A vista em lista é destinada a leitura sequencial — útil para
-                consultores e estudantes que querem ver as próximas avaliações
-                ordenadas por data e agrupadas por mês.
+                A vista em lista é destinada a leitura sequencial, útil para
+                estudantes que querem ver as próximas avaliações ordenadas por
+                data e agrupadas por mês.
             </p>
 
             <h5 class="font-semibold mt-3">Comportamento</h5>
@@ -692,8 +664,6 @@ const agruparPorMes = (lista) => {
                 client:load
             />
         </DocsSubsection>
-
-        <!-- Heatmap -->
         <DocsSubsection
             id="heatmap"
             title="Vista: Heatmap Semestral"
@@ -702,14 +672,14 @@ const agruparPorMes = (lista) => {
             <p class="text-sm text-muted-foreground">
                 O heatmap apresenta semanas como linhas (ou colunas, dependendo
                 da implementação) e dias como células, colore cada célula
-                segundo o número de avaliações desse dia. É ideal para
+                segundo o número de avaliações desse dia. É orientado para
                 identificar picos de carga.
             </p>
 
             <h5 class="font-semibold mt-3">Construção do semestre</h5>
             <p class="text-sm text-muted-foreground">
-                O heatmap é gerado com base em um semestre académico definido
-                por <code>startMonth</code> e <code>endMonth</code>. A
+                O heatmap é gerado com base no período de um semestre académico
+                definido por <code>startMonth</code> e <code>endMonth</code>. A
                 implementação calcula todas as semanas entre as datas de início
                 e fim e preenche dias nulos com placeholders.
             </p>
@@ -739,16 +709,14 @@ const agruparPorMes = (lista) => {
                 <p class="text-sm text-muted-foreground">
                     Para manter a legibilidade do heatmap em ecrãs pequenos,
                     mostra apenas marcadores numéricos ao hover/tap e fornece a
-                    legenda de intensidades abaixo.
+                    legenda de intensidades mais em baixo.
                 </p>
             </DocsCallout>
         </DocsSubsection>
-
-        <!-- Dialog -->
         <DocsSubsection id="dialog" title="Dialog / Details" client:load>
             <p class="text-sm text-muted-foreground">
-                O diálogo de detalhe é invocado ao clicar num dia com
-                avaliações. É implementado com o componente <code>Dialog</code>
+                O <i>pop-up</i> de detalhe é invocado ao clicar num dia com avaliações.
+                É implementado com o componente <code>Dialog</code>
                 e apresenta a lista de avaliações com os campos: disciplina, descrição
                 e data formatada.
             </p>
@@ -757,7 +725,7 @@ const agruparPorMes = (lista) => {
             <ul
                 class="list-disc list-inside text-sm text-muted-foreground mt-2"
             >
-                <li>Foco inicial no título do diálogo.</li>
+                <li>Foco inicial no título do <i>pop-up</i>.</li>
                 <li>
                     Fecho com <code>Escape</code> e botão explícito de fechar.
                 </li>
@@ -787,8 +755,6 @@ const agruparPorMes = (lista) => {
                 client:load
             />
         </DocsSubsection>
-
-        <!-- Utilitários -->
         <DocsSubsection
             id="utilitarios"
             title="Utilitários e Helpers"
@@ -837,9 +803,6 @@ function formatarData(dataStr: string) {
             />
         </DocsSubsection>
     </DocsSection>
-    <!-- ============================================================= -->
-    <!-- Parte 3/5: Estados e Lógica Interna -->
-    <!-- ============================================================= -->
     <DocsSection
         id="estado-logica"
         title="Estados e Lógica Interna"
@@ -993,16 +956,12 @@ function onDayClick(dateStr: string) {
         <DocsCallout variant="info" title="Reatividade previsível" client:load>
             <p class="text-sm text-muted-foreground">
                 Esta hierarquia reativa assegura que o calendário nunca precisa
-                de <code>deep watch</code> em listas complexas — todas as dependências
+                de <code>deep watch</code> em listas complexas, todas as dependências
                 são computadas a partir de fontes únicas, o que evita loops ou actualizações
                 desnecessárias.
             </p>
         </DocsCallout>
     </DocsSection>
-
-    <!-- ============================================================= -->
-    <!-- Parte 3/5: Decisões de Design -->
-    <!-- ============================================================= -->
     <DocsSection id="design-decisions" title="Decisões de Design" client:load>
         <p class="text-muted-foreground mb-4">
             O desenho do componente foi orientado por princípios de consistência
@@ -1015,7 +974,7 @@ function onDayClick(dateStr: string) {
             Foi seguida a linha de design dos componentes <code>shadcn/ui</code
             >, priorizando legibilidade e hierarquia visual: cores neutras, foco
             claro e interacções suaves. O calendário herda as variáveis do tema
-            (modo escuro/claro).
+            definido.
         </p>
 
         <h4 class="mt-4 font-semibold">2. Acessibilidade (A11Y)</h4>
@@ -1049,10 +1008,6 @@ function onDayClick(dateStr: string) {
                 Lazy rendering em heatmap e lista (v-if condicional fora da
                 viewport).
             </li>
-            <li>
-                Memorização de legendas e cores com <code>useMemo</code> (utilitário
-                custom).
-            </li>
         </ul>
 
         <h4 class="mt-4 font-semibold">4. UX e microinterações</h4>
@@ -1083,10 +1038,6 @@ function onDayClick(dateStr: string) {
             </p>
         </DocsCallout>
     </DocsSection>
-
-    <!-- ============================================================= -->
-    <!-- Parte 3/5: Integração com o Projeto -->
-    <!-- ============================================================= -->
     <DocsSection id="integracao" title="Integração com o Projeto" client:load>
         <p class="text-muted-foreground mb-4">
             O componente está desenhado para integrar-se diretamente com os
@@ -1187,7 +1138,7 @@ if (!validarUCS(ucsData)) {
 </template>
 
 <script setup lang="ts">
-import Calendar from '@/components/ui/calendar'
+import CalendarComponent from "@/components/Calendar.vue";
 import ucsData from '@/data/ucs.json'
 
 function abrirDetalhes(date, avaliacoes) {
@@ -1198,134 +1149,13 @@ function abrirDetalhes(date, avaliacoes) {
             />
 
             <p class="text-sm text-muted-foreground mt-3">
-                Este exemplo mostra a integração típica no projeto — o
-                componente é reativo e funciona imediatamente ao receber a
-                estrutura <code>ucs.json</code>.
+                Este exemplo mostra a integração típica no projeto, o componente
+                é reativo e funciona imediatamente ao receber a estrutura <code
+                    >ucs.json</code
+                >.
             </p>
         </DocsSubsection>
     </DocsSection>
-    <!-- ============================================================= -->
-    <!-- Parte 4/5: Testes e Edge Cases -->
-    <!-- ============================================================= -->
-    <DocsSection id="testes-edgecases" title="Testes e Edge Cases" client:load>
-        <p class="text-muted-foreground mb-4">
-            O componente <strong>Calendário</strong> foi concebido com foco na previsibilidade.
-            Apesar de depender fortemente de dados externos (<code
-                >ucs.json</code
-            >), a estrutura reativa e as salvaguardas internas permitem evitar
-            falhas em cenários de dados incompletos ou inconsistentes.
-        </p>
-
-        <h4 class="mt-4 font-semibold">
-            1. Testes de Unidade (Vitest / Vue Test Utils)
-        </h4>
-        <p class="text-sm text-muted-foreground mb-2">
-            Cada vista (CalendarView, ListView, HeatmapView) possui uma suíte de
-            testes dedicada. Abaixo segue um exemplo simplificado de teste
-            unitário para a lógica de filtragem:
-        </p>
-
-        <CodeBlock
-            language="ts"
-            code={`import { mount } from '@vue/test-utils'
-import Calendar from '@/components/ui/calendar.vue'
-
-const disciplinasMock = [
-  { slug: 'matematica', nome: 'Matemática', avaliacoes: [{ data: '2025-10-10', descricao: 'Teste 1' }] },
-  { slug: 'fisica', nome: 'Física', avaliacoes: [{ data: '2025-10-12', descricao: 'Mini-teste' }] }
-]
-
-test('filtra avaliações corretamente por disciplina', async () => {
-  const wrapper = mount(Calendar, { props: { disciplinasData: disciplinasMock } })
-  await wrapper.setProps({ selectedSlugs: ['matematica'] })
-  expect(wrapper.vm.avaliacoesFiltradas.length).toBe(1)
-  expect(wrapper.vm.avaliacoesFiltradas[0].descricao).toBe('Teste 1')
-})`}
-            client:load
-        />
-
-        <DocsCallout
-            variant="info"
-            title="Cobertura mínima recomendada"
-            client:load
-        >
-            <p class="text-sm text-muted-foreground">
-                Recomenda-se cobrir pelo menos:
-            </p>
-            <ul class="list-disc list-inside text-sm text-muted-foreground">
-                <li>Renderização básica e estados de carregamento.</li>
-                <li>Filtros múltiplos e combinações de disciplinas.</li>
-                <li>
-                    Eventos emitidos (<code>day-click</code>, <code
-                        >month-change</code
-                    >, etc.).
-                </li>
-                <li>Renderização condicional de heatmap e lista.</li>
-            </ul>
-        </DocsCallout>
-
-        <h4 class="mt-6 font-semibold">2. Testes de Interação e Snapshot</h4>
-        <p class="text-sm text-muted-foreground">
-            Os testes de snapshot asseguram que o layout visual permanece
-            consistente. Pequenas alterações no markup ou estrutura CSS são
-            imediatamente detectadas.
-        </p>
-
-        <CodeBlock
-            language="ts"
-            code={`import { mount } from '@vue/test-utils'
-import Calendar from '@/components/ui/calendar.vue'
-import ucsData from '@/data/ucs.json'
-
-test('renderização consistente', () => {
-  const wrapper = mount(Calendar, { props: { disciplinasData: ucsData } })
-  expect(wrapper.html()).toMatchSnapshot()
-})`}
-            client:load
-        />
-
-        <h4 class="mt-6 font-semibold">3. Edge Cases Comuns</h4>
-        <ul class="list-disc list-inside text-sm text-muted-foreground mt-2">
-            <li>
-                <strong>Datas inválidas:</strong> o componente ignora avaliações
-                com formato de data incorreto.
-            </li>
-            <li>
-                <strong>Filtros vazios:</strong> se nenhuma disciplina for selecionada,
-                mostra todas.
-            </li>
-            <li>
-                <strong>Heatmap vazio:</strong> renderiza placeholder com mensagem
-                “Sem dados disponíveis”.
-            </li>
-            <li>
-                <strong>JSON incompleto:</strong> se o campo <code
-                    >avaliacoes</code
-                > estiver ausente, é substituído por lista vazia.
-            </li>
-            <li>
-                <strong>Navegação rápida:</strong> travas de debounce impedem múltiplos
-                <code>month-change</code> simultâneos.
-            </li>
-        </ul>
-
-        <DocsCallout
-            variant="warning"
-            title="Estratégia de fallback"
-            client:load
-        >
-            <p class="text-sm text-muted-foreground">
-                Sempre que possível, o componente tenta recuperar de erros de
-                dados. O objetivo é garantir que o utilizador nunca vê uma tela
-                em branco — apenas estados de “sem dados” ou “erro parcial”, com
-                mensagens contextualizadas.
-            </p>
-        </DocsCallout>
-    </DocsSection>
-
-    <!-- ============================================================= -->
-    <!-- Parte 4/5: Boas Práticas e Recomendações -->
-    <!-- ============================================================= -->
     <DocsSection
         id="boas-praticas"
         title="Boas Práticas e Recomendações"
@@ -1337,30 +1167,7 @@ test('renderização consistente', () => {
             longevidade no projeto.
         </p>
 
-        <h4 class="mt-4 font-semibold">1. Estrutura de Pastas</h4>
-        <CodeBlock
-            language="bash"
-            code={`components/
-└── ui/
-    ├── calendar/
-    │   ├── Calendar.vue
-    │   ├── CalendarView.vue
-    │   ├── ListView.vue
-    │   ├── HeatmapView.vue
-    │   ├── CalendarFilters.vue
-    │   ├── CalendarDialog.vue
-    │   ├── useCalendar.ts
-    │   └── types.ts
-    └── index.ts`}
-            client:load
-        />
-
-        <p class="text-sm text-muted-foreground mt-2">
-            Mantém cada vista e subcomponente isolado em ficheiros próprios.
-            Centraliza a lógica partilhada no <code>useCalendar.ts</code>.
-        </p>
-
-        <h4 class="mt-4 font-semibold">2. Tipagem e Segurança</h4>
+        <h4 class="mt-4 font-semibold">1. Tipagem e Segurança</h4>
         <p class="text-sm text-muted-foreground">
             Define sempre os tipos <code>Disciplina</code>, <code
                 >Avaliacao</code
@@ -1368,32 +1175,32 @@ test('renderização consistente', () => {
             e melhora a autocompletação no editor.
         </p>
 
-        <h4 class="mt-4 font-semibold">3. Comunicação de Eventos</h4>
+        <h4 class="mt-4 font-semibold">2. Comunicação de Eventos</h4>
         <p class="text-sm text-muted-foreground">
             Usa <code>defineEmits</code> com eventos semanticamente claros. Evita
             enviar objetos excessivamente aninhados ou dependentes de estado interno.
         </p>
 
-        <h4 class="mt-4 font-semibold">4. Acessibilidade</h4>
+        <h4 class="mt-4 font-semibold">3. Acessibilidade</h4>
         <ul class="list-disc list-inside text-sm text-muted-foreground mt-2">
-            <li>Evita dependências de mouse-only; testa com teclado.</li>
+            <li>Evita dependências de mouse-only, testa com teclado.</li>
             <li>
                 Usa labels descritivos e feedback auditivo (screen readers).
             </li>
             <li>Verifica contraste de cores e tamanhos de fonte.</li>
         </ul>
 
-        <h4 class="mt-4 font-semibold">5. Desempenho e Lazy Loading</h4>
+        <h4 class="mt-4 font-semibold">4. Desempenho e Lazy Loading</h4>
         <p class="text-sm text-muted-foreground">
-            Carrega apenas a vista necessária — <code>v-if</code> sobre o modo ativo.
+            Carrega apenas a vista necessária, <code>v-if</code> sobre o modo ativo.
             O heatmap e lista não devem ser montados até o utilizador os ativar.
         </p>
 
-        <h4 class="mt-4 font-semibold">6. Persistência e Preferências</h4>
+        <h4 class="mt-4 font-semibold">5. Persistência e Preferências</h4>
         <p class="text-sm text-muted-foreground">
             Podes armazenar as preferências de filtro e modo de visualização no <code
                 >localStorage</code
-            >:
+            > (embora para já não seja implementado nativamente):
         </p>
         <CodeBlock
             language="ts"
@@ -1435,15 +1242,12 @@ const config = { ...defaultConfig, locale: es }`}
             </p>
         </DocsCallout>
     </DocsSection>
-    <!-- ============================================================= -->
-    <!-- Parte 5/5: Extensões Futuras / Roadmap -->
-    <!-- ============================================================= -->
     <DocsSection id="roadmap" title="Extensões Futuras / Roadmap" client:load>
         <p class="text-muted-foreground mb-4">
-            O componente <strong>Calendário</strong> foi concebido como base sólida
-            de visualização e gestão de avaliações académicas. No entanto, existem
-            diversas áreas de expansão já mapeadas para versões futuras, alinhadas
-            com a evolução do ecossistema Vue e das necessidades pedagógicas.
+            O <strong>Calendário</strong> foi concebido como base sólida de visualização
+            e gestão de avaliações. No entanto, existem diversas áreas de expansão
+            já mapeadas para versões futuras, alinhadas com a evolução do ecossistema
+            Vue e das necessidades.
         </p>
 
         <h4 class="mt-4 font-semibold">1. Vistas adicionais</h4>
@@ -1465,7 +1269,9 @@ const config = { ...defaultConfig, locale: es }`}
         <h4 class="mt-4 font-semibold">2. Sincronização externa</h4>
         <ul class="list-disc list-inside text-sm text-muted-foreground mt-2">
             <li>
-                Exportação para <code>iCalendar (.ics)</code> e sincronização bidirecional.
+                Exportação para <code>iCalendar (.ics)</code>, <code
+                    >Google Calendar</code
+                > e sincronização bidirecional.
             </li>
             <li>
                 Integração com APIs institucionais (ex.: SIGARRA, Moodle, Google
@@ -1487,7 +1293,7 @@ const config = { ...defaultConfig, locale: es }`}
         <p class="text-sm text-muted-foreground">
             Planeia-se a introdução de um módulo preditivo, capaz de sugerir
             datas de estudo ideais com base na densidade de avaliações e
-            desempenho histórico do aluno (módulo opcional).
+            desempenho histórico do aluno.
         </p>
 
         <h4 class="mt-4 font-semibold">5. Extensão para dispositivos móveis</h4>
@@ -1505,12 +1311,12 @@ const config = { ...defaultConfig, locale: es }`}
             otimizações reais, baseadas em uso.
         </p>
 
-        <DocsCallout variant="info" title="Governança de versões" client:load>
+        <DocsCallout variant="info" title="Gestão de versões" client:load>
             <p class="text-sm text-muted-foreground">
-                Cada extensão deve ser lançada sob um sistema de versionamento
-                semântico:
+                Cada extensão relacionada deve ser lançada sob um sistema de
+                versionamento semântico:
                 <code>major.minor.patch</code>. As alterações de API pública
-                serão documentadas em changelogs no diretório <code
+                futuramente serão documentadas em changelogs no diretório <code
                     >docs/changelogs/</code
                 >.
             </p>
@@ -1525,39 +1331,10 @@ const config = { ...defaultConfig, locale: es }`}
             React ou Svelte.
         </p>
     </DocsSection>
-
-    <!-- ============================================================= -->
-    <!-- Conclusão -->
-    <!-- ============================================================= -->
-    <DocsSection id="conclusao" title="Conclusão" client:load>
-        <p class="text-lg text-muted-foreground">
-            O componente <strong>Calendário</strong> não é apenas uma representação
-            visual das avaliações — é um <em
-                >framework modular de organização académica</em
-            >, construído com foco em clareza, previsibilidade e
-            extensibilidade.
+    <div class="mt-6 flex justify-center">
+        <p class="text-xs text-muted-foreground italic text-center">
+            Versão do documento: 1.0.0 • Última atualização: Outubro 2025 —
+            Infoloom
         </p>
-
-        <p class="text-sm text-muted-foreground mt-3">
-            A sua implementação demonstra boas práticas de design de componentes
-            Vue 3, comunicação de eventos e integração de dados. O código é
-            suficientemente genérico para ser reutilizado noutros contextos
-            (ex.: planeamento de projetos ou gestão de prazos).
-        </p>
-
-        <DocsCallout variant="success" title="Resumo Final" client:load>
-            <ul class="list-disc list-inside text-sm text-muted-foreground">
-                <li>API reativa e extensível.</li>
-                <li>Integração direta com <code>ucs.json</code>.</li>
-                <li>Vistas modulares (Calendar, List, Heatmap).</li>
-                <li>Escalabilidade comprovada em datasets grandes.</li>
-                <li>Base sólida para futuras extensões inteligentes.</li>
-            </ul>
-        </DocsCallout>
-
-        <p class="text-xs text-muted-foreground mt-6 italic">
-            Versão do documento: 1.0.0 • Última atualização: Outubro 2025 Autor
-            técnico: Equipa de UI/UX — Núcleo Académico Digital
-        </p>
-    </DocsSection>
+    </div>
 </DocsLayout>
