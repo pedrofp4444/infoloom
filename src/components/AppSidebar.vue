@@ -7,6 +7,7 @@ import {
   Book,
   Calendar,
   FileText,
+  FolderClosed,
   MessageCircle,
   Star,
   Users
@@ -53,6 +54,11 @@ const items = [
     title: "Favoritas",
     url: "/favorites",
     icon: Star,
+  },
+  {
+    title: "Documentação",
+    url: "/docs",
+    icon: FolderClosed,
   },
   {
     title: "Contactos",
