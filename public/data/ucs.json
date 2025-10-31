@@ -311,7 +311,7 @@
         "sigla": "MEVS",
         "avaliacoes": [
             { "data": "2025-12-11", "descricao": "Teste" },
-            { "data": "2025-12-18", "descricao": "Entrega do Projeto Prático" }
+            { "data": "2026-01-08", "descricao": "Entrega do Projeto Prático" }
         ],
         "criterios": "Teste (50%) + Trabalho prático (50%, 75% de projeto + 25% de avaliação contínua)",
         "notas": "",
@@ -411,7 +411,9 @@
         "sigla": "EG",
         "avaliacoes": [
             { "data": "2025-11-06", "descricao": "Apresentação TP1" },
-            { "data": "2025-12-18", "descricao": "Apresentação TP2" }
+            { "data": "2025-12-11", "descricao": "Teste" },
+            { "data": "2025-12-18", "descricao": "Apresentação TP2" },
+            { "data": "2026-01-22", "descricao": "Exame" }
         ],
         "criterios": "Projetos (60%, Min. 8 valores) + Teste (40%, Min. 8 valores)",
         "notas": "Os grupos são compostos por 2 elementos.",
