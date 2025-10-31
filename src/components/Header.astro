@@ -11,6 +11,7 @@ const pages = [
     { label: "Relatórios", route: "/reports" },
     { label: "Favoritas", route: "/favorites" },
     { label: "Documentação", route: "/docs" },
+    { label: "Contribuidores", route: "/contributors" },
     { label: "Contactos", route: "/contacts" },
 ];
 ---
@@ -43,13 +44,13 @@ const pages = [
                 </div>
             </a>
 
-            <ul class="hidden md:flex gap-8 text-sm font-medium items-center">
+            <ul class="hidden xl:flex gap-8 text-sm font-medium items-center">
                 {
                     pages.map(({ label, route }) => (
                         <li>
                             <a
                                 href={route}
-                                class="relative text-gray-800 hover:text-green-500 transition-colors duration-300"
+                                class="relative text-gray-800 hover:text-green-500 transition-colors duration-300 group"
                             >
                                 {label}
                                 <span class="absolute left-0 -bottom-1 w-0 h-0.5 bg-green-500 transition-all duration-300 group-hover:w-full" />
@@ -59,7 +60,7 @@ const pages = [
                 }
             </ul>
 
-            <div class="md:hidden">
+            <div class="xl:hidden">
                 <AppSidebar client:load />
             </div>
         </nav>

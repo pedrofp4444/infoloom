@@ -8,6 +8,7 @@ import {
   Calendar,
   FileText,
   FolderClosed,
+  GitPullRequestCreateArrow,
   MessageCircle,
   Star,
   Users
@@ -59,6 +60,11 @@ const items = [
     title: "Documentação",
     url: "/docs",
     icon: FolderClosed,
+  },
+  {
+    title: "Contribuidores",
+    url: "/contributors",
+    icon: GitPullRequestCreateArrow,
   },
   {
     title: "Contactos",
