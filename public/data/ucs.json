@@ -310,8 +310,8 @@
         "slug": "dvms-uc1",
         "sigla": "MEVS",
         "avaliacoes": [
-            { "data": "2025-12-18", "descricao": "Teste" },
-            { "data": "2026-01-08", "descricao": "Entrega do Projeto Prático" }
+            { "data": "2025-12-11", "descricao": "Teste" },
+            { "data": "2025-12-18", "descricao": "Entrega do Projeto Prático" }
         ],
         "criterios": "Teste (50%) + Trabalho prático (50%, 75% de projeto + 25% de avaliação contínua)",
         "notas": "",
