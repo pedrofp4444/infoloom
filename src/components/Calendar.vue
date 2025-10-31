@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { ref, computed } from 'vue'
+import { ref, computed, onMounted, watch, nextTick } from 'vue'
 import {
   Card,
   CardContent,
@@ -14,6 +14,7 @@ import { Sheet, SheetContent, SheetHeader, SheetTitle, SheetTrigger } from '@/co
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from '@/components/ui/dialog'
 import { Calendar, List, Filter, BarChart3, ChevronLeft, ChevronRight } from 'lucide-vue-next'
 import disciplinasData from '../../public/data/ucs.json'
+import { useFavoritesStore } from '@/stores/useFavoritesStore'
 
 type Disciplina = {
   slug: string
@@ -38,6 +39,88 @@ type Avaliacao = {
 const disciplinasSelecionadas = ref<Record<string, boolean>>(
   Object.fromEntries(disciplinasComAvaliacoes.map(d => [d.slug, true]))
 )
+
+let favoritesStore: any = null
+
+const favoritasOnly = ref(false)
+const _ignoreFavoritasWatcher = ref(false)
+
+const getFavsArray = () => {
+  try {
+    if (typeof window !== 'undefined') {
+      const stored = localStorage.getItem('favorites')
+      if (stored) {
+        try {
+          const arr = JSON.parse(stored)
+          if (Array.isArray(arr)) return arr
+        } catch (e) {
+          // fallback for store below
+        }
+      }
+    }
+
+    if (!favoritesStore && typeof window !== 'undefined') favoritesStore = useFavoritesStore()
+    if (!favoritesStore) return []
+    // favorites is a Set stored in the Pinia store (or a ref holding a Set)
+    const fv = favoritesStore.favorites?.value ?? favoritesStore.favorites ?? []
+    return Array.from(fv)
+  } catch (e) {
+    // if Pinia not ready yet - do nothing, fallback keeps all selected
+    return []
+  }
+}
+
+const applyFavoritasSelection = (enable: boolean) => {
+  const favsArray = getFavsArray()
+  if (enable) {
+    if (favsArray.length === 0) return
+
+    disciplinasSelecionadas.value = Object.fromEntries(
+      disciplinasComAvaliacoes.map(d => [d.slug, favsArray.includes(d.slug)])
+    )
+  } else {
+    disciplinasSelecionadas.value = Object.fromEntries(
+      disciplinasComAvaliacoes.map(d => [d.slug, true])
+    )
+  }
+}
+
+onMounted(() => {
+  try {
+    if (typeof window !== 'undefined') {
+      const stored = localStorage.getItem('favorites')
+      if (stored) {
+        try {
+          const arr = JSON.parse(stored)
+          if (Array.isArray(arr) && arr.length > 0) {
+            favoritasOnly.value = true
+            disciplinasSelecionadas.value = Object.fromEntries(
+              disciplinasComAvaliacoes.map(d => [d.slug, arr.includes(d.slug)])
+            )
+          }
+        } catch (e) {
+          // ignore and fallback to store below
+        }
+      }
+    }
+
+    favoritesStore = useFavoritesStore()
+    watch(
+      () => Array.from(favoritesStore.favorites?.value ?? favoritesStore.favorites ?? []),
+      () => {
+        if (favoritasOnly.value) applyFavoritasSelection(true)
+      },
+      { deep: true }
+    )
+  } catch (e) {
+    // if Pinia not ready yet - do nothing, fallback keeps all selected
+  }
+})
+
+watch(favoritasOnly, (val) => {
+  if (_ignoreFavoritasWatcher.value) return
+  applyFavoritasSelection(val)
+})
 
 const viewMode = ref<'calendar' | 'list' | 'heatmap'>('calendar')
 const currentDate = ref(new Date())
@@ -99,6 +182,20 @@ const todasSelecionadas = computed<boolean>({
     disciplinasSelecionadas.value = Object.fromEntries(
       disciplinasComAvaliacoes.map(d => [d.slug, newValue])
     )
+    if (!newValue) {
+      _ignoreFavoritasWatcher.value = true
+      favoritasOnly.value = false
+      nextTick(() => {
+        _ignoreFavoritasWatcher.value = false
+      })
+    }
+    if (newValue) {
+      _ignoreFavoritasWatcher.value = true
+      favoritasOnly.value = true
+      nextTick(() => {
+        _ignoreFavoritasWatcher.value = false
+      })
+    }
   }
 })
 
@@ -328,6 +425,16 @@ const formatWeekRange = (startDate: Date, endDate: Date) => {
                 </label>
               </div>
 
+              <div class="flex items-center space-x-2 py-3 border-b">
+                <Checkbox
+                  id="favoritas"
+                  v-model="favoritasOnly"
+                />
+                <label for="favoritas" class="text-sm font-medium leading-none cursor-pointer">
+                  Disciplinas favoritas
+                </label>
+              </div>
+
               <ScrollArea class="h-[400px] pr-4">
                 <div class="space-y-3">
                   <div
@@ -382,7 +489,16 @@ const formatWeekRange = (startDate: Date, endDate: Date) => {
               </label>
             </div>
 
-            <!-- ScrollArea ocupa todo o espaço restante -->
+            <div class="flex items-center space-x-2 py-3 border-b">
+              <Checkbox
+                id="favoritas-lg"
+                v-model="favoritasOnly"
+              />
+              <label for="favoritas-lg" class="text-sm font-medium leading-none cursor-pointer">
+                Disciplinas favoritas
+              </label>
+            </div>
+
             <ScrollArea class="flex-1 pr-4 -mx-6 px-6">
               <div class="space-y-3 pb-6">
                 <div
@@ -603,7 +719,7 @@ const formatWeekRange = (startDate: Date, endDate: Date) => {
           <CardContent>
             <div v-if="avaliacoes.length === 0" class="text-center py-12 text-muted-foreground">
               <p>Nenhuma avaliação selecionada</p>
-              <p class="text-sm mt-2">Selecione disciplinas para ver as avaliações</p>
+              <p class="text-sm mt-2">Seleciona disciplinas para ver as avaliações</p>
             </div>
 
             <ScrollArea v-else class="h-[600px] pr-4">
