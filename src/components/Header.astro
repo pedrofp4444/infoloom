@@ -60,11 +60,14 @@ const pages = [
                     ))
                 }
                 <li>
-                    <ThemeToggle client:load />
+                    <ThemeToggle
+                        client:load
+                        class="hover:text-green-500 transition-colors duration-300 text-black"
+                    />
                 </li>
             </ul>
 
-            <div class="xl:hidden">
+            <div class="xl:hidden text-black">
                 <AppSidebar client:load />
             </div>
         </nav>

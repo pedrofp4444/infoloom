@@ -1,12 +1,12 @@
 <template>
   <button
     @click="toggleTheme"
-    class="p-2 rounded-lg group cursor-pointer"
+    class="p-2 rounded-lg cursor-pointer"
     aria-label="Toggle theme"
   >
     <component
       :is="isDark ? Sun : Moon"
-      class="w-4 h-4 stroke-current text-black group-hover:text-green-500 transition-colors duration-300"
+      class="h-4 w-4 stroke-current"
     />
   </button>
 </template>
@@ -33,4 +33,6 @@ const toggleTheme = () => {
   document.documentElement.classList.toggle('dark', isDark.value);
   localStorage.setItem('theme', isDark.value ? 'dark' : 'light');
 };
+
+defineExpose({ toggleTheme });
 </script>
