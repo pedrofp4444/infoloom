@@ -77,7 +77,7 @@ const totalContributions = computed(() =>
       </div>
 
       <div class="text-center mb-12">
-        <Button variant="outline" class="bg-transparent" as="a"
+        <Button variant="outline" class="bg-transparent dark:bg-transparent" as="a"
           href="https://github.com/pedrofp4444/infoloom"
           target="_blank"
           rel="noopener noreferrer"
@@ -121,7 +121,7 @@ const totalContributions = computed(() =>
                 variant="outline"
                 size="sm"
                 as="a"
-                class="w-full group-hover:bg-primary group-hover:text-primary-foreground transition-colors bg-transparent"
+                class="w-full bg-transparent group-hover:bg-primary group-hover:text-primary-foreground  transition-colors dark:bg-transparent dark:group-hover:bg-primary dark:group-hover:text-primary-foreground dark:hover:text-foreground"
                 :href="c.html_url"
                 target="_blank"
                 rel="noopener noreferrer"

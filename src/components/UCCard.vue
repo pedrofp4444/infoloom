@@ -56,13 +56,13 @@ const toggleFavorite = () => favoritesStore.toggleFavorite(props.uc.slug);
 
       <div class="mt-3 w-full flex flex-col space-y-2">
         <a :href="`/uc/${uc.slug}`" class="w-full">
-          <Button variant="outline" size="sm" class="w-full min-h-[36px] bg-transparent justify-center">
+          <Button variant="outline" size="sm" class="w-full min-h-[36px] bg-transparent dark:bg-transparent justify-center">
             <Eye class="h-3 w-3 mr-1" />
             Ver página
           </Button>
         </a>
 
-        <Button variant="outline" size="sm" class="w-full min-h-[36px] bg-transparent justify-center"
+        <Button variant="outline" size="sm" class="w-full min-h-[36px] bg-transparent dark:bg-transparent justify-center"
           @click="toggleFavorite">
           <Star :class="[
             'h-4 w-4 mr-1 transition-colors',
