@@ -2,6 +2,7 @@
 import Image from "astro/components/Image.astro";
 import logo from "../assets/logo.svg";
 import AppSidebar from "./AppSidebar.vue";
+import ThemeToggle from "./ThemeToggle.vue";
 
 const pages = [
     { label: "Unidades Curriculares", route: "/ucs" },
@@ -58,6 +59,9 @@ const pages = [
                         </li>
                     ))
                 }
+                <li>
+                    <ThemeToggle client:load />
+                </li>
             </ul>
 
             <div class="xl:hidden">
