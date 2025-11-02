@@ -1,7 +1,7 @@
 <template>
   <button
     @click="toggleTheme"
-    class="p-2 rounded-lg cursor-pointer"
+    class="rounded-lg cursor-pointer flex"
     aria-label="Toggle theme"
   >
     <component

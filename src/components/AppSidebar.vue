@@ -99,7 +99,6 @@ const toggleTheme = () => {
                   </a>
                 </SidebarMenuButton>
               </SidebarMenuItem>
-
               <SidebarMenuItem>
                 <SidebarMenuButton as-child @click="toggleTheme">
                   <div class="cursor-pointer">
