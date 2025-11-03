@@ -12,6 +12,4 @@ function applyTheme() {
     document.documentElement.classList.toggle("dark", theme === "dark");
 }
 
-applyTheme();
-
 export { initTheme, applyTheme };
