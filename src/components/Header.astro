@@ -17,7 +17,9 @@ const pages = [
 ];
 ---
 
-<header class="bg-green-100 shadow-md">
+<header
+    class="bg-green-100 dark:bg-emerald-950 shadow-md transition-colors duration-300"
+>
     <div class="container mx-auto">
         <nav
             class="mx-4 flex flex-row items-center justify-between py-5 lg:mx-12 xl:mx-20"
@@ -33,13 +35,15 @@ const pages = [
                     src={logo}
                     alt="Infoloom's Logo"
                     loading="eager"
-                    class="rounded-full"
+                    class="rounded-full dark:invert"
                 />
                 <div>
-                    <h1 class="text-2xl font-semibold text-gray-800">
+                    <h1
+                        class="text-2xl font-semibold text-gray-800 dark:text-gray-100"
+                    >
                         Infoloom
                     </h1>
-                    <p class="text-sm text-gray-600">
+                    <p class="text-sm text-gray-600 dark:text-gray-400">
                         Mestrado em Engenharia Informática
                     </p>
                 </div>
@@ -51,10 +55,10 @@ const pages = [
                         <li>
                             <a
                                 href={route}
-                                class="relative text-gray-800 hover:text-green-500 transition-colors duration-300 group"
+                                class="relative text-gray-800 hover:text-green-500 dark:text-gray-200 dark:hover:text-green-400 transition-colors duration-300 group"
                             >
                                 {label}
-                                <span class="absolute left-0 -bottom-1 w-0 h-0.5 bg-green-500 transition-all duration-300 group-hover:w-full" />
+                                <span class="absolute left-0 -bottom-1 w-0 h-0.5 bg-green-500 dark:bg-green-400 transition-all duration-300 group-hover:w-full" />
                             </a>
                         </li>
                     ))
@@ -62,12 +66,12 @@ const pages = [
                 <li>
                     <ThemeToggle
                         client:load
-                        class="hover:text-green-500 transition-colors duration-300 text-black"
+                        class="text-gray-800 hover:text-green-500 dark:text-gray-200 dark:hover:text-green-400 transition-colors duration-300"
                     />
                 </li>
             </ul>
 
-            <div class="xl:hidden text-black">
+            <div class="xl:hidden text-black dark:text-white">
                 <AppSidebar client:load />
             </div>
         </nav>

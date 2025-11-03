@@ -59,6 +59,19 @@ const navigation = [
 <!doctype html>
 <html lang="pt">
     <head>
+        <script is:inline>
+            (function () {
+                const theme = localStorage.getItem("theme");
+                const prefersDark = window.matchMedia(
+                    "(prefers-color-scheme: dark)",
+                ).matches;
+                if (theme === "dark" || (!theme && prefersDark)) {
+                    document.documentElement.classList.add("dark");
+                } else {
+                    document.documentElement.classList.remove("dark");
+                }
+            })();
+        </script>
         <meta charset="UTF-8" />
         <link rel="icon" type="image/svg+xml" href={logo} />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
