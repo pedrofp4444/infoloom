@@ -9,7 +9,7 @@ defineProps({
 
 <template>
   <div
-    class="w-full bg-amber-100 border-l-4 border-amber-500 text-amber-800 px-4 py-3 mb-6 rounded-none shadow-sm"
+    class="w-full bg-amber-100 border-l-4 border-amber-500 text-amber-800 dark:bg-amber-900 dark:border-amber-200 dark:text-amber-200 px-4 py-3 mb-6 rounded shadow-sm"
     role="alert"
   >
     <div class="flex items-center gap-2">

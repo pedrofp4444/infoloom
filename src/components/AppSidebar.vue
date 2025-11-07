@@ -1,6 +1,8 @@
 <script setup lang="ts">
+import { ref } from 'vue'
 import SidebarProvider from "./ui/sidebar/SidebarProvider.vue";
 import SidebarTrigger from "./ui/sidebar/SidebarTrigger.vue";
+import ThemeToggle from "./ThemeToggle.vue";
 
 import {
   BarChart2,
@@ -72,25 +74,39 @@ const items = [
     icon: Users,
   }
 ];
+
+const themeToggleRef = ref<InstanceType<typeof ThemeToggle> | null>(null)
+
+const toggleTheme = () => {
+  themeToggleRef.value?.toggleTheme()
+}
 </script>
 
 <template>
   <SidebarProvider :defaultOpen="false">
-  <SidebarTrigger />
+    <SidebarTrigger />
     <Sidebar side="right">
       <SidebarContent>
         <SidebarGroup>
           <SidebarGroupLabel>Infoloom</SidebarGroupLabel>
           <SidebarGroupContent>
             <SidebarMenu>
-                <SidebarMenuItem v-for="item in items" :key="item.title">
-                  <SidebarMenuButton asChild>
-                      <a :href="item.url">
-                        <component :is="item.icon" />
-                        <span>{{item.title}}</span>
-                      </a>
-                  </SidebarMenuButton>
-                </SidebarMenuItem>
+              <SidebarMenuItem v-for="item in items" :key="item.title">
+                <SidebarMenuButton asChild>
+                  <a :href="item.url">
+                    <component :is="item.icon" />
+                    <span>{{item.title}}</span>
+                  </a>
+                </SidebarMenuButton>
+              </SidebarMenuItem>
+              <SidebarMenuItem>
+                <SidebarMenuButton as-child @click="toggleTheme">
+                  <div class="cursor-pointer">
+                    <ThemeToggle ref="themeToggleRef" />
+                    <span>Mudar Tema</span>
+                  </div>
+                </SidebarMenuButton>
+              </SidebarMenuItem>
             </SidebarMenu>
           </SidebarGroupContent>
         </SidebarGroup>

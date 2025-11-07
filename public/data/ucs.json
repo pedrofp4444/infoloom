@@ -33,6 +33,7 @@
         "slug": "computacao-paralela",
         "sigla": "CPar",
         "avaliacoes": [
+            { "data": "2025-11-24", "descricao": "Entrega da Fase 1" },
             { "data": "2026-01-09", "descricao": "Teste" },
             { "data": "2026-01-30", "descricao": "Exame" }
         ],
