@@ -616,7 +616,7 @@
             { "data": "2025-10-17", "descricao": "Entrega do TP1" },
             { "data": "2025-11-14", "descricao": "Entrega do TP2" },
             { "data": "2025-12-19", "descricao": "Entrega do TP3" },
-            { "data": "2026-01-08", "descricao": "Teste" }
+            { "data": "2026-01-10", "descricao": "Teste" }
         ],
         "criterios": "Nota Final = 60% Componente Teórica (Nota mínima: 8 valores) + 40% Componente Prática (Nota Mínima: 10 valores)",
         "notas": "",
