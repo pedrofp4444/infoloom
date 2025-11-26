@@ -362,6 +362,10 @@
         "sigla": "ABD",
         "avaliacoes": [
             { "data": "2025-12-18", "descricao": "Teste" },
+            {
+                "data": "2026-01-04",
+                "descricao": "Entrega do Trabalho Prático"
+            },
             { "data": "2026-01-22", "descricao": "Exame" }
         ],
         "criterios": "Projeto (50%) + Teste (50%, Min. 8 valores)",
