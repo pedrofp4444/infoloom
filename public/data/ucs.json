@@ -9,12 +9,8 @@
             { "data": "2025-11-30", "descricao": "Checkpoint#2" },
             { "data": "2025-12-29", "descricao": "Entrega Final" },
             { "data": "2026-01-05", "descricao": "Teste" },
-            { "data": "2026-01-12", "descricao": "Defesa" },
-            { "data": "2026-01-13", "descricao": "Defesa" },
-            { "data": "2026-01-14", "descricao": "Defesa" },
             { "data": "2026-01-15", "descricao": "Defesa" },
             { "data": "2026-01-16", "descricao": "Defesa" },
-            { "data": "2026-01-17", "descricao": "Defesa" },
             { "data": "2026-01-26", "descricao": "Exame" }
         ],
         "criterios": "Projeto (50%) + Teste (50%, Min. 8 valores)",
