@@ -157,7 +157,8 @@
         "sigla": "AAC",
         "avaliacoes": [
             { "data": "2025-10-31", "descricao": "Defesa do TP1" },
-            { "data": "2026-01-04", "descricao": "Entrega do TP2" }
+            { "data": "2026-01-04", "descricao": "Entrega do TP2" },
+            { "data": "2026-01-10", "descricao": "Teste" }
         ],
         "criterios": "Teste (35%) + Trabalho prático (50%) + Análise, apresentação e discussão de um artigo sobre HPC (15%)",
         "notas": "Os grupos são compostos por 3 elementos. Defesas do TP2 na semana do 12-17 de janeiro, idealmente logo dia 12 mas por confirmar ainda.",
