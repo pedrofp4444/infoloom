@@ -369,7 +369,7 @@
         "sigla": "PCG",
         "avaliacoes": [],
         "criterios": "",
-        "notas": "Teste.",
+        "notas": "",
         "recursos": [],
         "docentes": []
     },
@@ -809,33 +809,49 @@
         "perfil": "Redes de Nova Geração",
         "slug": "rng-uc2",
         "sigla": "NPR",
-        "avaliacoes": [],
-        "criterios": "",
+        "avaliacoes": [
+            { "data": "2026-03-23", "descricao": "Apresentação Intermédia" },
+            { "data": "2026-05-18", "descricao": "Teste" },
+            { "data": "2026-05-30", "descricao": "Entrega Final" }
+        ],
+        "criterios": "Avaliação = 50%T + 50%TP (Nota mínima de 8 Teste/Recurso, nota mínima 9,5 TP)",
         "notas": "",
         "recursos": [],
-        "docentes": []
+        "docentes": [
+            "António Luis Duarte Costa (costa@di.uminho.pt) (Regente)",
+            "João Pereira (d12267@di.uminho.pt)"
+        ]
     },
     {
         "nome": "Redes Definidas por Software",
         "perfil": "Redes de Nova Geração",
         "slug": "rng-uc3",
         "sigla": "RDS",
-        "avaliacoes": [],
-        "criterios": "",
+        "avaliacoes": [{ "data": "2026-05-25", "descricao": "Teste" }],
+        "criterios": "Avaliação = 50%T + 50%TP (Nota mínima de 8 Teste/Recurso, nota mínima 9,5 TP)",
         "notas": "",
         "recursos": [],
-        "docentes": []
+        "docentes": [
+            "Pedro Nuno Miranda de Sousa (pns@di.uminho.pt) (Regente)",
+            "João Pereira (d12267@di.uminho.pt)"
+        ]
     },
     {
         "nome": "Projeto em Redes de Nova Geração",
         "perfil": "Redes de Nova Geração",
         "slug": "rng-projeto",
         "sigla": "PRNG",
-        "avaliacoes": [],
+        "avaliacoes": [
+            { "data": "2026-03-17", "descricao": "Apresentação Intermédia" },
+            { "data": "2026-05-31", "descricao": "Entrega Final" }
+        ],
         "criterios": "",
         "notas": "",
         "recursos": [],
-        "docentes": []
+        "docentes": [
+            "Ivo Silva (ivo@di.uminho.pt) (Regente)",
+            "Vadim Hapanchak (vadim@di.uminho.pt)"
+        ]
     },
     {
         "nome": "Conceção e Implementação de Data Warehouses",
@@ -866,22 +882,31 @@
         "perfil": "Sistemas de Data Warehousing",
         "slug": "sdw-uc2",
         "sigla": "SETCD",
-        "avaliacoes": [],
-        "criterios": "",
-        "notas": "",
+        "avaliacoes": [
+            { "data": "2026-05-29", "descricao": "Teste" },
+            { "data": "2026-03-06", "descricao": "1ª Ficha Prática" }
+        ],
+        "criterios": "Critério de avaliação = 50%T + 50%TP (nota mínima de 10 valores nas duas componentes)",
+        "notas": "A avaliação prática é composta pela realização de dois exercícios práticos, como TPC, com a duração de uma semana.",
         "recursos": [],
-        "docentes": []
+        "docentes": [
+            "Orlando Belo (obelo@di.uminho.pt) (Regente)",
+            "Ana Filipa Barros Duarte (D14295@di.uminho.pt)"
+        ]
     },
     {
         "nome": "Extração de Conhecimento em Data Warehouses",
         "perfil": "Sistemas de Data Warehousing",
         "slug": "sdw-uc3",
         "sigla": "ECDW",
-        "avaliacoes": [],
-        "criterios": "",
-        "notas": "",
+        "avaliacoes": [{ "data": "2026-05-22", "descricao": "Teste" }],
+        "criterios": "Nota final = 40%T + 60% TP",
+        "notas": "A componente prática é composta pela avaliação de dois (ou três) exercícios práticos, como TPC, com a duração de uma semana.",
         "recursos": [],
-        "docentes": []
+        "docentes": [
+            "César Analide Freitas Silva Costa Rodrigues (analide@uminho.pt) (Regente)",
+            "Guilherme João Fernandes Barbosa (gjfbarbosa@di.uminho.pt)"
+        ]
     },
     {
         "nome": "Projeto em Sistemas de Data Warehousing",
@@ -889,10 +914,10 @@
         "slug": "sdw-projeto",
         "sigla": "PSDW",
         "avaliacoes": [],
-        "criterios": "",
-        "notas": "",
+        "criterios": "Trabalho Prático Desenvolvido",
+        "notas": "Cada aula tem como objetivo acompanhar o trabalho prático de cada grupo.",
         "recursos": [],
-        "docentes": []
+        "docentes": ["Orlando Belo (obelo@di.uminho.pt) (Regente)"]
     },
     {
         "nome": "Tolerância a Faltas",
@@ -990,32 +1015,79 @@
         "perfil": "Sistemas Inteligentes",
         "slug": "si-uc2",
         "sigla": "AP",
-        "avaliacoes": [],
-        "criterios": "",
-        "notas": "",
+        "avaliacoes": [
+            {
+                "data": "2026-03-23",
+                "descricao": "Apresentação do Projeto Prático (Módulo 1)"
+            },
+            {
+                "data": "2026-05-25",
+                "descricao": "Apresentação do Projeto Prático (Módulo 2)"
+            }
+        ],
+        "criterios": "Módulo 1 (50%) + Módulo 2 (50%). Cada módulo: Projeto Prático (70%) + Quizzes (30%)",
+        "notas": "Divisão do semestre em 2 módulos. Grupos de 4 elementos.",
         "recursos": [],
-        "docentes": []
+        "docentes": [
+            "Miguel Rocha (mrocha@di.uminho.pt) (Regente [Módulo 1])",
+            "Víctor Manuel Rodrigues Alves (valves@di.uminho.pt) (Regente [Módulo 2])",
+            "Diogo Cachetas (diogo.cachetas@inl.pt)"
+        ]
     },
     {
         "nome": "Sensorização e Ambiente",
         "perfil": "Sistemas Inteligentes",
         "slug": "si-uc3",
         "sigla": "SA",
-        "avaliacoes": [],
-        "criterios": "",
-        "notas": "",
+        "avaliacoes": [
+            {
+                "data": "2026-03-06",
+                "descricao": "Entrega do Trabalho de Investigação"
+            },
+            {
+                "data": "2026-03-17",
+                "descricao": "Revisão dos Trabalhos de Investigação"
+            },
+            {
+                "data": "2026-03-26",
+                "descricao": "Apresentação do Trabalho de Investigação"
+            },
+            {
+                "data": "2026-05-21",
+                "descricao": "Entrega do Projeto Prático"
+            },
+            {
+                "data": "2026-05-28",
+                "descricao": "Apresentação do Projeto Prático"
+            }
+        ],
+        "criterios": "Trabalho de Investigação (20% + 30%) + Projeto prático (50%)",
+        "notas": "Grupos de 4 a 5 elementos.",
         "recursos": [],
-        "docentes": []
+        "docentes": [
+            "César Analide Rodrigues (analide@di.uminho.pt) (Regente)",
+            "Filipa Tinoco Ferraz (filipa.ferraz@di.uminho.pt)",
+            "Pedro José Costa Oliveira (pedro.jose.oliveira@algoritmi.uminho.pt)"
+        ]
     },
     {
         "nome": "Projeto em Sistemas Inteligentes",
         "perfil": "Sistemas Inteligentes",
         "slug": "si-projeto",
         "sigla": "PSI",
-        "avaliacoes": [],
+        "avaliacoes": [
+            {
+                "data": "2026-05-30",
+                "descricao": "Entrega do Projeto Prático"
+            },
+            {
+                "data": "2026-06-17",
+                "descricao": "Apresentação do Projeto Prático"
+            }
+        ],
         "criterios": "",
-        "notas": "",
+        "notas": "Datas não definitivas. Grupos de 4 a 5 elementos. O acompanhamento do projeto é feito com o docente responsável pelo mesmo.",
         "recursos": [],
-        "docentes": []
+        "docentes": ["César Analide Rodrigues (analide@di.uminho.pt) (Regente)"]
     }
 ]
