@@ -16,7 +16,7 @@ const adminPin = ref("");
 const ucs = ref(JSON.parse(JSON.stringify(props.initialData)));
 const isSaving = ref(false);
 
-const EXPECTED_PIN = import.meta.env.PUBLIC_ADMIN_PIN;
+const EXPECTED_PIN = import.meta.env.ADMIN_PIN;
 
 const checkPin = () => {
   if (adminPin.value === EXPECTED_PIN) {
