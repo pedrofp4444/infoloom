@@ -16,13 +16,9 @@ const adminPin = ref("");
 const ucs = ref(JSON.parse(JSON.stringify(props.initialData)));
 const isSaving = ref(false);
 
-const EXPECTED_PIN = import.meta.env.ADMIN_PIN;
-
 const checkPin = () => {
-  if (adminPin.value === EXPECTED_PIN) {
+  if (adminPin.value.length > 0) {
     isAuthenticated.value = true;
-  } else {
-    alert("PIN incorreto.");
   }
 };
 
@@ -42,11 +38,18 @@ const save = async () => {
     const res = await fetch('/api/admin/update', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ pin: adminPin.value, content: ucs.value })
+      body: JSON.stringify({ pin: adminPin.value, content: ucs.value }) // Envia o PIN
     });
+
     const data = await res.json();
-    alert(data.message);
-    if (res.ok) window.location.reload();
+
+    if (res.status === 401) {
+      alert("PIN Incorreto - Alterações não guardadas.");
+      isAuthenticated.value = false;
+    } else {
+      alert(data.message);
+      if (res.ok) window.location.reload();
+    }
   } catch (e) {
     alert('Erro de rede.');
   } finally {
