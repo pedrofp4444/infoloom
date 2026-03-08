@@ -318,14 +318,18 @@ const calendarDays = computed(() => {
 
 const semesterHeatmapData = computed(() => {
   const hoje = new Date()
-  const anoBase = hoje.getMonth() >= 8 ? hoje.getFullYear() : hoje.getFullYear() - 1
-  const startDate = new Date(anoBase, 8, 1)
-  const endDate = new Date(anoBase + 1, 1, 28)
+  const anoBase = hoje.getFullYear()
+
+  // startDate definido para 1 de Fevereiro (mês 1 em JS)
+  const startDate = new Date(anoBase, 1, 1)
+  // endDate definido para 31 de Julho (mês 6 em JS) para cobrir o segundo semestre
+  const endDate = new Date(anoBase, 6, 31)
 
   const weeks: Array<{ startDate: Date; endDate: Date; days: (Date | null)[] }> = []
 
   const currentWeekStart = new Date(startDate)
   const dayOfWeek = currentWeekStart.getDay()
+
   const daysToMonday = dayOfWeek === 0 ? -6 : 1 - dayOfWeek
   currentWeekStart.setDate(currentWeekStart.getDate() + daysToMonday)
 
@@ -335,6 +339,7 @@ const semesterHeatmapData = computed(() => {
     for (let i = 0; i < 7; i++) {
       const day = new Date(currentWeekStart)
       day.setDate(day.getDate() + i)
+      // Verifica se o dia pertence ao intervalo pretendido
       if (day >= startDate && day <= endDate) weekDays.push(day)
       else weekDays.push(null)
     }
