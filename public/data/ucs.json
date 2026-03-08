@@ -66,9 +66,7 @@
         "criterios": "1º Checkpoint Projeto (10%) + Entrega Final do Projeto (50%) + Teste (40%, Min. 5 valores)",
         "notas": "Os grupos são compostos por 2 elementos.",
         "recursos": [],
-        "docentes": [
-            "João Luís Sobral (jls@di.uminho.pt) (Regente)"
-        ]
+        "docentes": ["João Luís Sobral (jls@di.uminho.pt) (Regente)"]
     },
     {
         "nome": "Dados e Aprendizagem Automática",
@@ -563,9 +561,7 @@
         "criterios": "Projetos (60%, Min. 8 valores) + Teste (40%, Min. 8 valores)",
         "notas": "Os grupos são compostos por 2 elementos.",
         "recursos": [],
-        "docentes": [
-            "Nuno Macedo (nmacedo@di.uminho.pt) (Regente)"
-        ]
+        "docentes": ["Nuno Macedo (nmacedo@di.uminho.pt) (Regente)"]
     },
     {
         "nome": "Scripting para Processamento de Linguagem Natural",
@@ -806,9 +802,7 @@
         "criterios": "Nota Final = 60% Componente Teórica (Nota mínima: 8 valores) + 40% Componente Prática (Nota Mínima: 10 valores)",
         "notas": "",
         "recursos": [],
-        "docentes": [
-            "Flávio de Oliveira Silva (flavio@di.uminho.pt) (Regente)"
-        ]
+        "docentes": ["Flávio de Oliveira Silva (flavio@di.uminho.pt) (Regente)"]
     },
     {
         "nome": "Novos Paradigmas de Redes",
@@ -865,9 +859,7 @@
         "criterios": "50% Trabalho Prático + 50% Teste Teórico (ambas componentes têm nota mínima de 10 valores)",
         "notas": "",
         "recursos": [],
-        "docentes": [
-            "Orlando Belo (obelo@di.uminho.pt) (Regente)"
-        ]
+        "docentes": ["Orlando Belo (obelo@di.uminho.pt) (Regente)"]
     },
     {
         "nome": "Sistemas de Extração, Transformação e Carregamento de Dados",
