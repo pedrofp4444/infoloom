@@ -1,0 +1,9 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+import AdminCMS from "../components/AdminCMS.vue";
+import ucsData from "../../public/data/ucs.json";
+---
+
+<MainLayout title="Infoloom Admin">
+    <AdminCMS client:only="vue" initialData={ucsData} />
+</MainLayout>
