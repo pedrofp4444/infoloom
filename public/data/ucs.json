@@ -66,7 +66,9 @@
         "criterios": "1º Checkpoint Projeto (10%) + Entrega Final do Projeto (50%) + Teste (40%, Min. 5 valores)",
         "notas": "Os grupos são compostos por 2 elementos.",
         "recursos": [],
-        "docentes": ["João Luís Sobral (jls@di.uminho.pt) (Regente)"]
+        "docentes": [
+            "João Luís Sobral (jls@di.uminho.pt) (Regente)"
+        ]
     },
     {
         "nome": "Dados e Aprendizagem Automática",
@@ -391,8 +393,21 @@
         "perfil": "Criptografia e Segurança da Informação",
         "slug": "csi-uc2",
         "sigla": "SS",
-        "avaliacoes": [],
-        "criterios": "",
+        "avaliacoes": [
+            {
+                "data": "2026-05-02",
+                "descricao": "Entrega do projeto de grupo"
+            },
+            {
+                "data": "2026-05-08",
+                "descricao": "Defesa do projeto de grupo"
+            },
+            {
+                "data": "2026-04-24",
+                "descricao": "Teste escrito"
+            }
+        ],
+        "criterios": "Avaliação contínua (30%) + Projeto de grupo (50%) + Teste escrito (20%)",
         "notas": "",
         "recursos": [],
         "docentes": []
@@ -402,9 +417,26 @@
         "perfil": "Criptografia e Segurança da Informação",
         "slug": "csi-uc3",
         "sigla": "CI",
-        "avaliacoes": [],
+        "avaliacoes": [
+            {
+                "data": "2026-02-23",
+                "descricao": "Entrega de trabalho prático"
+            },
+            {
+                "data": "2026-03-23",
+                "descricao": "Entrega de trabalho prático"
+            },
+            {
+                "data": "2026-07-27",
+                "descricao": "Entrega de trabalho prático"
+            },
+            {
+                "data": "2026-06-01",
+                "descricao": "Entrega de trabalho prático"
+            }
+        ],
         "criterios": "",
-        "notas": "",
+        "notas": "O exame de recurso substitui um trabalho.",
         "recursos": [],
         "docentes": []
     },
@@ -413,9 +445,18 @@
         "perfil": "Criptografia e Segurança da Informação",
         "slug": "csi-projeto",
         "sigla": "PCSI",
-        "avaliacoes": [],
+        "avaliacoes": [
+            {
+                "data": "2026-03-11",
+                "descricao": "Primeira fase"
+            },
+            {
+                "data": "2026-05-31",
+                "descricao": "Fase final"
+            }
+        ],
         "criterios": "",
-        "notas": "",
+        "notas": "A fase final não tem data especifica.",
         "recursos": [],
         "docentes": []
     },
@@ -458,7 +499,12 @@
         "perfil": "Desenvolvimento, Validação e Manutenção de Software",
         "slug": "dvms-uc3",
         "sigla": "TDS",
-        "avaliacoes": [],
+        "avaliacoes": [
+            {
+                "data": "2026-03-17",
+                "descricao": "Exercício 1"
+            }
+        ],
         "criterios": "",
         "notas": "",
         "recursos": [],
@@ -469,7 +515,24 @@
         "perfil": "Desenvolvimento, Validação e Manutenção de Software",
         "slug": "dvms-projeto",
         "sigla": "PDVMS",
-        "avaliacoes": [],
+        "avaliacoes": [
+            {
+                "data": "2026-03-23",
+                "descricao": "1ª apresentação"
+            },
+            {
+                "data": "2026-03-24",
+                "descricao": "1ª apresentação"
+            },
+            {
+                "data": "2026-05-04",
+                "descricao": "2ª apresentação"
+            },
+            {
+                "data": "2026-05-05",
+                "descricao": "2ª apresentação"
+            }
+        ],
         "criterios": "",
         "notas": "",
         "recursos": [],
@@ -561,7 +624,9 @@
         "criterios": "Projetos (60%, Min. 8 valores) + Teste (40%, Min. 8 valores)",
         "notas": "Os grupos são compostos por 2 elementos.",
         "recursos": [],
-        "docentes": ["Nuno Macedo (nmacedo@di.uminho.pt) (Regente)"]
+        "docentes": [
+            "Nuno Macedo (nmacedo@di.uminho.pt) (Regente)"
+        ]
     },
     {
         "nome": "Scripting para Processamento de Linguagem Natural",
@@ -802,7 +867,9 @@
         "criterios": "Nota Final = 60% Componente Teórica (Nota mínima: 8 valores) + 40% Componente Prática (Nota Mínima: 10 valores)",
         "notas": "",
         "recursos": [],
-        "docentes": ["Flávio de Oliveira Silva (flavio@di.uminho.pt) (Regente)"]
+        "docentes": [
+            "Flávio de Oliveira Silva (flavio@di.uminho.pt) (Regente)"
+        ]
     },
     {
         "nome": "Novos Paradigmas de Redes",
@@ -810,9 +877,18 @@
         "slug": "rng-uc2",
         "sigla": "NPR",
         "avaliacoes": [
-            { "data": "2026-03-23", "descricao": "Apresentação Intermédia" },
-            { "data": "2026-05-18", "descricao": "Teste" },
-            { "data": "2026-05-30", "descricao": "Entrega Final" }
+            {
+                "data": "2026-03-23",
+                "descricao": "Apresentação Intermédia"
+            },
+            {
+                "data": "2026-05-18",
+                "descricao": "Teste"
+            },
+            {
+                "data": "2026-05-30",
+                "descricao": "Entrega Final"
+            }
         ],
         "criterios": "Avaliação = 50%T + 50%TP (Nota mínima de 8 Teste/Recurso, nota mínima 9,5 TP)",
         "notas": "",
@@ -827,7 +903,12 @@
         "perfil": "Redes de Nova Geração",
         "slug": "rng-uc3",
         "sigla": "RDS",
-        "avaliacoes": [{ "data": "2026-05-25", "descricao": "Teste" }],
+        "avaliacoes": [
+            {
+                "data": "2026-05-25",
+                "descricao": "Teste"
+            }
+        ],
         "criterios": "Avaliação = 50%T + 50%TP (Nota mínima de 8 Teste/Recurso, nota mínima 9,5 TP)",
         "notas": "",
         "recursos": [],
@@ -842,10 +923,16 @@
         "slug": "rng-projeto",
         "sigla": "PRNG",
         "avaliacoes": [
-            { "data": "2026-03-17", "descricao": "Apresentação Intermédia" },
-            { "data": "2026-05-31", "descricao": "Entrega Final" }
+            {
+                "data": "2026-03-17",
+                "descricao": "Apresentação Intermédia"
+            },
+            {
+                "data": "2026-05-31",
+                "descricao": "Entrega Final"
+            }
         ],
-        "criterios": "",
+        "criterios": "Avaliação intermédia (30%) + Avaliação final (70%)",
         "notas": "",
         "recursos": [],
         "docentes": [
@@ -875,7 +962,9 @@
         "criterios": "50% Trabalho Prático + 50% Teste Teórico (ambas componentes têm nota mínima de 10 valores)",
         "notas": "",
         "recursos": [],
-        "docentes": ["Orlando Belo (obelo@di.uminho.pt) (Regente)"]
+        "docentes": [
+            "Orlando Belo (obelo@di.uminho.pt) (Regente)"
+        ]
     },
     {
         "nome": "Sistemas de Extração, Transformação e Carregamento de Dados",
@@ -883,8 +972,14 @@
         "slug": "sdw-uc2",
         "sigla": "SETCD",
         "avaliacoes": [
-            { "data": "2026-05-29", "descricao": "Teste" },
-            { "data": "2026-03-06", "descricao": "1ª Ficha Prática" }
+            {
+                "data": "2026-05-29",
+                "descricao": "Teste"
+            },
+            {
+                "data": "2026-03-06",
+                "descricao": "1ª Ficha Prática"
+            }
         ],
         "criterios": "Critério de avaliação = 50%T + 50%TP (nota mínima de 10 valores nas duas componentes)",
         "notas": "A avaliação prática é composta pela realização de dois exercícios práticos, como TPC, com a duração de uma semana.",
@@ -899,7 +994,16 @@
         "perfil": "Sistemas de Data Warehousing",
         "slug": "sdw-uc3",
         "sigla": "ECDW",
-        "avaliacoes": [{ "data": "2026-05-22", "descricao": "Teste" }],
+        "avaliacoes": [
+            {
+                "data": "2026-05-22",
+                "descricao": "Teste"
+            },
+            {
+                "data": "2026-06-12",
+                "descricao": "Exame"
+            }
+        ],
         "criterios": "Nota final = 40%T + 60% TP",
         "notas": "A componente prática é composta pela avaliação de dois (ou três) exercícios práticos, como TPC, com a duração de uma semana.",
         "recursos": [],
@@ -917,7 +1021,9 @@
         "criterios": "Trabalho Prático Desenvolvido",
         "notas": "Cada aula tem como objetivo acompanhar o trabalho prático de cada grupo.",
         "recursos": [],
-        "docentes": ["Orlando Belo (obelo@di.uminho.pt) (Regente)"]
+        "docentes": [
+            "Orlando Belo (obelo@di.uminho.pt) (Regente)"
+        ]
     },
     {
         "nome": "Tolerância a Faltas",
@@ -1088,6 +1194,8 @@
         "criterios": "",
         "notas": "Datas não definitivas. Grupos de 4 a 5 elementos. O acompanhamento do projeto é feito com o docente responsável pelo mesmo.",
         "recursos": [],
-        "docentes": ["César Analide Rodrigues (analide@di.uminho.pt) (Regente)"]
+        "docentes": [
+            "César Analide Rodrigues (analide@di.uminho.pt) (Regente)"
+        ]
     }
 ]
