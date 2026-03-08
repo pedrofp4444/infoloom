@@ -5,13 +5,34 @@
         "slug": "aplicacoes-e-servicos-de-computacao-em-nuvem",
         "sigla": "ASCN",
         "avaliacoes": [
-            { "data": "2025-11-02", "descricao": "Checkpoint#1" },
-            { "data": "2025-11-30", "descricao": "Checkpoint#2" },
-            { "data": "2025-12-29", "descricao": "Entrega Final" },
-            { "data": "2026-01-05", "descricao": "Teste" },
-            { "data": "2026-01-15", "descricao": "Defesa" },
-            { "data": "2026-01-16", "descricao": "Defesa" },
-            { "data": "2026-01-26", "descricao": "Exame" }
+            {
+                "data": "2025-11-02",
+                "descricao": "Checkpoint#1"
+            },
+            {
+                "data": "2025-11-30",
+                "descricao": "Checkpoint#2"
+            },
+            {
+                "data": "2025-12-29",
+                "descricao": "Entrega Final"
+            },
+            {
+                "data": "2026-01-05",
+                "descricao": "Teste"
+            },
+            {
+                "data": "2026-01-15",
+                "descricao": "Defesa"
+            },
+            {
+                "data": "2026-01-16",
+                "descricao": "Defesa"
+            },
+            {
+                "data": "2026-01-26",
+                "descricao": "Exame"
+            }
         ],
         "criterios": "Projeto (50%) + Teste (50%, Min. 8 valores)",
         "notas": "Os grupos são compostos por 5 elementos (4 é possível mas não recomendado). Checkpoints do projeto podem ter avaliação associada (a confirmar). As datas marcadas como \"Defesa\" são apenas indicativas da semana das mesmas, posteriormente a equipa docente divulgará as datas concretas, como habitual.",
@@ -29,14 +50,25 @@
         "slug": "computacao-paralela",
         "sigla": "CPar",
         "avaliacoes": [
-            { "data": "2025-11-24", "descricao": "Entrega da Fase 1" },
-            { "data": "2026-01-09", "descricao": "Teste" },
-            { "data": "2026-01-30", "descricao": "Exame" }
+            {
+                "data": "2025-11-24",
+                "descricao": "Entrega da Fase 1"
+            },
+            {
+                "data": "2026-01-09",
+                "descricao": "Teste"
+            },
+            {
+                "data": "2026-01-30",
+                "descricao": "Exame"
+            }
         ],
         "criterios": "1º Checkpoint Projeto (10%) + Entrega Final do Projeto (50%) + Teste (40%, Min. 5 valores)",
         "notas": "Os grupos são compostos por 2 elementos.",
         "recursos": [],
-        "docentes": ["João Luís Sobral (jls@di.uminho.pt) (Regente)"]
+        "docentes": [
+            "João Luís Sobral (jls@di.uminho.pt) (Regente)"
+        ]
     },
     {
         "nome": "Dados e Aprendizagem Automática",
@@ -44,18 +76,42 @@
         "slug": "dados-e-aprendizagem-automatica",
         "sigla": "DAA",
         "avaliacoes": [
-            { "data": "2025-12-02", "descricao": "Apresentação 1º fase" },
-            { "data": "2025-12-03", "descricao": "Apresentação 1º fase" },
-            { "data": "2025-12-17", "descricao": "Teste" },
-            { "data": "2026-01-02", "descricao": "Fim do challenge" },
+            {
+                "data": "2025-12-02",
+                "descricao": "Apresentação 1º fase"
+            },
+            {
+                "data": "2025-12-03",
+                "descricao": "Apresentação 1º fase"
+            },
+            {
+                "data": "2025-12-17",
+                "descricao": "Teste"
+            },
+            {
+                "data": "2026-01-02",
+                "descricao": "Fim do challenge"
+            },
             {
                 "data": "2026-01-10",
                 "descricao": "Entrega final do Trabalho Prático"
             },
-            { "data": "2026-01-12", "descricao": "Apresentação 2º fase" },
-            { "data": "2026-01-13", "descricao": "Apresentação 2º fase" },
-            { "data": "2026-01-14", "descricao": "Apresentação 2º fase" },
-            { "data": "2026-01-21", "descricao": "Exame" }
+            {
+                "data": "2026-01-12",
+                "descricao": "Apresentação 2º fase"
+            },
+            {
+                "data": "2026-01-13",
+                "descricao": "Apresentação 2º fase"
+            },
+            {
+                "data": "2026-01-14",
+                "descricao": "Apresentação 2º fase"
+            },
+            {
+                "data": "2026-01-21",
+                "descricao": "Exame"
+            }
         ],
         "criterios": "Projeto (60%) + Teste (40%, Min. 8 valores)",
         "notas": "Os grupos são compostos por 4 elementos.",
@@ -73,8 +129,14 @@
         "slug": "engenharia-de-servicos-em-rede",
         "sigla": "ESR",
         "avaliacoes": [
-            { "data": "2025-12-19", "descricao": "Teste" },
-            { "data": "2026-01-23", "descricao": "Exame" }
+            {
+                "data": "2025-12-19",
+                "descricao": "Teste"
+            },
+            {
+                "data": "2026-01-23",
+                "descricao": "Exame"
+            }
         ],
         "criterios": "Projetos (50%) (TP1:20% | TP2:80% - Desvalorização de 0.5 por cada falta injustificada) + Teste (50%, Min. 8 valores)",
         "notas": "Os grupos são compostos por 3 elementos (2 é possível se não houver número certo no turno para divisão).",
@@ -107,8 +169,14 @@
                 "data": "2025-12-23",
                 "descricao": "Data Limite da submissão do 4º Exercício"
             },
-            { "data": "2026-01-07", "descricao": "Teste" },
-            { "data": "2026-01-28", "descricao": "Exame" }
+            {
+                "data": "2026-01-07",
+                "descricao": "Teste"
+            },
+            {
+                "data": "2026-01-28",
+                "descricao": "Exame"
+            }
         ],
         "criterios": "Teste (80%) + Exercícios (20%)",
         "notas": "",
@@ -125,20 +193,62 @@
         "slug": "requisitos-e-arquiteturas-de-software",
         "sigla": "RAS",
         "avaliacoes": [
-            { "data": "2025-11-07", "descricao": "Entrega da Fase 1" },
-            { "data": "2025-11-10", "descricao": "Defesa da Fase 1" },
-            { "data": "2025-11-11", "descricao": "Defesa da Fase 1" },
-            { "data": "2025-11-12", "descricao": "Defesa da Fase 1" },
-            { "data": "2025-11-13", "descricao": "Defesa da Fase 1" },
-            { "data": "2025-11-14", "descricao": "Defesa da Fase 1" },
-            { "data": "2025-12-15", "descricao": "Teste" },
-            { "data": "2026-01-09", "descricao": "Entrega da Fase 2" },
-            { "data": "2026-01-12", "descricao": "Defesa da Fase 2" },
-            { "data": "2026-01-13", "descricao": "Defesa da Fase 2" },
-            { "data": "2026-01-14", "descricao": "Defesa da Fase 2" },
-            { "data": "2026-01-15", "descricao": "Defesa da Fase 2" },
-            { "data": "2026-01-16", "descricao": "Defesa da Fase 2" },
-            { "data": "2026-01-19", "descricao": "Exame" }
+            {
+                "data": "2025-11-07",
+                "descricao": "Entrega da Fase 1"
+            },
+            {
+                "data": "2025-11-10",
+                "descricao": "Defesa da Fase 1"
+            },
+            {
+                "data": "2025-11-11",
+                "descricao": "Defesa da Fase 1"
+            },
+            {
+                "data": "2025-11-12",
+                "descricao": "Defesa da Fase 1"
+            },
+            {
+                "data": "2025-11-13",
+                "descricao": "Defesa da Fase 1"
+            },
+            {
+                "data": "2025-11-14",
+                "descricao": "Defesa da Fase 1"
+            },
+            {
+                "data": "2025-12-15",
+                "descricao": "Teste"
+            },
+            {
+                "data": "2026-01-09",
+                "descricao": "Entrega da Fase 2"
+            },
+            {
+                "data": "2026-01-12",
+                "descricao": "Defesa da Fase 2"
+            },
+            {
+                "data": "2026-01-13",
+                "descricao": "Defesa da Fase 2"
+            },
+            {
+                "data": "2026-01-14",
+                "descricao": "Defesa da Fase 2"
+            },
+            {
+                "data": "2026-01-15",
+                "descricao": "Defesa da Fase 2"
+            },
+            {
+                "data": "2026-01-16",
+                "descricao": "Defesa da Fase 2"
+            },
+            {
+                "data": "2026-01-19",
+                "descricao": "Exame"
+            }
         ],
         "criterios": "min(0.6 * max(Teórica,Prática) + 0.4 * min(Teórica, Prática), Teórica + 2); Teste >= 9; Prático >= 10; Final >= 9.5",
         "notas": "Os grupos são compostos por 5 elementos.",
@@ -156,9 +266,18 @@
         "slug": "ca-uc1",
         "sigla": "AAC",
         "avaliacoes": [
-            { "data": "2025-10-31", "descricao": "Defesa do TP1" },
-            { "data": "2026-01-04", "descricao": "Entrega do TP2" },
-            { "data": "2026-01-10", "descricao": "Teste" }
+            {
+                "data": "2025-10-31",
+                "descricao": "Defesa do TP1"
+            },
+            {
+                "data": "2026-01-04",
+                "descricao": "Entrega do TP2"
+            },
+            {
+                "data": "2026-01-10",
+                "descricao": "Teste"
+            }
         ],
         "criterios": "Teste (35%) + Trabalho prático (50%) + Análise, apresentação e discussão de um artigo sobre HPC (15%)",
         "notas": "Os grupos são compostos por 3 elementos. Defesas do TP2 na semana do 12-17 de janeiro, idealmente logo dia 12 mas por confirmar ainda.",
@@ -252,7 +371,7 @@
         "sigla": "PCG",
         "avaliacoes": [],
         "criterios": "",
-        "notas": "",
+        "notas": "Teste.",
         "recursos": [],
         "docentes": []
     },
@@ -308,8 +427,14 @@
         "slug": "dvms-uc1",
         "sigla": "MEVS",
         "avaliacoes": [
-            { "data": "2025-12-11", "descricao": "Teste" },
-            { "data": "2026-01-08", "descricao": "Entrega do Projeto Prático" }
+            {
+                "data": "2025-12-11",
+                "descricao": "Teste"
+            },
+            {
+                "data": "2026-01-08",
+                "descricao": "Entrega do Projeto Prático"
+            }
         ],
         "criterios": "Teste (50%) + Trabalho prático (50%, 75% de projeto + 25% de avaliação contínua)",
         "notas": "",
@@ -358,12 +483,18 @@
         "slug": "ea-uc1",
         "sigla": "ABD",
         "avaliacoes": [
-            { "data": "2025-12-18", "descricao": "Teste" },
+            {
+                "data": "2025-12-18",
+                "descricao": "Teste"
+            },
             {
                 "data": "2026-01-04",
                 "descricao": "Entrega do Trabalho Prático"
             },
-            { "data": "2026-01-22", "descricao": "Exame" }
+            {
+                "data": "2026-01-22",
+                "descricao": "Exame"
+            }
         ],
         "criterios": "Projeto (50%) + Teste (50%, Min. 8 valores)",
         "notas": "Os grupos são compostos por 4 elementos. Há obrigatoriedade de defesa para notas superiores a 16 no projeto.",
@@ -412,15 +543,29 @@
         "slug": "el-uc1",
         "sigla": "EG",
         "avaliacoes": [
-            { "data": "2025-11-06", "descricao": "Apresentação TP1" },
-            { "data": "2025-12-11", "descricao": "Teste" },
-            { "data": "2025-12-18", "descricao": "Apresentação TP2" },
-            { "data": "2026-01-22", "descricao": "Exame" }
+            {
+                "data": "2025-11-06",
+                "descricao": "Apresentação TP1"
+            },
+            {
+                "data": "2025-12-11",
+                "descricao": "Teste"
+            },
+            {
+                "data": "2025-12-18",
+                "descricao": "Apresentação TP2"
+            },
+            {
+                "data": "2026-01-22",
+                "descricao": "Exame"
+            }
         ],
         "criterios": "Projetos (60%, Min. 8 valores) + Teste (40%, Min. 8 valores)",
         "notas": "Os grupos são compostos por 2 elementos.",
         "recursos": [],
-        "docentes": ["Nuno Macedo (nmacedo@di.uminho.pt) (Regente)"]
+        "docentes": [
+            "Nuno Macedo (nmacedo@di.uminho.pt) (Regente)"
+        ]
     },
     {
         "nome": "Scripting para Processamento de Linguagem Natural",
@@ -461,10 +606,22 @@
         "slug": "ek-uc1",
         "sigla": "BDN",
         "avaliacoes": [
-            { "data": "2025-11-07", "descricao": "Ficha de avaliação" },
-            { "data": "2025-11-28", "descricao": "Ficha de avaliação" },
-            { "data": "2025-12-12", "descricao": "Ficha de avaliação" },
-            { "data": "2026-01-09", "descricao": "Teste" }
+            {
+                "data": "2025-11-07",
+                "descricao": "Ficha de avaliação"
+            },
+            {
+                "data": "2025-11-28",
+                "descricao": "Ficha de avaliação"
+            },
+            {
+                "data": "2025-12-12",
+                "descricao": "Ficha de avaliação"
+            },
+            {
+                "data": "2026-01-09",
+                "descricao": "Teste"
+            }
         ],
         "criterios": "Projeto (40%) + Teste (60%)",
         "notas": "",
@@ -513,11 +670,26 @@
         "slug": "ei-uc1",
         "sigla": "QSI",
         "avaliacoes": [
-            { "data": "2025-10-10", "descricao": "Entrega do TP1" },
-            { "data": "2025-10-24", "descricao": "Entrega do TP2" },
-            { "data": "2025-11-21", "descricao": "Entrega do TP4" },
-            { "data": "2025-12-19", "descricao": "Apresentação do TP3" },
-            { "data": "2026-01-06", "descricao": "Teste" }
+            {
+                "data": "2025-10-10",
+                "descricao": "Entrega do TP1"
+            },
+            {
+                "data": "2025-10-24",
+                "descricao": "Entrega do TP2"
+            },
+            {
+                "data": "2025-11-21",
+                "descricao": "Entrega do TP4"
+            },
+            {
+                "data": "2025-12-19",
+                "descricao": "Apresentação do TP3"
+            },
+            {
+                "data": "2026-01-06",
+                "descricao": "Teste"
+            }
         ],
         "criterios": "Trabalhos Práticos (50%, Min. 10 valores) + Teste (50%, Min. 8 valores)",
         "notas": "Os grupos são compostos por 3 elementos.",
@@ -614,15 +786,29 @@
         "slug": "rng-uc1",
         "sigla": "RFM",
         "avaliacoes": [
-            { "data": "2025-10-17", "descricao": "Entrega do TP1" },
-            { "data": "2025-11-14", "descricao": "Entrega do TP2" },
-            { "data": "2025-12-19", "descricao": "Entrega do TP3" },
-            { "data": "2026-01-10", "descricao": "Teste" }
+            {
+                "data": "2025-10-17",
+                "descricao": "Entrega do TP1"
+            },
+            {
+                "data": "2025-11-14",
+                "descricao": "Entrega do TP2"
+            },
+            {
+                "data": "2025-12-19",
+                "descricao": "Entrega do TP3"
+            },
+            {
+                "data": "2026-01-10",
+                "descricao": "Teste"
+            }
         ],
         "criterios": "Nota Final = 60% Componente Teórica (Nota mínima: 8 valores) + 40% Componente Prática (Nota Mínima: 10 valores)",
         "notas": "",
         "recursos": [],
-        "docentes": ["Flávio de Oliveira Silva (flavio@di.uminho.pt) (Regente)"]
+        "docentes": [
+            "Flávio de Oliveira Silva (flavio@di.uminho.pt) (Regente)"
+        ]
     },
     {
         "nome": "Novos Paradigmas de Redes",
@@ -667,13 +853,21 @@
                 "data": "2025-12-22",
                 "descricao": "Entrega do Trabalho Prático"
             },
-            { "data": "2026-01-08", "descricao": "Teste" },
-            { "data": "2026-01-12", "descricao": "Defesa do Trabalho Prático" }
+            {
+                "data": "2026-01-08",
+                "descricao": "Teste"
+            },
+            {
+                "data": "2026-01-12",
+                "descricao": "Defesa do Trabalho Prático"
+            }
         ],
         "criterios": "50% Trabalho Prático + 50% Teste Teórico (ambas componentes têm nota mínima de 10 valores)",
         "notas": "",
         "recursos": [],
-        "docentes": ["Orlando Belo (obelo@di.uminho.pt) (Regente)"]
+        "docentes": [
+            "Orlando Belo (obelo@di.uminho.pt) (Regente)"
+        ]
     },
     {
         "nome": "Sistemas de Extração, Transformação e Carregamento de Dados",
@@ -714,8 +908,14 @@
         "slug": "sd-uc1",
         "sigla": "TF",
         "avaliacoes": [
-            { "data": "2026-01-02", "descricao": "Entrega do Projeto Prático" },
-            { "data": "2026-01-08", "descricao": "Teste" }
+            {
+                "data": "2026-01-02",
+                "descricao": "Entrega do Projeto Prático"
+            },
+            {
+                "data": "2026-01-08",
+                "descricao": "Teste"
+            }
         ],
         "criterios": "Projeto (50%) + Teste (50%, Min. 10 valores)",
         "notas": "As apresentações do Projeto Prático são entre o teste e o exame.",
@@ -776,7 +976,10 @@
                 "data": "2025-11-10",
                 "descricao": "Revisão de trabalhos de investigação"
             },
-            { "data": "2026-01-12", "descricao": "Entrega do projeto prático" },
+            {
+                "data": "2026-01-12",
+                "descricao": "Entrega do projeto prático"
+            },
             {
                 "data": "2026-01-15",
                 "descricao": "Apresentação do projeto prático"
