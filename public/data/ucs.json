@@ -813,11 +813,23 @@
         "perfil": "Métodos Formais de Programação",
         "slug": "mfp-uc2",
         "sigla": "VF",
-        "avaliacoes": [],
-        "criterios": "",
+        "avaliacoes": [
+            {
+                "data": "2026-03-18",
+                "descricao": "Teste 1"
+            },
+            {
+                "data": "2026-05-06",
+                "descricao": "Teste 2"
+            }
+        ],
+        "criterios": "Teste 1: Laboratorial Rocq Prover (50%) + Teste 2: Individual Escrito em Why3 (50%)",
         "notas": "",
         "recursos": [],
-        "docentes": []
+        "docentes": [
+            "Maria João Frade (mjf@di.uminho.pt)",
+            "Jorge Sousa Pinto (jsp@di.uminho.pt)"
+        ]
     },
     {
         "nome": "Programação Ciberfísica",
