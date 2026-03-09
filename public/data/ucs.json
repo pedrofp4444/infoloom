@@ -832,15 +832,26 @@
         ]
     },
     {
-        "nome": "Programação Ciberfísica",
+        "nome": "Programação Ciber-física",
         "perfil": "Métodos Formais de Programação",
         "slug": "mfp-uc3",
         "sigla": "PC",
-        "avaliacoes": [],
-        "criterios": "",
+        "avaliacoes": [
+            {
+                "data": "2026-04-16",
+                "descricao": "Entrega TP1"
+            },
+            {
+                "data": "2026-06-04",
+                "descricao": "Entrega TP2"
+            }
+        ],
+        "criterios": "2 Trabalhos Práticos sobre modelação e análise de sistemas ciber-físicos",
         "notas": "",
         "recursos": [],
-        "docentes": []
+        "docentes": [
+            "Renato Neves (nevrenato@di.uminho.pt)"
+        ]
     },
     {
         "nome": "Projeto em Métodos Formais de Programação",
