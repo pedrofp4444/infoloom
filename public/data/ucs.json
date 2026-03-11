@@ -288,15 +288,31 @@
         ]
     },
     {
-        "nome": "Análise de Dados de Grandes Dimensões",
+        "nome": "Análise de Dados de Elevado Desempenho",
         "perfil": "Computação Avançada",
         "slug": "ca-uc2",
-        "sigla": "ADA",
-        "avaliacoes": [],
-        "criterios": "",
+        "sigla": "ADED",
+        "avaliacoes": [
+            {
+                "data": "2026-03-18",
+                "descricao": "Projeto 1"
+            },
+            {
+                "data": "2026-05-06",
+                "descricao": "Projeto 2"
+            },
+            {
+                "data": "2026-05-27",
+                "descricao": "Teste "
+            }
+        ],
+        "criterios": "2 Projetos (50%) + 1 Teste (50%)",
         "notas": "",
         "recursos": [],
-        "docentes": []
+        "docentes": [
+            "António Luís Sousa (als@di.uminho.pt)",
+            "Cláudia Brito (D13235@di.uminho.pt)"
+        ]
     },
     {
         "nome": "Sistemas de Armazenamento de Dados",
@@ -858,26 +874,11 @@
         "perfil": "Métodos Formais de Programação",
         "slug": "mfp-projeto",
         "sigla": "PMFP",
-        "avaliacoes": [
-            {
-                "data": "2026-03-19",
-                "descricao": "Milestone 1"
-            },
-            {
-                "data": "2026-04-09",
-                "descricao": "Milestone 2"
-            },
-            {
-                "data": "2026-05-28",
-                "descricao": "Milestone 3"
-            }
-        ],
-        "criterios": "Apresentação de um relatório escrito do trabalho desenvolvido (50%)\nApresentações públicas periódicas e apresentação final do projeto (50%)",
+        "avaliacoes": [],
+        "criterios": "",
         "notas": "",
         "recursos": [],
-        "docentes": [
-            "Renato Neves (nevrenato@di.uminho.pt)"
-        ]
+        "docentes": []
     },
     {
         "nome": "Redes Fixas e Móveis",
