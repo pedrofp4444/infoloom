@@ -294,11 +294,11 @@
         "sigla": "ADED",
         "avaliacoes": [
             {
-                "data": "2026-03-19",
+                "data": "2026-03-18",
                 "descricao": "Projeto 1"
             },
             {
-                "data": "2026-05-07",
+                "data": "2026-05-06",
                 "descricao": "Projeto 2"
             },
             {
@@ -306,7 +306,7 @@
                 "descricao": "Teste "
             }
         ],
-        "criterios": "2 Projetos (50% -> 25% + 25%) + 1 Teste (50%)",
+        "criterios": "2 Projetos (50%) + 1 Teste (50%)",
         "notas": "",
         "recursos": [],
         "docentes": [
@@ -350,11 +350,27 @@
         "perfil": "Computação Avançada",
         "slug": "ca-projeto",
         "sigla": "PCA",
-        "avaliacoes": [],
-        "criterios": "",
+        "avaliacoes": [
+            {
+                "data": "2026-02-20",
+                "descricao": "Tutorial 1"
+            },
+            {
+                "data": "2026-03-13",
+                "descricao": "Tutorial 2"
+            },
+            {
+                "data": "2026-04-10",
+                "descricao": "Tutorial 3"
+            }
+        ],
+        "criterios": "Paper Submission (100%)",
         "notas": "",
         "recursos": [],
-        "docentes": []
+        "docentes": [
+            " (Ricardo Macedo (d12010@di.uminho.pt)",
+            "Cláudia Brito (D13235@di.uminho.pt)"
+        ]
     },
     {
         "nome": "Visualização em Tempo Real",
