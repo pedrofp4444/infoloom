@@ -294,11 +294,11 @@
         "sigla": "ADED",
         "avaliacoes": [
             {
-                "data": "2026-03-18",
+                "data": "2026-03-19",
                 "descricao": "Projeto 1"
             },
             {
-                "data": "2026-05-06",
+                "data": "2026-05-07",
                 "descricao": "Projeto 2"
             },
             {
@@ -306,7 +306,7 @@
                 "descricao": "Teste "
             }
         ],
-        "criterios": "2 Projetos (50%) + 1 Teste (50%)",
+        "criterios": "2 Projetos (50% -> 25% + 25%) + 1 Teste (50%)",
         "notas": "",
         "recursos": [],
         "docentes": [
