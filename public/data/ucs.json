@@ -294,11 +294,11 @@
         "sigla": "ADED",
         "avaliacoes": [
             {
-                "data": "2026-03-19",
+                "data": "2026-03-18",
                 "descricao": "Projeto 1"
             },
             {
-                "data": "2026-05-07",
+                "data": "2026-05-06",
                 "descricao": "Projeto 2"
             },
             {
@@ -306,7 +306,7 @@
                 "descricao": "Teste "
             }
         ],
-        "criterios": "2 Projetos (50% -> 25% + 25%) + 1 Teste (50%)",
+        "criterios": "2 Projetos (50%) + 1 Teste (50%)",
         "notas": "",
         "recursos": [],
         "docentes": [
@@ -315,15 +315,35 @@
         ]
     },
     {
-        "nome": "Sistemas de Armazenamento de Dados",
+        "nome": "Sistemas de Armazenamento de Dados Eficientes",
         "perfil": "Computação Avançada",
         "slug": "ca-uc3",
-        "sigla": "SAD",
-        "avaliacoes": [],
-        "criterios": "",
+        "sigla": "SADE",
+        "avaliacoes": [
+            {
+                "data": "2026-04-24",
+                "descricao": "Initial Reviews"
+            },
+            {
+                "data": "2026-05-04",
+                "descricao": "Online paper discussion and review tuning"
+            },
+            {
+                "data": "2026-05-08",
+                "descricao": "In-person paper review discussion"
+            },
+            {
+                "data": "2026-05-22",
+                "descricao": "Teste"
+            }
+        ],
+        "criterios": "Paper Review (40%) + Teste (60%)",
         "notas": "",
         "recursos": [],
-        "docentes": []
+        "docentes": [
+            "João Tiago Paulo (jtpaulo@di.uminho.pt)",
+            "Ricardo Macedo (d12010@di.uminho.pt)"
+        ]
     },
     {
         "nome": "Projeto em Computação Avançada",
