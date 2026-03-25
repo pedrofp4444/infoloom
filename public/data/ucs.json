@@ -929,11 +929,26 @@
         "perfil": "Métodos Formais de Programação",
         "slug": "mfp-projeto",
         "sigla": "PMFP",
-        "avaliacoes": [],
-        "criterios": "",
+        "avaliacoes": [
+            {
+                "data": "2026-03-19",
+                "descricao": "Milestone 1"
+            },
+            {
+                "data": "2026-04-09",
+                "descricao": "Milestone 2"
+            },
+            {
+                "data": "2026-05-28",
+                "descricao": "Milestone 3"
+            }
+        ],
+        "criterios": "Relatório Escrito (50%) + Apresentações Públicas Periódicas e Apresentação Final (50%)",
         "notas": "",
         "recursos": [],
-        "docentes": []
+        "docentes": [
+            "Renato Neves (nevrenato@di.uminho.pt)"
+        ]
     },
     {
         "nome": "Redes Fixas e Móveis",
