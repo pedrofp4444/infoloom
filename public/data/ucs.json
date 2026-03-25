@@ -294,11 +294,11 @@
         "sigla": "ADED",
         "avaliacoes": [
             {
-                "data": "2026-03-19",
+                "data": "2026-03-18",
                 "descricao": "Projeto 1"
             },
             {
-                "data": "2026-05-07",
+                "data": "2026-05-06",
                 "descricao": "Projeto 2"
             },
             {
@@ -362,6 +362,22 @@
             {
                 "data": "2026-04-10",
                 "descricao": "Tutorial 3"
+            },
+            {
+                "data": "2026-03-06",
+                "descricao": "Checkpoint 1"
+            },
+            {
+                "data": "2026-04-24",
+                "descricao": "Checkpoint 2"
+            },
+            {
+                "data": "2026-05-15",
+                "descricao": "Paper Submission"
+            },
+            {
+                "data": "2026-06-01",
+                "descricao": "Apresentações"
             }
         ],
         "criterios": "Paper Submission (100%)",
@@ -369,7 +385,10 @@
         "recursos": [],
         "docentes": [
             " (Ricardo Macedo (d12010@di.uminho.pt)",
-            "Cláudia Brito (D13235@di.uminho.pt)"
+            "Cláudia Brito (D13235@di.uminho.pt)",
+            "João Tiago Paulo (jtpaulo@di.uminho.pt)",
+            "António Luís Sousa (als@di.uminho.pt)",
+            "André Pereira (ampereira@di.uminho.pt)"
         ]
     },
     {
