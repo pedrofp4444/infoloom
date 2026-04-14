@@ -779,7 +779,12 @@
         "perfil": "Engenharia do Conhecimento",
         "slug": "ek-uc3",
         "sigla": "AISBD",
-        "avaliacoes": [],
+        "avaliacoes": [
+            {
+                "data": "2026-05-05",
+                "descricao": "Teste"
+            }
+        ],
         "criterios": "",
         "notas": "",
         "recursos": [],
