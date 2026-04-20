@@ -768,7 +768,12 @@
         "perfil": "Engenharia do Conhecimento",
         "slug": "ek-uc2",
         "sigla": "MD",
-        "avaliacoes": [],
+        "avaliacoes": [
+            {
+                "data": "2026-05-18",
+                "descricao": "Teste"
+            }
+        ],
         "criterios": "",
         "notas": "",
         "recursos": [],
