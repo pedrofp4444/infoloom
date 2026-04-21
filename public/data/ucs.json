@@ -715,7 +715,20 @@
         "perfil": "Engenharia de Linguagens",
         "slug": "el-uc3",
         "sigla": "RPCW",
-        "avaliacoes": [],
+        "avaliacoes": [
+            {
+                "data": "2026-05-18",
+                "descricao": "Teste (9h)"
+            },
+            {
+                "data": "2026-05-25",
+                "descricao": "Defesa do Projeto (9h)"
+            },
+            {
+                "data": "2026-06-08",
+                "descricao": "Exame de recurso (9h)"
+            }
+        ],
         "criterios": "",
         "notas": "",
         "recursos": [],
@@ -787,7 +800,7 @@
         "avaliacoes": [
             {
                 "data": "2026-05-05",
-                "descricao": "Teste"
+                "descricao": "Teste (9h)"
             }
         ],
         "criterios": "",
