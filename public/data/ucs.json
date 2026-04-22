@@ -895,7 +895,28 @@
         "perfil": "Engenharia Internet",
         "slug": "ei-projeto",
         "sigla": "PEI",
-        "avaliacoes": [],
+        "avaliacoes": [
+            {
+                "data": "2026-06-01",
+                "descricao": "Demonstração final"
+            },
+            {
+                "data": "2026-06-02",
+                "descricao": "Demonstração final"
+            },
+            {
+                "data": "2026-06-03",
+                "descricao": "Demonstração final"
+            },
+            {
+                "data": "2026-06-04",
+                "descricao": "Demonstração final"
+            },
+            {
+                "data": "2026-06-05",
+                "descricao": "Demonstração final"
+            }
+        ],
         "criterios": "",
         "notas": "",
         "recursos": [],
@@ -1075,6 +1096,26 @@
             {
                 "data": "2026-05-31",
                 "descricao": "Entrega Final"
+            },
+            {
+                "data": "2026-06-01",
+                "descricao": "Demonstração Final"
+            },
+            {
+                "data": "2026-06-02",
+                "descricao": "Demonstração Final"
+            },
+            {
+                "data": "2026-06-03",
+                "descricao": "Demonstração Final"
+            },
+            {
+                "data": "2026-06-04",
+                "descricao": "Demonstração Final"
+            },
+            {
+                "data": "2026-06-05",
+                "descricao": "Demonstração Final"
             }
         ],
         "criterios": "Avaliação intermédia (30%) + Avaliação final (70%)",
