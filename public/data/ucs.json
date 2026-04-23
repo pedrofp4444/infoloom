@@ -873,7 +873,16 @@
         "perfil": "Engenharia Internet",
         "slug": "ei-uc2",
         "sigla": "IoTA",
-        "avaliacoes": [],
+        "avaliacoes": [
+            {
+                "data": "2026-05-22",
+                "descricao": "Teste (9h)"
+            },
+            {
+                "data": "2026-05-29",
+                "descricao": "Apresentação do projeto prático"
+            }
+        ],
         "criterios": "",
         "notas": "",
         "recursos": [],
@@ -1169,6 +1178,10 @@
             {
                 "data": "2026-03-27",
                 "descricao": "Entrega do Primeiro Trabalho Prático"
+            },
+            {
+                "data": "2026-06-12",
+                "descricao": "Exame"
             }
         ],
         "criterios": "Critério de avaliação = 50%T + 50%TP (nota mínima de 10 valores nas duas componentes)",
