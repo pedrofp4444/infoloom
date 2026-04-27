@@ -641,7 +641,12 @@
         "perfil": "Engenharia de Aplicações",
         "slug": "ea-uc2",
         "sigla": "SIC",
-        "avaliacoes": [],
+        "avaliacoes": [
+            {
+                "data": "2026-05-19",
+                "descricao": "Teste"
+            }
+        ],
         "criterios": "",
         "notas": "",
         "recursos": [],
@@ -652,7 +657,12 @@
         "perfil": "Engenharia de Aplicações",
         "slug": "ea-uc3",
         "sigla": "AA",
-        "avaliacoes": [],
+        "avaliacoes": [
+            {
+                "data": "2026-05-25",
+                "descricao": "Teste"
+            }
+        ],
         "criterios": "",
         "notas": "",
         "recursos": [],
